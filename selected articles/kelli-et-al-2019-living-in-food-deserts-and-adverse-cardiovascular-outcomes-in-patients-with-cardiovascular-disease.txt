@@ -1,0 +1,635 @@
+===== PDF METADATA =====
+/CreationDate: D:20190130143453+05'30'
+/Creator: Arbortext Advanced Print Publisher 9.1.531/W Unicode
+/CrossMarkDomains[1]: www.ahajournals.org
+/CrossmarkDomainExclusive: true
+/CrossmarkMajorVersionDate: 2019-02-11
+/ModDate: D:20250103155343-06'00'
+/Producer: Acrobat Distiller 10.0.0 (Windows); modified using iText 4.2.0 by 1T3XT
+/Subject: JAHA 2019.8:e010694
+/Title: Living in Food Deserts and Adverse Cardiovascular Outcomes in Patients With Cardiovascular Disease
+/WPS-ARTICLEDOI: 10.1161/JAHA.118.010694
+/WPS-JOURNALDOI: 10.1002/(ISSN)2047-9980
+/WPS-PROCLEVEL: 3
+/doi: 10.1161/JAHA.118.010694
+=======================
+
+===== EXTRACTED TEXT (First 10 pages) =====
+--- Page 1 ---
+Living in Food Deserts and Adverse Cardiovascular Outcomes in
+Patients With Cardiovascular Disease
+Heval M. Kelli, MD;* Jeong Hwan Kim, MD;* Ayman Samman Tahhan, MD; Chang Liu, MPH; Yi-An Ko, PhD; Muhammad Hammadah, MD;
+Samaah Sullivan, PhD; Pratik Sandesara, MD; Ayman A. Alkhoder, MD; Fahad K. Choudhary, MD; M. Mazen Gafeer, MD; Keyur Patel, MD;
+Saqib Qadir, BS; Ten /C19e T. Lewis, PhD; Viola Vaccarino, MD, PhD; Laurence S. Sperling, MD; Arshed A. Quyyumi, MD
+Background- —Food deserts (FDs), de ﬁned as low-income communities with limited access to healthy food, are a growing public
+health concern. We evaluated the impact of living in FDs on incident cardiovascular events.
+Methods and Results- —We recruited 4944 subjects (age 64 /C612, 64% male) undergoing cardiac catheterization into the Emory
+Cardiovascular Biobank. Using the US Department of Agriculture de ﬁnition of FD, we determined whether their residential
+addresses had (1) poor access to healthy food, (2) low income, or (3) both ( =FD). Subjects were prospectively followed for a median
+of 3.2 years for myocardial infarction (MI) and death. Fine and Gray ’s subdistribution hazard models for MI and Cox proportional
+hazard models for death/MI were used to examine the association between area characteristics (FD, poor access, and low income)and the rates of adverse events after adjusting for traditional risk factors. A total of 981 (20%) lived in FDs and had a higheradjusted risk of MI (subdistribution hazard ratio, 1.44 [95% CI, 1.06 –1.95]) than those living in non-FDs. In a multivariate analysis
+including both food access and area income, only living in a low-income area was associated with a higher adjusted risk of MI(subdistribution hazard ratio, 1.40 [1.06 –1.85]) and death/MI (hazard ratio, 1.18 [1.02 –1.35]) while living in a poor-access area
+was not signi ﬁcantly associated with either (subdistribution hazard ratio, 1.05 [0.80 –1.38] and hazard ratio, 0.99 [0.87 –1.14],
+respectively).
+Conclusions- —Living in an FD is associated with a higher risk of adverse cardiovascular events in those with coronary artery
+disease. Speci ﬁcally, low area income of FDs, not poor access to food, was signi ﬁcantly associated with worse outcomes. (JA m
+Heart Assoc . 2019;8:e010694. DOI: 10.1161/JAHA.118.010694.)
+Key Words: cardiovascular disease death environment food desert myocardial infarction socioeconomic position
+First coined in the early 1990s, the term food deserts
+(FDs) identi ﬁes areas where residents have dif ﬁculty
+with access to affordable healthy food.1While there is no
+consensus on the de ﬁnition of FD in the literature, the US
+Department of Agriculture (USDA) currently de ﬁnes FDs asareas with both poor food access and low area income,2
+and an estimated 23.5 million people are living in such FDs
+across the United States.2,3With the growing interest in
+residential “place ”as a determinant of health in the recent
+years,4FDs have been increasingly recognized as important
+environmental contributors to individual health and as
+potential targets of community-level interventions to
+improve health outcomes.5,6In the meantime, it is well
+established that cardiovascular risk and disease are not
+only associated with food choice and dietary intake
+patterns of individuals7,8but also in ﬂuenced by their
+residential neighborhoods.9–11Thus, a better understanding
+of FDs and their impact on cardiovascular risk factors and
+disease is imperative not only to improve our epidemiologic
+knowledge of cardiovascular disease, but more importantly
+to develop effective interventions to target vulnerable,
+disadvantaged areas of food resources to improve their
+cardiovascular outcomes.
+The association between FDs and cardiovascular disease
+outcomes still remains understudied. A few studies have
+examined the cross-sectional association between foodFrom the Division of Cardiology, Department of Medicine, Emory University
+School of Medicine, Atlanta, GA (H.M.K., J.H.K., A.S.T., C.L., M.H., P.S., A.A.A.,F.K.C., M.M.G., K.P., S.Q., V.V., L.S.S., A.A.Q.); Departments of Biostatistics
+and Bioinformatics (Y.-A.K.) and Epidemiology (S.S., T.T.L., V.V.), Rollins School
+of Public Health, Emory University, Atlanta, GA.
+Accompanying Tables S1 through S3 are available at https://www.ahajourna
+ls.org/doi/suppl/10.1161/JAHA.118.010694
+*Dr Kelli and Dr Kim contributed equally as co –ﬁrst authors of this work.
+Correspondence to: Arshed A. Quyyumi, MD, Emory Clinical Cardiovascular
+Research Institute, Emory University School of Medicine, 1462 Clifton RoadN.E. Suite 507, Atlanta, GA 30322. E-mail: aquyyum@emory.edu
+Received September 26, 2018; accepted December 24, 2018.ª2019 The Authors. Published on behalf of the American Heart Association,
+Inc., by Wiley. This is an open access article under the terms of the Creative
+Commons Attribution-NonCommercial-NoDerivs License, which permits useand distribution in any medium, provided the original work is properly cited,the use is non-commercial and no modi ﬁcations or adaptations are made.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 1ORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 2 ---
+environment and cardiovascular risk factors/disease.
+Recently, we demonstrated that living in an FD was
+associated with unfavorable cardiovascular risk pro ﬁles as
+well as subclinical vascular disease in a population without
+known clinical cardiovascular disease.12Several other
+studies have also shown that food environment was
+associated with cardiovascular risk factors, such as obe-
+sity,13–15diabetes mellitus,16and hypertension.17,18How-
+ever, despite these cross-sectional ﬁndings, no study has
+yet directly examined the association between living in an
+FD and incident cardiovascular outcomes in a longitudinal
+study, which would be essential in establishing the causal
+relationship between FDs and cardiovascular disease.
+Furthermore, given the heterogeneity in the de ﬁnitions of
+FD, an in-depth examination of what aspects of FDs drive
+adverse cardiovascular outcomes will be also crucial to
+address and elucidate the mechanistic pathways from living
+in FDs to cardiovascular outcomes and to help design
+effective policies.
+Herein, we examined the impact of living in FDs on adverse
+cardiovascular events using a cohort of patients with suspected or
+conﬁrmed coronary artery disease (CAD). We investigated not
+o n l yw h e t h e rl i v i n gi nF D sp r e d i c t e dh a r do u t c o m e so fc a r d i o v a s -
+cular disease, myocardial infarction (MI), and death, independent
+of the traditional demographic and clinical risk factors, but alsoinvestigated which component of FDs, poor access to food or low
+income, as de ﬁned by the USDA, is the driver of adverse
+outcomes. Given our prior work showing that area income drives
+the unfavorable cardiovascular disease risk pro ﬁle and disease
+burden,
+12we hypothesized that living in an FD would be an
+independent risk factor of adverse cardiovascular outcomes,
+independent of the traditional risk factors, and it would be largely
+driven by the low area income, not the level of access to food.Methods
+The data that support the ﬁndings of this study are available
+from the corresponding author upon reasonable request.
+Study Population
+We studied 4944 adults aged ≥18 years with valid residential
+addresses from the Emory Cardiovascular Biobank,19a
+prospective cohort of patients undergoing cardiac catheter-
+ization for suspected or con ﬁrmed CAD at 3 Emory Healthcare
+sites in Atlanta, Georgia, between 2003 and 2015. Subjects
+with congenital heart disease, heart transplantation, severe
+anemia, and cancer were excluded. Participants were inter-
+viewed to inquire about demographic characteristics, medical
+history, medication use, and behavioral habits as previouslydescribed at the time of cardiac catheterization upon
+enrollment.
+19Collected variables of interest included age,
+sex, race, body mass index (BMI), level of education, and
+smoking history, as well as medical history including hyper-
+tension, diabetes mellitus, hyperlipidemia, CAD, heart failure
+(HF), ejection fraction, prior MI, prior coronary revasculariza-
+tion, and medications. Level of education and smoking history
+were obtained through a questionnaire completed by patients.
+History of hypertension, hyperlipidemia, and diabetes mellitus
+were reported by patients and con ﬁrmed by physician
+diagnosis. CAD was de ﬁned as angiographic evidence of
+luminal stenosis ≥20% of major epicardial vessels on the
+index coronary angiography upon enrollment. HF was de ﬁned
+by the presence of at least 1 of the following: self-reported
+history of HF; physician diagnosis of HF noted in medical
+records; International Classi ﬁcation of Diseases, Ninth Revision
+(ICD-9 ) discharge diagnosis of HF; or ejection fraction <50%.
+History of MI and coronary revascularization reported by the
+subjects were also veri ﬁed by medical records and ICD-9
+diagnostic codes. Medication use was documented based onthe medications being taken at enrollment as well as upon
+discharge from their index hospitalizations. Fasting lipid
+proﬁle and serum creatinine levels were obtained from their
+hospital records at the time of enrollment, and estimated
+glomerular ﬁltration rate was calculated on the basis of
+creatinine level using the Chronic Kidney Disease Epidemiol-
+ogy Collaboration equation.
+20The study was approved by the
+institutional review board at Emory University (Atlanta, GA).
+All subjects provided written informed consent at the time of
+enrollment.
+Environmental Characteristics
+We utilized the FD data from the USDA Food Access ResearchAtlas.
+2The data de ﬁne FDs as areas based on the USDA
+classi ﬁcation at the census-tract level, namely, those censusClinical Perspective
+What Is New?
+Living in a food desert, de ﬁned as an area of low income and
+poor access to healthy foods, is associated with adverse
+cardiovascular outcomes in patients with coronary arterydisease, independent of their traditional cardiovascular riskfactor burden.
+The association between food deserts and adverse out-
+comes is largely driven by low area income, not poor accessto food.
+What Are the Clinical Implications?
+Living in low-income neighborhoods is a risk factor for
+adverse outcomes in patients with coronary artery disease.
+Whether community-level or individual-level interventions
+will improve outcomes needs to be investigated.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 2Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 3 ---
+tracts that meet the criteria of having both (1) low income and
+(2) poor access to food. According to the Atlas de ﬁnitions, the
+criteria for identifying a census tract as low income are from
+the Department of Treasury ’s New Markets Tax Credit
+program. This program de ﬁnes a low-income census tract as
+any tract where the tract ’s poverty rate is 20% or greater, the
+tract’s median family income is ≤80% of the statewide median
+family income, or the tract is in a metropolitan area and has a
+median family income ≤80% of the metropolitan area ’s
+median family income. Using established de ﬁnitions used in
+the Atlas, poor access to healthy food at the census tract level
+is de ﬁned as having a signi ﬁcant number of individuals (at
+least 500 people) or share (at least 33%) of the population are
+>1 mile from a supermarket, supercenter, or large grocery
+store for an urban area or >10 miles for a rural area.
+Using the USDA Food Access Research Atlas, we obtained
+3 area characteristics for the residential address of each
+subject: whether its respective census tract is classi ﬁed as (1)
+FD, (2) low income, or (3) poor access to food. A previous
+study had investigated the validation of the USDA FD
+measures; the USDA FDs were compared with secondarydata sources of food outlets (Dun & Bradstreet and InfoUSA)
+across 169 census tracts in South Carolina, and the 2 sources
+had 94% concordance, 50% to 65% sensitivity, and 60% to 64%
+positive predictive value.
+21
+In addition, we categorized the residential addresses of
+subjects as urban or rural using the Census Bureau ’s
+urbanized area de ﬁnitions.2Rural areas were de ﬁned as
+sparsely populated areas with fewer than 2500 people,
+whereas urban areas are areas with more than 2500 people.
+Follow-Up and Outcomes
+The cohort was prospectively followed for adverse cardiovas-cular events. Follow-up data were obtained by dedicated
+research personnel using phone contact, electronic medical
+record review, Georgia vital records, and the Social Security
+Death Index. The primary end point of the study was MI
+including fatal MI, de ﬁned as death within 28 days of MI
+onset, as well as nonfatal MI. The secondary outcome was the
+composite end point of death or MI. All death and MI eventswere adjudicated by the committee of physicians blinded to
+the data, by reviewing medical records as well as the
+aforementioned death certi ﬁcates.
+Statistical Methods
+Baseline demographic and clinical characteristics of the
+cohort were summarized as means (SDs) or median (in-
+terquartile range) for continuous variables and frequencycounts (%) for categorical variables. Patient characteristics
+were compared between those living in FDs and those notliving in FDs using t tests or Mann –Whitney Utests for
+continuous variables and chi-squared tests for categorical
+variables. The same comparison was also performed between
+those living in low-income areas versus high-income areas as
+well as between those living in areas with poor access versus
+adequate access to food.
+We performed survival analysis to examine the risk of
+adverse events for subjects who lived in (1) FD versus non-FD,
+(2) area with low income versus area with high income, and
+(3) area with poor access versus area with adequate access.Follow-up time was de ﬁned as the time from enrollment until
+1 of the following: death, MI, loss to follow-up, or end of
+follow-up. Initially, survival probability was compared between
+the 2 groups using Kaplan –Meier curves and log-rank test.
+Subsequently, multivariable survival analysis was performed
+with adjustment of age, sex, race (black versus non-black),
+BMI, level of education (high school or less, some college, or
+college graduate), smoking history, as well as medical history
+including hypertension, diabetes mellitus, hyperlipidemia,
+CAD, HF, ejection fraction, prior MI, prior coronary revascu-
+larization and medication use (aspirin, clopidogrel, statin,b-blocker, and angiotensin-converting enzyme inhibitor/an-
+giotensin II receptor blocker) (Model 1). These covariates in
+the models were selected a priori to account for baseline
+differences of risk factor burden between subjects living in
+different areas of an FD, as we have recently demonstrated,
+12
+and to examine the independent association between living inan FD and outcomes. Because individual household income
+was not collected in this cohort, we used education level as a
+surrogate for individual socioeconomic status. Previously,education had been shown to correlate with individual
+household income and cardiovascular risk factors and
+outcomes.
+22–24For the primary end point of MI, Fine and
+Gray’s subdistribution hazard model25was used while treating
+death as a competing risk. For the secondary end point of
+death/MI, Cox proportional hazards models were used with
+the same aforementioned covariates used for the primary end
+point.
+In addition, we examined the study end point by including
+both area income (high or low) and food access (poor or
+adequate) simultaneously as independent exposure variablesin a single model (Model 2), in place of the FD variable. This
+was to examine which of the 2 components of FDs are driving
+the associations between the outcomes and FDs, if any.
+Additionally, we strati ﬁed the cohort into 4 groups, depending
+on the permutation of area income (high or low) and food
+access (poor or adequate) categories, and compared the
+differences in their Kaplan –Meier curves using pairwise log-
+rank tests.
+In the sensitivity analysis, we examined whether the
+association between an FD and adverse outcomes differed
+with respect to the presence of prespeci ﬁed covariates by
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 3Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 4 ---
+including the interaction term of FD 9the covariate of interest
+(Model 1). The same sensitivity analysis was repeated with
+respect to the subcomponent of the FD (low area income or
+food access) that was identi ﬁed as the primary driver in the
+main analysis on the association between the FD and
+outcomes.
+Finally, we examined whether living in an FD, poor-access,
+or low-income area was associated with the risk of death
+following incident MI. Among those with incident MI, the rates
+of fatal MI, de ﬁned as death within 28 days of incident MI,
+were compared depending on the area characteristics (FD
+versus non-FD; low income versus high income; poor access
+versus adequate access) using Cox proportional hazard
+models.
+Throughout the analyses, there were no violations of the
+proportional hazards assumption, and P<0.05 was considered
+statistically signi ﬁcant. All analyses were performed using
+SAS version 9.4 (SAS Institute, Cary, NC).
+Results
+Subjects Characteristics
+Baseline demographic and clinical characteristics of the4944 subjects are presented in Table 1. The cohort
+consisted of 64% male and 22% black individuals with a
+mean age of 64 /C612 years; 43% had a high school diploma
+or less, whereas 22% had some college education and 35%
+were college graduates. Individuals living in FDs (n =981;
+20%) were more likely to be black (31% versus 20%) withless college education, were more likely to be living in
+urban areas (77% versus 73%) compared with those who
+were not living in FDs, and had a higher prevalence of
+hypertension and prior revascularization and higher BMI
+(Table 1).
+FD and Incident Cardiovascular Outcomes
+During a median follow-up period of 3.4 years, 812 patients
+(16%) died and 230 (5%) had incident MI (Table 2). In
+univariate analysis, patients living in an FD compared withthose not living in an FD had a 46% higher risk of MI
+(subdistribution hazard ratio [sHR], 1.46 [95% CI, 1.08 –1.96];
+P=0.013), and a 22% higher risk of the composite outcome of
+death or MI (hazard ratio, 1.22 [1.05 –1.43]; P=0.011)
+(Tables 2 and 3, Figures 1A and 2A). After adjustment for
+the baseline demographics and cardiovascular risk factors as
+described in the methods, patients living in FDs compared
+with those not living in FDs had a 44% higher risk of MI (sHR,
+1.44 [1.04 –1.91]; P=0.020), but the increase in risk for
+death/MI was no longer statistically signi ﬁcant hazard ratio,
+(hazard ratio, 1.16 [0.99 –1.37]) (Table 3).Food Access and Incident Cardiovascular
+Outcomes
+The rates of adverse outcomes were also compared between
+those living in areas with poor food access and those living in
+areas with adequate access (Table 2). Subjects living in areas
+with poor access to healthy foods were more likely to beyounger and black, with higher education attainment than
+subjects living in favorable food access areas. Interestingly,
+subjects living in areas with poor food access had a lower
+prevalence of smoking and prior MI, higher high-density
+lipoprotein cholesterol levels, and were more likely to live in
+urban areas (Table S1). However, there were no signi ﬁcant
+differences in the rates of adverse cardiovascular outcomes
+including MI or death/MI between patients living in areas
+with poor and adequate access to healthy foods in both
+univariate and multivariable analyses (Tables 2 and 3,
+Figures 1B and 2B).
+Area Income and Incident Cardiovascular
+Outcomes
+The cohort was also categorized on the basis of area income.
+Patients who lived in low-income areas were more likely to be
+younger, female, and black, with lower educational attainment.
+They were also less likely to live in urban areas and had higher
+prevalence of hypertension, diabetes mellitus, smoking, and
+higher BMI as well as higher total cholesterol and low-densitylipoprotein cholesterol levels (Table S1). In univariate analysis,
+patients living in low-income areas had a 54% higher risk of
+incident MI (sHR, 1.54 [1.19 –2.00]; P=0.001) and 29% higher
+risk of death or MI (hazard ratio, 1.29 [1.13 –1.46]; P<0.001)
+(Tables 2 and 3, Figures 1C and 2C). After adjustment for the
+baseline demographics and cardiovascular risk factors,
+patients living in low-income compared with high-income areas
+had a 39% higher risk of incident MI (sHR, 1.39 [1.06 –1.83];
+P=0.019]) and an 18% higher risk of death/MI (hazard ratio,
+1.18 [1.03 –1.35]; P=0.033) (Table 3).
+Relationship Between Area Income and Food
+Access and Incident Cardiovascular Outcomes
+When area income and food access were examined simultane-
+ously in the same model with the aforementioned covariate
+adjustment, living in low-income areas remained signi ﬁcantly
+associated with elevated risk of adverse outcomes, including MI
+(sHR, 1.40 [1.06 –1.85]) and death/MI (1.18 [1.02 –1.35]),
+independent of food access. On the other hand, living in areas
+with poor access to food continued to be unassociated with
+adverse outcomes (Table 3, Model 2).
+Based on the combination of area income and food
+access, 1141 (23%) lived in a high-income, adequate-access
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 4Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 5 ---
+area; 1614 (33%) in a high-income, poor-access area; 1208
+(24%) in a low-income, adequate-access area; and the
+remainder (981; 20%) lived in an FD (Table S2). The
+prevalence of traditional cardiovascular risk factors, such as
+age, male sex, black race, hypertension, diabetes mellitus,
+and smoking habits, generally tended to be similar according
+to the income level of the area, not access to food (Table S2).
+Similarly, the incident rates of adverse outcomes were similar
+among those with similar level of area income, regardless of
+access to food (Figure 3, Table S3). For example, theincidence of MI was similar between subjects living in areas
+with low income/poor access (FD) and in areas with low
+income/adequate access (log-rank P=0.49). Furthermore,
+subjects living in a high-income/adequate-access area had
+comparable risk of MI to those living in a high-income/poor-
+access area (log-rank P=0.55) (Figure 3A). On the other hand,
+those living in an FD had a higher risk of incident MI
+compared with those living in both high-income/poor-access
+and high-income/adequate-access areas (log-rank P=0.002
+and 0.039, respectively) (Figure 3A). A similar pattern of
+Table 1. Subject Characteristics by FD Status
+Total
+(N=4944)Non–Food Desert
+(N=3963)Food Desert
+(N=981) PValue
+Age, y 64 /C612 64 /C612 63 /C612 0.006*
+Male 3148 (64) 2540 (64) 608 (62) 0.22Black race 1087 (22) 787 (20) 300 (31) <0.001*
+Education <0.001*
+High school graduate or less 2104 (43) 1628 (41) 476 (49)
+Some college 1108 (22) 883 (22) 225 (23)College graduate 1732 (35) 1452 (37) 280 (29)
+Urban 2846 (74) 2243 (73) 603 (77) 0.023*Hypertension 3913 (79) 3110 (79) 803 (82) 0.028*Diabetes mellitus 1748 (36) 1399 (36) 349 (36) 0.86
+Hyperlipidemia 3537 (72) 2848 (72) 689 (71) 0.32
+Smoking 3393 (69) 2723 (69) 670 (68) 0.82History of coronary artery disease 4500 (91) 3610 (91) 890 (91) 0.71History of myocardial infarction 1178 (24) 957 (25) 221 (23) 0.36History of revascularization 2637 (53) 2143 (54) 494 (50) 0.038*History of heart failure 956 (19) 764 (19) 192 (20) 0.86
+BMI, kg/m
+230/C662 9 /C663 0 /C67 0.002*
+Total cholesterol, mg/dL 166 /C645 166 /C644 166 /C647 0.65
+LDL, mg/dL 94 /C638 94 /C637 96 /C639 0.11
+HDL, mg/dL 43 /C616 43 /C614 43 /C623 0.9
+eGFR, mL/min per 1.73 m273/C624 73 /C624 72 /C626 0.62
+Gensini angiographic score, median (IQR) 6.5 (0 –32) 6.5 (0 –33) 7 (0 –31) 0.9
+Ejection fraction % 53 /C613 53 /C613 52 /C613 0.24
+Medications
+ACE/ARB use 2757 (56) 2235 (56) 522 (53) 0.07Aspirin use 3762 (76) 3038 (77) 724 (74) 0.07Clopidogrel use 2215 (45) 1779 (45) 436 (44) 0.83
+Statin use 3471 (70) 2805 (71) 666 (68) 0.08
+b-Blocker use 3340 (68) 2687 (68) 653 (67) 0.47
+Values shown are mean /C6SDs or median (IQR) for continuous variables and number (percentage) for categorical variables. ACE indicates angiotensin-converting enzyme inhi bitor; ARB,
+angiotensin II receptor blocker; BMI, body mass index; eGFR, estimated glomerular ﬁltration rate; FD, food deserts; HDL, high-density lipoprotein cholesterol; IQR, interquartile range; LDL,
+low-density lipoprotein cholesterol.*Denotes a statistically signi ﬁcant P-value.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 5Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 6 ---
+relationship was seen with respect to the secondary end
+point of death/MI as well (Figure 3B).
+Sensitivity Analysis
+The association between living in an FD and the increased risk
+of adverse outcomes was similar across the subgroups
+strati ﬁed by prespeci ﬁed covariates (Table 4). We also
+performed sensitivity analyses with respect to low-income
+areas, as they were identi ﬁed as the primary driver of the
+association between FD and adverse outcomes in the main
+analysis (Model 2). Similar to FD, the increase in risk of
+incident MI or death/MI for those living in low-income areas
+did not differ across most subgroups strati ﬁed by the same
+covariates. However, we found a trend for a greater increase
+in risk of MI associated with low-income areas among those
+with diabetes mellitus ( P-interaction =0.065) and those living
+in urban areas ( P-interaction =0.084) compared with theircounterparts. For the composite end point of death/MI, there
+was a trend for greater increase in risk with living in low-
+income areas among those without HF than in those with HF
+(P-interaction =0.062) (Table 5).
+We also examined whether living in FD, poor-access, or
+low-income areas was associated with a higher risk of death
+following incident MI. Of 230 patients who had MI during the
+follow-up, 70 (30.4%) died within 28 days of MI (fatal MI).
+Nevertheless, living in an FD, poor-access area, or low-income
+area was not signi ﬁcantly associated with the risk of
+death within 28 days of the index MI (hazard ratio, 1.07
+[0.63 –1.82], 1.18 [0.73 –1.88], and 1.12 [0.70 –1.80], respec-
+tively).
+Discussion
+In this large cohort of patients with suspected or con ﬁrmed
+CAD, we demonstrate the clinical impact of living in an FD and
+Table 2. Rate of Adverse Events Strati ﬁed by Living in FD, Access to Food, and Area Income
+OverallFD Access to Food Area Income
+FD Non-FD PValue Adequate Poor PValue High Low PValue
+MI 230 (4.7) 171 (4.3) 59 (6) 0.028* 114 (4.9) 116 (4.5) 0.54 105 (3.8) 125 (5.7) 0.002*
+Death 812 (16.4) 636 (16) 176 (17.9) 0.16 401 (17.1) 411 (15.8) 0.25 424 (15.4) 388 (17.7) 0.03*Death or MI 941 (19) 734 (18.5) 207 (21.1) 0.07 471 (20.1) 470 (18.1) 0.09 480 (17.4) 461 (21.1) 0.001*
+Number of events (%) are shown. FD indicates food desert; MI, myocardial infarction.
+*Denotes a statistically signi ﬁcant P-value.
+Table 3. Cox Regression Models for the Association Between Incident Cardiovascular Events and FD, Food Access, and Area
+Income
+MI
+PValueDeath/MI
+PValue sHR (95% CI) HR (95% CI)
+Univariate
+FD 1.46 (1.08 –1.96) 0.013* 1.22 (1.05 –1.43) 0.011*
+Poor food access 0.96 (0.74 –1.24) 0.75 0.95 (0.84 –1.08) 0.46
+Low area income 1.54 (1.19 –2.00) 0.001* 1.29 (1.13 –1.46) <0.001*
+Multivariate model 1
+FD 1.44 (1.06 –1.95) 0.020* 1.16 (0.99 –1.37) 0.068
+Poor food access 1.00 (0.77 –1.31) 0.98 0.97 (0.85 –1.11) 0.67
+Low area income 1.39 (1.06 –1.83) 0.019* 1.18 (1.03 –1.35) 0.020*
+Multivariate model 2
+Poor food access 1.05 (0.80 –1.38) 0.71 0.99 (0.87 –1.14) 0.91
+Low area income 1.40 (1.06 –1.85) 0.018* 1.18 (1.02 –1.35) 0.023*
+Model 1: adjusted for age, sex, race, diabetes mellitus, hypertension, hyperlipidemia, estimated glomerular ﬁltration rate, body mass index, smoking history, heart failure, prior coronary
+revascularization, history of coronary artery disease, use of cardiovascular medications, previous MI, and education level. Model 2: poor food acc ess and low area income were
+simultaneously treated as separate exposure variables with the same covariate adjustment for Model 1. FD indicates food desert; HR, hazard ratio; MI , myocardial infarction; sHR,
+subdistribution hazard ratio.
+*Denotes a statistically signi ﬁcant P-value.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 6Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 7 ---
+Figure 1. Kaplan –Meier curves for association between ( A) food desert,
+(B) food access, and ( C) area income with incident myocardial infarction
+(MI). Pvalues were derived from log-rank tests. A, Food desert and incident
+MI.B, Food access and incident MI. C, Area income and incident MI.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 7Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 8 ---
+Figure 2. Kaplan –Meier curves for association between ( A) food desert,
+(B) food access, and ( C) area income with incident composite event rate of
+all-cause death/myocardial infarction (MI). Pvalues were derived from log-
+rank tests. A, Food desert and incident death/MI. B, Food access and
+incident death/MI. C, Area income and incident death/MI.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 8Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 9 ---
+its components, area income and food access, on adverse
+cardiovascular outcomes. We found that subjects living in FDs
+not only had an unfavorable cardiovascular risk pro ﬁle but
+also a higher risk of incident MI independent of cardiovascular
+risk factors, cardiovascular disease, and education level.
+Further analyses of the components of FDs revealed that their
+adverse health impact is mainly driven by area income rather
+than access to healthy food. To the best of our knowledge,
+our study is the ﬁrst to demonstrate the risk of incident
+adverse cardiovascular outcomes associated with living in an
+FD, as currently de ﬁned by the USDA, using a well-
+characterized clinical cohort of patients with cardiovasculardisease.
+Our ﬁndings substantially augment the current under-
+standing of the food environment and its role in cardiovas-
+cular disease, by directly demonstrating an independent
+association between living in an FD and worse outcomes.
+Over the past 2 decades, a growing body of literature has
+demonstrated that disadvantaged neighborhoods that are
+deprived socioeconomically and/or in their physical/social
+resources are associated with an elevated risk of unfavorablecardiovascular risk pro ﬁles
+10,26,27as well as incident adverse
+outcomes.28–30Similarly, studies also examined factors of
+food environment in relation to dietary intake patterns31as
+well as cardiovascular risk factors, such as obesity,13–15,32
+diabetes mellitus,16and hypertension.17,18Yet whether living
+in areas with poor food environment, such as FDs, would lead
+to adverse health outcomes remains understudied. Recently,
+we have demonstrated among those without known cardio-
+vascular disease that living in an FD is independently
+associated with a higher prevalence of cardiovascular riskfactors, in ﬂammation, oxidative stress, and arterial stiffness in
+a cross-sectional analysis.12Now, by demonstrating that
+living in an FD also predicts adverse cardiovascular outcomes
+including MI and death, independent of the traditional
+cardiovascular risk factors and demographic differences, we
+highlight that the relationship between FDs and cardiovascu-
+lar disease is more likely causal, likely mediated via the
+unfavorable cardiovascular risk and disease burden associ-
+ated with FDs, and our ﬁnding calls for due attention from a
+public policy standpoint to develop strategies to intervene and
+improve cardiovascular outcomes in FDs.
+Another unique contribution of our analysis is that we
+simultaneously examined the 2 crucial components of FDs,
+low area income and poor access to healthy food, as de ﬁned
+by the USDA, to demonstrate that the association between
+FDs and adverse outcomes were largely driven by low area
+income rather than access to healthy foods. This ﬁnding
+indicates that area income and hence the ability to afford
+healthy food was a greater predictor of cardiovascular events
+rather than access to healthy foods. Overall, our results
+suggest that neighborhood characteristics should be consid-ered in risk assessment of patients, while it can also help to
+further explore and tailor appropriate interventions and public
+resources to underserved areas.
+These results have 3 main implications. First, access to
+healthy food may be overridden by income and the ability to
+actually purchase healthy food regardless of whether there is
+local access to healthy food options. Among those with poor
+access, living in an area with high income was clearly
+associated with lower incidence of adverse events. On the
+other hand, among those living in high-income areas, whether
+Figure 3. Kaplan –Meier curves for association between food access and area income with ( A) incident myocardial infarction (MI) and ( B)
+incident composite event rate of all-cause death/MI. Pvalues were derived from log-rank tests. A, Incident MI. B, Incident death/MI. FD
+indicates food desert; ns, not signi ﬁcant.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 9Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+
+--- Page 10 ---
+living in areas with poor or adequate access did not result in
+any signi ﬁcant difference in the risk of adverse outcomes.
+Therefore, access to healthy food by itself may not signif-
+icantly contribute to improved cardiovascular outcomes, and
+the relative cost of higher-quality food rather than access may
+be a major barrier to healthy lifestyle and choices.33,34As
+neighborhood poverty increases, there are fewer supermar-
+kets and more grocery stores, convenience stores, and fast
+food restaurants, and prices for healthy foods tend to be
+higher.35–38Other characteristics of low-income areas such
+as social deprivation, lack of cohesion, decreased access torecreational resources, lack of public space, and safety were
+not measured in this study but may play an important role in
+determining outcomes in these area residents.
+39It appears
+that these neighborhood attributes are correlated with area
+income, which can be the driver for adverse health outcomes,
+as demonstrated in our analysis.40,41Thus, simply providing
+interventions and resources focused on providing access to
+healthy food alone may not be enough to overcome disease
+risk, especially as it relates to cardiovascular outcomes.Second, access to healthy food options does not necessarily
+encourage people to purchase and engage in healthy eating
+behaviors that may decrease cardiovascular disease risk.
+Studies on the association of food resources, speci ﬁcally
+proximity to food establishments, and cardiovascular risk have
+been inconclusive and limited.42,43A study of the Framingham
+offspring cohort did not ﬁnd a consistent relationship between
+BMI and food access.42Although prior data suggest that FDs
+may negatively affect risk factors and health behaviors, more
+research is needed to determine how access to healthy foods
+inﬂuences healthy behaviors and the types of foods. While
+public health advocates would hope that increased access to
+affordable and nutritious foods would increase the intake of
+those foods, studies have shown that even after healthier food
+options are made more widely available in FDs, consumers
+often continue to make unhealthy choices based on personal
+preferences.44Thus, the role of local food environment
+interventions to improve healthy food choices coupled with
+providing food access in communities should be discussed.
+Evidence-based interventions to improve healthy food choices
+Table 4. Interaction of Clinical Covariates With Adverse Outcomes Associated With Living in FD
+SubgroupsMI Death/MI
+sHR (95% CI) PValue Interaction PValue HR (95% CI) PValue Interaction PValue
+Age≤65 y 1.48 (0.98 –2.24) 0.06 0.61 1.23 (0.96 –1.58) 0.10 0.36
+Age>65 y 1.36 (0.85 –2.18) 0.19 1.12 (0.90 –1.39) 0.31
+Female 1.55 (0.93 –2.61) 0.096 0.72 1.30 (1.00 –1.70) 0.050 0.36
+Male 1.41 (0.96 –2.08) 0.078 1.11 (0.90 –1.37) 0.32
+Nonblack 1.24 (0.84 –1.84) 0.28 0.20 1.18 (0.98 –1.42) 0.08 0.60
+Black 1.88 (1.10 –3.22) 0.022 1.05 (0.75 –1.48) 0.78
+No smoking 1.73 (0.92 –3.23) 0.087 0.47 1.17 (0.85 –1.61) 0.35 0.93
+Smoking 1.34 (0.94 –1.91) 0.10 1.17 (0.97 –1.41) 0.11
+No heart failure 1.39 (0.97 –1.98) 0.072 0.83 1.23 (1.01 –1.49) 0.038 0.36
+Heart failure 1.80 (0.95 –3.42) 0.071 1.06 (0.78 –1.44) 0.72
+No CAD 1.96 (0.61 –6.33) 0.26 0.49 1.42 (0.96 –2.11) 0.079 0.24
+CAD 1.41 (1.03 –1.94) 0.033 1.12 (0.94 –1.34) 0.22
+No diabetes mellitus 1.16 (0.73 –1.85) 0.53 0.14 1.22 (0.98 –1.51) 0.072 0.81
+Diabetes mellitus 1.78 (1.16 –2.72) 0.008 1.12 (0.87 –1.45) 0.38
+No hypertension 1.43 (0.52 –3.90) 0.49 0.87 1.06 (0.69 –1.63) 0.79 0.63
+Hypertension 1.45 (1.05 –2.00) 0.025 1.19 (1.00 –1.42) 0.057
+No hyperlipidemia 1.71 (0.89 –3.30) 0.11 0.38 1.23 (0.91 –1.66) 0.18 0.70
+Hyperlipidemia 1.36 (0.96 –1.92) 0.085 1.14 (0.93 –1.38) 0.20
+Urban 1.51 (1.03 –2.22) 0.035 0.65 1.14 (0.92 –1.42) 0.22 0.72
+Rural 1.29 (0.58 –2.87) 0.53 1.30 (0.92 –1.84) 0.14
+No college education 1.57 (1.06 –2.35) 0.026 0.59 1.14 (0.91 –1.43) 0.24 0.57
+College education 1.26 (0.77 –2.06) 0.36 1.20 (0.94 –1.52) 0.14
+CAD indicates coronary artery disease; FD, food desert; HR, hazard ratio; MI, myocardial infarction; sHR, subdistribution hazard ratio.
+DOI: 10.1161/JAHA.118.010694 Journal of the American Heart Association 10Food Desert and Adverse Cardiovascular Outcomes Kelli et alORIGINAL RESEARCH
+Downloaded from http://ahajournals.org by on January 3, 2025
+
+

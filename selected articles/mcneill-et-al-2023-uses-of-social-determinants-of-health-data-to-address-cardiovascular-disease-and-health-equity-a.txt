@@ -1,0 +1,1011 @@
+===== PDF METADATA =====
+/Creator: Adobe InDesign 15.1 (Windows)
+/ModDate: D:20250109130108-08'00'
+/Trapped: /False
+/CreationDate: D:20231031122344+05'30'
+/Producer: Adobe PDF Library 15.0; modified using iText 4.2.0 by 1T3XT
+/Subject: JAHA 2023.12:e030571
+/WPS-PROCLEVEL: 3
+/WPS-JOURNALDOI: 10.1002/(ISSN)2047-9980
+/Title: Uses of Social Determinants of Health Data to Address Cardiovascular Disease and Health Equity: A Scoping Review
+/WPS-ARTICLEDOI: 10.1161/JAHA.123.030571
+=======================
+
+===== EXTRACTED TEXT (First 10 pages) =====
+--- Page 1 ---
+Journal of the American Heart AssociationJ Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 1 
+ORIGINAL RESEARCH
+Uses of Social Determinants of Health Data 
+to Address Cardiovascular Disease and 
+Health Equity: A Scoping Review
+Elizabeth McNeill , MPH ; Zoe Lindenfeld , BSc; Logina Mostafa, MPH; Dina Zein , MHA;  
+Diana Silver , PhD, MPH; José Pagán , PhD; William B. Weeks, MD, PhD, MBA;  
+Ann Aerts , MD, MPH, MSc; Sarah Des Rosiers, MSc, MBA; Johannes Boch , MSc; Ji Eun Chang, PhD, MS
+BACKGROUND: Cardiovascular disease is the leading cause of morbidity and mortality worldwide. Prior research suggests that 
+social determinants of health have a compounding effect on health and are associated with cardiovascular disease. This 
+scoping review explores what and how social determinants of health data are being used to address cardiovascular disease 
+and improve health equity.
+METHODS AND RESULTS: After removing duplicate citations, the initial search yielded 4110 articles for screening, and 50 studies 
+were identified for data extraction. Most studies relied on similar data sources for social determinants of health, including geo -
+coded electronic health record data, national survey responses, and census data, and largely focused on health care access 
+and quality, and the neighborhood and built environment. Most focused on developing interventions to improve health care 
+access and quality or characterizing neighborhood risk and individual risk.
+CONCLUSIONS: Given that few interventions addressed economic stability, education access and quality, or community context 
+and social risk, the potential for harnessing social determinants of health data to reduce the burden of cardiovascular disease 
+remains unrealized.
+Key Words:  cardiovascular disease ■ data-driven interventions ■ health equity ■ hypertension ■ social determinants of health
+Cardiovascular disease (CVD) is the leading cause 
+of morbidity and mortality across the world, ac -
+counting for 32% of deaths worldwide.1 In the 
+United States alone, CVD accounts for 659 000 annual 
+deaths, and costs the nation $219 billion each year.2 
+Key risk factors for CVD include high blood pressure, 
+high cholesterol, and smoking, with other medical 
+conditions and lifestyle choices such as diabetes, 
+obesity, poor diet, physical inactivity, and excessive 
+alcohol use increasing one’s risk.2 Nationwide, 7% of 
+men and 4.2% of women have CVD, with the highest 
+prevalence among adults ≥75 years of age.3 Racial and ethnic disparities in CVD are also well documented.4 
+Moreover, the risk incurred by low socioeconomic sta -
+tus alone is comparable to traditional risk factors.5
+The Centers for Disease Control and Prevention 
+(CDC) and the American Heart Association have 
+identified the need to address social determinants of 
+health (SDOH) in both public health and in health care 
+delivery efforts to close these gaps between popu -
+lation groups.6,7 Furthermore, practicing clinicians 
+have called for the integration of SDOH, big data, and 
+technology to address CVD disparities, specifically 
+calling for an integration that must reach beyond the 
+Correspondence to: Elizabeth McNeill, MPH, New York University School of Global Public Health, 708 Broadway, 7th Floor, New York, NY 10003. Email: 
+mcneill.elizabeth@nyu.edu
+This article was sent to Mahasin S. Mujahid, PhD, MS, FAHA, Associate Editor, for review by expert referees, editorial decision, and final disposition.
+Supplemental Material is available at https:// www. ahajo urnals. org/ doi/ suppl/  10. 1161/ JAHA. 123. 030571
+For Sources of Funding and Disclosures, see page 9.
+© 2023 The Authors and Novartis Foundation. Published on behalf of the American Heart Association, Inc., by Wiley. This is an open access article under the 
+terms of the Creative Commons Attribution-NonCommercial License, which permits use, distribution and reproduction in any medium, provided the original work 
+is properly cited and is not used for commercial purposes. 
+JAHA is available at: www.ahajournals.org/journal/jaha
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 2 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 2
+McNeill et al Addressing CVD and Health Equity With SDOH Datahealth care system and into the community and pa -
+tients’ homes.8–11 According to the CDC, there are 5 
+SDOH domains that must be addressed to improve 
+health: economic stability, education access and qual -
+ity, health care access and quality, neighborhood and 
+built environment, and social and community context.7 
+Social and community context includes the existence 
+of discrimination, which is a threat to health among 
+racial and ethnic minority communities.12 Further re -
+search has linked the effects of these domains to CVD 
+outcomes.5,8–11,13–21Despite the literature documenting the association 
+of SDOH and CVD outcomes, efforts to address SDOH 
+have been hindered by lack of knowledge about how 
+SDOH compounds problems of access and treatment, 
+as well ways in which SDOH may be practically ad-
+dressed. A major obstacle for addressing these issues 
+has been an absence of strategies to harness data 
+about SDOH to drive interventions, especially because 
+data may come from many different sectors.22
+The goal of this scoping review is to assess what 
+types of SDOH data are being used to reduce the bur -
+den of CVD and how these data are being applied. 
+Previous reviews have examined the role of SDOH on 
+influencing CVD outcomes; however, these reviews 
+have been limited to specific SDOH domains (such as 
+housing instability and food insecurity, or education 
+and income) and have not examined the all SDOH fac -
+tors that influence health in 1 review.23,24 Other reviews 
+have focused on a wide range of SDOH, yet either 
+lacked focus on CVD or only evaluated single method-
+ological approaches to analyze data.25,26 This review 
+addresses these gaps in evidence by focusing on the 
+ways in which SDOH data have been applied to im -
+prove CVD outcomes, largely in the United States but 
+also in other high-income countries.
+METHODS
+Search Strategy
+Search terms for each of the 3 domains of inter -
+est, social determinants of health, data, and CVD, 
+were used to retrieve abstracts from PubMed, Web 
+of Science, Cumulative Index to Nursing and Allied 
+Health Literature, Ovid/Embase, Cochrane, and 
+Scopus. Search terms for each of the areas of interest 
+included both the domain (eg, social determinants of 
+health) as well as Medical Subject Headings  and other 
+terms related to these domains (eg, social environ -
+ment, social inequality, living environment). Following 
+the World Health Organization’s definition of CVD, we 
+included search terms that included heart and blood 
+vessel disorders, and health conditions and complica -
+tions that are strongly associated with CVD such as 
+diabetes, high cholesterol, hypertension, myocardial 
+infarction, and stroke.1 Although not a systematic re -
+view, this review conforms to the Preferred Reporting 
+Items for Systematic Reviews and Meta-Analyses pro -
+tocol for scoping reviews.27 Database searches were 
+conducted on March 11, 2022, with results exported 
+to the Covidence application.28 In all, >60 terms were 
+entered, with searches modified as needed for each 
+database. In regard to the American Heart Association 
+Transparency and Openness Promotion Guidelines on 
+data sharing and study materials, no original data were 
+produced by this scoping review; however, all search CLINICAL PERSPECTIVE
+What Is New?
+• Previous reviews have examined the role of so -
+cial determinants of health (SDOH) influence on 
+cardiovascular disease (CVD) outcomes; how -
+ever, these reviews have been limited to specific 
+SDOH factors and have not examined all SDOH 
+domains in 1 review.
+• Reviews on a wide range of SDOH factors 
+lacked focus on CVD outcomes or focused on 1 
+approach to using big data to address CVD out -
+comes or health equity (such as solely reviewing 
+applications of artificial intelligence algorithms), 
+rather than exploring the range of approaches.
+• This review addresses these gaps in evidence 
+by examining what and how data across sectors 
+are being used to address social determinants 
+of health to improve equity in CVD outcomes.
+What Are the Clinical Implications?
+• This review discusses the ways in which SDOH 
+data may be applied in clinical settings, as many 
+studies discussed in this review are performed 
+within a clinical or hospital setting, and link 
+electronic health record data with SDOH data 
+to generate health equity reports, construct 
+patient care plans, form risk scores for clinical 
+decision making, and improve patient self-man -
+agement of CVD outcomes.
+• The COVID-19 pandemic has exacerbated un -
+derlying disparities in health care, and patients 
+who have contracted COVID-19 are at a higher 
+risk for CVD, indicating the importance of apply -
+ing the findings of this review to address these 
+developing needs.
+Nonstandard Abbreviations and Acronyms
+CDC  Centers for Disease Control and 
+Prevention
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 3 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 3
+McNeill et al Addressing CVD and Health Equity With SDOH Datastrategies may be found in Data  S1. Additionally, be -
+cause this review did not include human subjects, this 
+review did not require institutional review board ap -
+proval or patient written informed consent.
+Eligibility Criteria
+We use the definition for CVD put forth by the World 
+Health Organization, which defines CVD as heart and 
+blood vessel disorders, and includes health conditions 
+and complications that are strongly associated with 
+CVD such as diabetes, high cholesterol, hyperten -
+sion, myocardial infarction, and stroke.1 The decision 
+to include data from different domains was based on 
+the recognition that multiple factors affect health out -
+comes.29 This review only included studies located in 
+high-income countries, as categorized by the World 
+Bank.30 The search results were limited to studies 
+published in 2014 and onward, because health care 
+providers were required to demonstrate meaningful 
+use of electronic health records (EHRs) by January 1, 
+2014 under the American Recovery and Reinvestment 
+Act.31,32 At this time, there was a similar movement 
+across the European Union. In 2013, the European 
+Commission released a major report urging health 
+care providers across the European Union to increase 
+adoption of EHRs, and improved adoption was dem -
+onstrated over the next 5 years.33,34 We excluded all 
+studies with a study population <18 years of age and 
+those in languages other than English. Editorials, com -
+mentaries, systematic reviews, conference abstracts, 
+conference proceedings, methods articles, reviews, 
+qualitative studies, articles discussing treatment pro -
+tocols, and those intended to validate tools or software 
+applications were also excluded.
+Screening and Study Selection
+Inclusion criteria included studies that (1) contained 
+data related to SDOH; (2) contained outcomes related 
+to CVD; (3) included data from ≥1 of the SDOH do -
+mains as outlined by the CDC framework; (4) were lo -
+cated in high-income countries, as categorized by the 
+World Bank30; and (5) were limited to studies published 
+in 2014 to 2022, because US health care providers 
+were required to demonstrate meaningful use of EHRs 
+by January 1, 2014 under the American Recovery and 
+Reinvestment Act, and a similar movement across the 
+European Union was happening at the same time.31–34 
+Articles must have been published between January 
+2014 and March 2022. Exclusion criteria included (1) 
+studies with a study population <18 years of age and 
+(2) those in languages other than English. Also ex -
+cluded were editorials, commentaries, systematic re -
+views, conference abstracts, conference proceedings, 
+methods articles, reviews, qualitative studies, articles 
+discussing treatment protocols, and those intended to validate tools or software applications. The Figure  sum-
+marizes the screening and study selection process.
+Data Extraction
+We extracted results from included studies, and the fol -
+lowing categories were extracted: authors, year, study 
+purpose, and SDOH domain addressed by the study. 
+The following additional categories were extracted: 
+outcomes, outcome measures, data sources, and 
+main findings. CVD-related results included outcomes 
+(eg, stroke, hypertension) and outcome measures (eg, 
+blood pressure values considered to be hypertension). 
+Other information extracted included the data source 
+(eg, health claims data, transportation data), how the 
+data were being used or applied (eg, use of data to 
+create vulnerability maps), and the time period cov -
+ered by the data sources used. We also extracted the 
+method or algorithm applied (eg, deep learning, ma -
+chine learning) and the limitations/barriers to the data 
+identified (eg, missing data). Notably, we excluded co -
+variates from the data extraction.
+RESULTS
+A complete extraction table of the studies may be 
+found in Table  S1.35–84 The study characteristics are 
+summarized in Table  1, the SDOH domains addressed 
+by each study are summarized in Table  2, and the pri -
+mary uses of the SDOH data among each study are 
+summarized in Table  3.
+Study Characteristics
+Table  1 outlines the characteristics of the studies 
+selected for this review. The majority of studies ana -
+lyzed were published in the years 2020 (n=8) and 
+2021 (n=8). Most articles studied populations within 
+the United States (n=40), and New York City was the 
+most common geographical location within the United 
+States (n=8). Twelve studies were in nations outside 
+the United States.
+Common settings were uses of data within the 
+hospitals (n=26), neighborhoods (n=13), and pri -
+mary care practices (n=11). Populations of interest 
+were health care users within a specific health care 
+system (n=31). The second most common popula -
+tion was residents within a specific geographic area, 
+such as residents of specific states or cities (n=19). 
+Most studies used a cross-sectional study design 
+(n=17), retrospective cohort studies (n=13), and geo -
+graphical and spatial analysis (n=12), whereas less 
+common study designs included case studies (n=3), 
+clinical trials (n=3), and randomized control trials (n=2). 
+Thirty-three studies used linear or logistic regres -
+sion methods,35,37–42,46–48,51,52,54,56–60,62,64–66,69–78,80,81 
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 4 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 4
+McNeill et al Addressing CVD and Health Equity With SDOH Dataand 14 studies applied spatial analysis to under -
+stand the relationship between SDOH and CVD out -
+comes.35–38,45,50,53,54,58–61 Machine learning, including 
+data mining, gradient boosting machine, extreme gra -
+dient boosting, phase type random forests, Breiman’s 
+random forest, support vector machine, and tree-
+based classification were used in 4 studies.52,72,73,75
+Six types of outcomes were investigated. The most 
+common outcomes studied were cardiac outcomes, 
+such as acute heart events (n=13) and chronic dis -
+ease (n=33). Thirty-one studies characterized patient 
+lifestyles, 14 studies investigated decision-making 
+improvement strategies, and 4 studies investigated 
+patient management of CVD ( Table  2). Thirteen 
+studies examined acute heart events such as heart 
+attack, stroke, hospitalization, readmission, and 
+ejection fraction changes.36,38,40,45,50,53,54,59,63–65,73,79 
+Thirty-three studies investigated chronic heart dis -
+eases such as high blood pressure, chronic heart 
+disease, atherosclerotic CVD, and medication adherence.35,41–44,46–48,51,52,55–58,60–62,67,68,70–72,74–78,80,84 
+Four studies investigated CVD mortality.37,39,49,66
+SDOH Domains Addressed by Each Study
+Table  2 summarizes the SDOH domains ad -
+dressed in these studies and the uses of the data. 
+The most common SDOH domain among the ar -
+ticles retrieved was health care access and qual -
+ity,36,37,39–45,47,48,50,58,63,64,66,67,69–75,77–84 followed by 
+the neighborhood and built environment.35,46,49,52–61 
+Four studies measured economic stability as their 
+primary domain.38,62,65,68 Eleven studies addressed 
+2 SDOH domains, focusing on a combination of the 
+economic stability, health care access and qual -
+ity, or neighborhood and built environment do -
+mains.37–39,45,49,58,62,64,73,75,76 One article addressed 
+social and community context.76 No studies captured 
+in our review indicated a study purpose of addressing 
+education access and quality.Figure. The screening process flowchart.
+app indicates application; CVD, cardiovascular disease; and SDOH, social determinants of health.
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 5 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 5
+McNeill et al Addressing CVD and Health Equity With SDOH DataUses of SDOH Data
+Table  3 summarizes the primary uses of SDOH data 
+to address CVD outcomes and health equity. Data 
+measuring an SDOH domain were used for 3 main 
+purposes: neighborhood characterization, risk calcula -
+tion, and intervention development ( Table  3).
+Uses of SDOH Data to Characterize 
+Neighborhoods
+Unsurprisingly, SDOH data have been used to un -
+derstand the relationship between the built environ -
+ment and CVD outcomes. Twenty-seven studies 
+used data to characterize neighborhoods. The most 
+common sources of data were EHRs that were used 
+to describe prevalence or incidence of CVD risk fac -
+tors and outcomes at the neighborhood level. Data 
+were used to understand the health status of neigh -
+borhoods, including barriers to health that individuals within a neighborhood may face. Pharmaceutical dis -
+pensing data and health literacy data harnessed in 1 
+study helped researchers identify distribution patterns 
+and disparities in CVD medication dispensing within 
+a neighborhood.43 Specifically, this study mapped 
+these data to reveal neighborhoods that had lower ac -
+cess to pharmacies and were unable to dispense the 
+necessary CVD medications for self-management.43 
+Data about the neighborhood and built environment 
+were collected to create climate vulnerability maps 
+that could impact CVD outcomes (n=2): 1 for heat-
+extreme events35 and another for heat-extreme events 
+and flooding.49 One study applied EHR data to identify 
+health care access patterns among veterans in New 
+York City after a hurricane,41 whereas another study 
+analyzed the effects of perceived spatial stigma (for 
+example, feeling social judgment for living in a low-
+income area) on CVD outcomes among individuals 
+who live in an urban setting.51 Additional studies (n=2) Table 1. Study Characteristics
+Characteristics Examples References
+Settings
+Hospitals (n=26) Calculating risk to improve physician decision making, 
+evaluating the distribution of medication prescriptions.36–38,40,41,43,44,47,48,50,54,55,59,62–66,70–
+75,79,80
+Neighborhoods (n=13) Community-based interventions, characterizing a 
+neighborhood’s risk, understanding access to health care.35,42,45,46,49,51,52,56,57,61,69,81,82
+Primary care practices (n=11) Hypertension management in primary care settings, 
+health equity audits among primary care offices, applying 
+interventions in primary care settings.39,53,58,60,67,68,76–78,83,84
+Populations
+Health care users within a system (n=31) Patients who had used health care from specific systems, 
+offices, or hospitals.37,38,40,41,43,44,46–48,50,54,55,58,59,62–
+66,70–76,78–80,83,84
+Specific neighborhoods or geographic areas 
+(n=19)Individuals who live in specific neighborhoods (such as New 
+York City housing) or state.35,36,39,42,45,49,51–53,56,57,60,61,67–
+69,77,81,82
+Study design
+Cross-sectional (n=17) Characterizing neighborhoods, evaluating the effects of an 
+intervention, calculating risk.42,49,51,52,54–56,62,63,67–69,71,73,76,77,81
+Retrospective cohort (n=13) Observing the effects of climate change, the impact of an 
+e-referral program, creating indexes, calculating risk.38,39,41,44,61,64–66,70,72,74,75,78
+Geographic or spatial analysis (n=12) Mapping risk, access to care, or neighborhood characteristics.35–37,43,45–48,50,53,58,60
+Case studies (n=3) Studying health registries in specific regions or nations.40,59,84
+Clinical trial (n=3) Testing interventions in hospitals or primary care settings.79,80,82
+Randomized control trials (n=2) Testing the impact of an intervention.57,83
+Analytic method
+Regression (n=33) Linear or logistic regression.35,37–42,46–48,51,52,54,56–60,62,64–66,69–
+78,80,81
+Spatial analysis (n=15) Mapping access to care, mapping risk.35–38,43,45,50,53,54,58–61
+Machine learning (n=4) Data mining, gradient boosting machine, extreme gradient 
+boosting (eg, XGBoost), phase type random forests, Breiman’s 
+random forest, support vector machine, and tree-based 
+classification.52,72,73,75
+Health outcomes investigated
+Chronic heart disease (n=33) High blood pressure, chronic heart disease, atherosclerotic 
+cardiovascular disease, medication adherence.35,41–44,46–48,51,52,55–58,60–62,67,68,70–
+72,74–78,80,84
+Acute heart events (n=13) Heart attack, stroke, hospitalization, readmission, ejection 
+fraction changes.36,38,40,45,50,53,54,59,63–65,73,79
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 6 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 6
+McNeill et al Addressing CVD and Health Equity With SDOH Dataevaluated the association of air pollution and CVD55 or 
+identified the health effects of highway-adjacent hous -
+ing.57 Police data, state health survey data, census 
+data, and EHR data have been combined to identify 
+the characteristics that influence CVD within a de -
+fined neighborhood.46 Researchers applied spatial 
+analysis (n=10) to identify access to emergency care 
+and to applied health scores to identify risk within 
+neighborhoods.36,37,44,45,50,53,54,58,60,61
+Data have been used to understand the relationship 
+between disease burden and the built environment. 
+Three studies applied EHR data to New York City 
+neighborhoods that experience higher chronic disease 
+burden.42,47,48 Specifically, hospital administrative data, 
+emergency department data, and EHR data were used 
+map public health surveillance (n=2) so that health care 
+providers and policy makers could identify CVD health 
+risk among neighborhoods.47,48 One study observed 
+the use of a regional health registry and identified the 
+disparities within neighborhoods.40 Health adminis -
+trative data, census data, and food environment data have been compiled to create a county-level CVD risk 
+score.39 Three studies used social media X (formerly 
+Twitter) data to characterize chronic conditions within 
+a neighborhood and Google View satellite images to 
+identify the neighborhood characteristics associated 
+with CVD outcomes,52,56,61 whereas another evaluated 
+the spatial relationship between neighborhood disad -
+vantage and major atherosclerotic CVD-related events 
+to understand spatial risk of CVD.38
+Use of SDOH Data for Risk Calculation
+Fifteen studies used data about ≥1 SDOH domain to 
+evaluate risk scores that measure social risk. One study 
+recalibrated the Veterans Affairs cardiac risk score, and 
+found that EHR data are best for CVD risk prediction 
+in comparison with the established risk score.74 One 
+study created an SDOH score (including covariates 
+such as educational attainment, health literacy, stress, 
+living arrangements, social isolation, census-based 
+income, and ethnicity), and the Framingham Risk 
+Score (a commonly used risk score to predict CVD 
+over 10  years).70 Administrative claims data, labora -
+tory data, and demographic data were used to create 
+a mortality risk score,63 and 1 study determined that 
+adding SDOH data strengthened a CVD risk predic -
+tion score.64 Data were used to create a new measure 
+of CVD risk that included allostatic load to understand 
+the effects of racism on CVD.76 One study used the 
+Protocol for Responding To and Assessing Patients’ 
+Risks, Assets, and Experiences tool to evaluate patient 
+SDOH needs (self-reported data on SDOH such as 
+lack of housing, unemployment, and access to medi -
+cine or health care) to further understand the associa -
+tion between cardiometobolic risk and SDOH.62 One 
+study assessed the predictive power of a risk score 
+for carotid artery stenosis.71 Two studies assessed the 
+Area Deprivation Index’s ability to predict CVD risk,65,66 
+whereas another evaluated the impact of health infor -
+mation technology on CVD risk prediction.69
+Artificial intelligence has been applied to inform 
+clinician and policy decision making on CVD risk, Table 2. SDOH Domains Addressed to Improve 
+Cardiovascular Disease and Health Equity Outcomes
+SDOH domains investigated References
+Health care access and quality (n=32)36,37,39–45,47,48,50,58,63,  
+64,66,67,69–75,77–84
+Neighborhood and built environment (n=13)35,46,49,52–61
+Economic stability (n=4)38,62,65,68
+Social and community context (n=1)76
+Education access and quality (n=0) …
+Studies that addressed >1 domain
+Economic stability, neighborhood and 
+built environment (n=2)38,62
+Economic stability, health care access 
+and quality (n=3)39,64,75
+Health care access and quality, 
+neighborhood and built environment (n=5)37,45,49,58,73
+Health care access and quality, social 
+and community context (n=1)76
+SDOH indicates social determinants of health.
+Table 3. Uses of SDOH Data to Address Cardiovascular Disease Outcomes and Improve Health Equity
+Uses of SDOH data Examples of data use References
+Neighborhood characterization (n=27) Practice-level equity reports, electronic referral system to community-based interventions, 
+individualized care plans, EHR reminders, improved health literacy, health coaching 
+application, self-reported health application linked to EHRs, regional health registry.35–61
+Patient risk calculation (n=15) Health registry, understand neighborhood access to health care after climate disaster, creating 
+health indexes, identify neighborhoods with higher disease burden, identify neighborhood 
+disadvantage, identify spatial distribution of risk and disease, medical dispensing patterns, 
+characterizing risk, map emergency service access, public health surveillance.62–76
+Intervention development (n=8) Practice-level equity reports, electronic referral system to community-based interventions, 
+individualized care plans, EHR reminders, improved health literacy, health coaching 
+application, self-reported health application linked to EHRs, health registry.77–84
+EHR indicates electronic health record; and SDOH, social determinants of health.
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 7 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 7
+McNeill et al Addressing CVD and Health Equity With SDOH Datadetection, and treatment. For instance, to assure 
+appropriate treatment of multiethnic patients and 
+improve health care access, Sarraju et  al applied 
+machine learning techniques to create a 5-year pre -
+diction model of CVD among such patients using 
+neighborhood location data.72 Ye et al applied ma -
+chine learning and EHR data to predict the incidence 
+of hypertension within 1 year in 1.5 million Maine res -
+idents using socioeconomic indicators.75 An addi -
+tional study applied the Familial Hypercholesterolemia 
+Case Ascertainment Tool algorithm to describe risks 
+of familial hypercholesterolemia (and resulting isch -
+emic heart disease) among ethnically diverse pop -
+ulations using prescription data as indicators for 
+health care access.67 One study applied machine 
+learning to predict CVD hospital readmissions using 
+environmental risk.73
+Use of SDOH Data for Intervention 
+Development
+Eight studies described intervention development to 
+improve CVD outcomes by incorporating SDOH data. 
+EHR data and health care administrative data have 
+been used to create a health care registry to improve 
+data interoperability, allowing researchers, policy mak -
+ers, and health care providers to track health care de -
+livery and identify disparities in health care access at 
+the regional level.84 One study linked a digital health 
+application to EHRs to address health care access by 
+improving medication adherence to health literacy and 
+CVD outcomes,83 whereas another used a different 
+application to improve patient self-management of hy -
+pertension by providing a coach to help patients better 
+understand physician instructions.82 A third study pro -
+vided health education to community members by of -
+fering community-based education and screening for 
+dental care and hypertension to improve health literacy 
+and self-management of CVD.81 One study evaluated 
+racial disparities in health care and used SDOH data 
+on patients’ cultural, racial, and ethnic beliefs and 
+background to generate clinician reminders to discuss 
+hypertension with patients to improve self-manage -
+ment.80 Similarly, clinical and health registry data on 
+health care access and quality have been accessed to 
+provide primary care practices with health equity re -
+ports.77 One study linked patient EHRs, self-reported 
+patient SDOH data (such as primary language at 
+home), and a bidirectional community intervention e-
+referral portal, allowing health care providers to refer 
+patients to community-based interventions based on 
+patient need and receive feedback on patient pro -
+gress.78 Finally, 1 study constructed an application 
+that analyzed patient reported outcomes (mental and 
+social well-being data) to generate individualized CVD 
+care plans.79DISCUSSION
+This scoping review has examined 3 broad domains 
+of data, social determinants of health, and CVD. 
+Numerous studies have demonstrated the associa -
+tion between CVD and the 5 SDOH domains: eco -
+nomic stability,5 education access and quality,18,19,85 
+social and community context,20 health care access 
+and quality,21 and the neighborhood and built environ -
+ment,17 and practicing clinicians have called for the 
+use of big data on SDOH to address CVD and health 
+equity.8–11 This review identified 50 articles that have 
+used SDOH data to address these outcomes. SDOH 
+data have been used to address health outcomes, 
+yet gaps in research and application exist. Although 
+many studies used multiple sources of data to ad-
+dress SDOH and cardiovascular outcomes, by and 
+large, the studies used similar data sources, including 
+International Classification of Diseases, Ninth Revision 
+and Tenth Revision (ICD-9 and ICD-10 ) codes from 
+geocoded EHR data (n=33), national survey responses 
+and census data (n=17), and data focused largely on 
+health care access and equity. Overall, studies that ad-
+dressed the domain of health care access and qual -
+ity,37,39,42,44,45,58,63,64,72–75,77–79,84 and neighborhood and 
+built environment46,52–56,60 were found to successfully 
+predict or improve CVD outcomes. Studies that de -
+veloped individual risk scores relied almost exclusively 
+on EHR or health administrative data (n=4). For exam -
+ple, Ye et al calculated risk using EHR data to create a 
+risk prediction model of incident hypertension, but did 
+not draw on other data sources.75 Additionally, Nobel 
+et al created an Index of Cardiometabolic Health using 
+EHR data.76 A growing body of literature has indicated 
+that a variety of data sources are needed to capture 
+constructs that cannot be described by a single data 
+source.86–88 Although EHR data provide clinical infor -
+mation, details on other SDOH factors (such as food 
+security or socioeconomic status) are not captured. 
+Additionally, multiple sources of data are needed to 
+limit bias.86 For example, EHR data only capture those 
+using the health care system; as a result, those with -
+out access are likely underrepresented. Despite calls 
+for improved integration of multiple SDOH from poli -
+cymakers, clinicians, and researchers, only a handful 
+of studies examined the role of economic stability and 
+social and community context. Although many stud -
+ies included race and ethnicity, and educational at -
+tainment as covariates, no studies primarily focused 
+on the SDOH domains of racism or education access 
+and quality.
+Occasionally, studies drew from a wide range of non-
+health sector data including transportation data, police 
+data, and retail data. For example, 1 study performed 
+by Kihal-Talantikite et al in Strasbourg, France assessed 
+the neighborhood influences on the spatial distribution 
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 8 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 8
+McNeill et al Addressing CVD and Health Equity With SDOH Dataof myocardial infarction.53 To understand a neighbor -
+hood’s access to greenspace, this study integrated data 
+on health care systems; transportation; greenspace and 
+public parks; athletic equipment and facilities from city 
+sports programs; civic and community environments; 
+local businesses; the educational environment; ven -
+dors, such as alcohol and tobacco stores; and land use 
+and land coverage.53 These sources were combined 
+with EHR data to create maps to assess the neighbor -
+hood influences on the spatial distribution of myocar -
+dial infarction.53 However, such uses of multisector data 
+sources were rare, suggesting an untapped potential 
+to combine a wide array of data sources to examine 
+SDOH, specifically within the United States.
+Although many studies used race as a covariate or 
+stratified populations by race, there is an absence of 
+attention to racism, which has been found to be a de -
+terminant of health.12 The studies captured here add 
+to the growing body of research documenting health 
+disparities among racial and ethnic minorities, but fall 
+short of exploring the role of racism as a determinant 
+and as a mechanism for explaining those disparities. 
+More research is needed to measure and examine 
+the role racism plays as a driver of cardiovascular 
+health inequities, because the burden of CVD is higher 
+among the Black population.4 Similarly, although stud -
+ies commonly include educational attainment as a co -
+variate, the domain of education access and quality is 
+a different construct, one not well measured by edu -
+cational attainment. Although some studies examined 
+health literacy, this construct is also different from ed-
+ucation access and quality, and is part of the health 
+access and quality SDOH domain according to the 
+CDC.29 This review identified 3 objectives in the use of 
+data to address SDOH and improve CVD outcomes: 
+neighborhood characterization, patient risk calcula -
+tion, and intervention development. Efforts to calculate 
+patient risk sought to incorporate the SDOH domains 
+of health care access and quality and economic sta -
+bility, whereas intervention development was limited to 
+addressing health care access and quality. Efforts to 
+characterize neighborhoods primarily focused on the 
+SDOH domains of health care access and quality, as 
+well as the neighborhood and built environment to ad-
+dress CVD outcomes. This is unsurprising, given that a 
+core mission of health care systems is to provide health 
+care intervention to improve population, or at least, pa -
+tient health outcomes. However, health care providers, 
+policymakers, and researchers should consider efforts 
+to better understand and develop interventions that 
+address the SDOH domains of neighborhood and built 
+environment, economic stability, education access 
+and quality, and social and community context, be -
+cause these also affect health care access and qual -
+ity. Although health care systems may view domains 
+such as education or economic stability as beyond their mission, the literature is clear that these social de -
+terminants of health impact health outcomes. Health 
+care systems should continue to screen patients for 
+needs, offer SDOH support services, and refer them 
+to community support to meet the needs under the 
+other domains.
+Notably, in the United States, several recent federal 
+policy initiatives are aimed at supporting the collection 
+and analysis of SDOH data.89 In their new strategy for 
+the Accountable Care Communities Model, which aims 
+to assess the health-related social needs of beneficia -
+ries, the Centers for Medicare and Medicaid Innovation 
+requires new participants to both collect and report on 
+data related to SDOH.90 As part of their Uniform Data 
+System Modernization Initiative, the Health Resources 
+and Services Administration has allocated $90 million to 
+support data-driven approaches for Federally Qualified 
+Health Centers to identify and address health inequity, 
+which includes the collection of patient-level SDOH data 
+beginning in 2023.89,91 Additionally, the Office of the 
+National Coordinator for Health Information Technology 
+aims to advance the use and interoperability of SDOH 
+data within EHR systems through a variety of initiatives; 
+this includes developing policies to address SDOH 
+data interoperability, supporting states in building EHR 
+systems for SDOH data, and helping integrate SDOH 
+data into provider workflows.89,92 These initiatives open 
+up opportunities to address some of the gaps identi -
+fied in this review including the use and integration of 
+multiple sources of SDOH data from a broad range of 
+sectors. In 2018, Europe established the Joint Action on 
+Health Information, a project funded by the European 
+Commission, to strengthen health system performance 
+assessment and population health monitoring.93 A simi -
+lar policy implemented in the United States could include 
+data from all 5 SDOH domains and improve assessment 
+and monitoring of health initiatives across the nation.
+In comparison with other published reviews, this re -
+view offers a review of all 5 SDOH domains in relation 
+to CVD in the literature. Previous reviews focused on 
+CVD have only addressed 1 to 2 specific domains.23,24 
+Khaing et al established the connection between ed-
+ucation, income, and CVD, but did not explore use 
+of SDOH data.23 Parekh et al studied the connection 
+between food insecurity, housing instability, and CVD, 
+but did not investigate the use of SDOH data to ad-
+dress these domains.24 This review has determined the 
+different ways SDOH data have been applied to ad-
+dress all 5 SDOH domains. Other reviews have evalu -
+ated a wide range of SDOH domains, yet lacked focus 
+on CVD outcome or only examined specific methods 
+(such as machine learning).25,26 Kino et al found that 
+the application of machine learning to understand 
+SDOH has relied upon traditional methods such as 
+surveys.25 Zhao et  al found that machine learning is 
+able to incorporate complex SDOH data across all 5 
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 9 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 9
+McNeill et al Addressing CVD and Health Equity With SDOH Datadomains.26 This review, however, has a broader scope, 
+including studies that apply different types methods to 
+understand all 5 SDOH domains.
+Like all studies, this study has limitations. Our ex -
+clusion of non-English articles may have resulted in 
+missing important studies; however, given our focus 
+on high-income countries, we expect this limitation to 
+have had minimal impact on our analysis. SDOH are 
+understood differently by different audiences; there-
+fore, studies that included SDOH beyond those in the 
+CDC framework may have been missed.29 Additionally, 
+our decision to exclude articles published before 2014 
+may have resulted in missing some relevant studies. 
+Finally, articles that focused on the validation of tools or 
+applications were eliminated; to the extent that the val -
+idation methods focused on interventions not reported 
+elsewhere, these may have been missed.
+CONCLUSIONS
+Data from each SDOH domain can be used to ex -
+press the state of health among a population, allow -
+ing a multidimensional look into the everyday lives of 
+a neighborhood, a population, or place. The wide -
+spread availability of data across sectors can provide 
+a sharper understanding of the health needs at hand. 
+Future research should focus on addressing additional 
+SDOH domains, such as education access and qual -
+ity, and social and community context, and must in -
+clude measures of racism. Given the widening health 
+disparities in the United States, now is the time to har -
+ness big data and new analytic tools to address health 
+equity and improve CVD outcomes.
+ARTICLE INFORMATION
+Received April 12, 2023; accepted September 6, 2023.
+Affiliations
+Department of Public Health Policy and Management, New York University 
+School of Global Public Health, New York, NY (E.M., Z.L., L.M., D.Z., D.S., 
+J.P., J.E.C.); Microsoft Corporation, Precision Population Health, Microsoft 
+Research, Redmond, WA (W.B.W.); and The Novartis Foundation, Basel, 
+Switzerland (A.A., S.D.R., J.B.).
+Sources of Funding
+This work was supported by the Novartis Foundation, Basel, Switzerland.
+Disclosures
+None.
+Supplemental Material
+Data S1
+Table S1
+REFERENCES
+ 1. Cardiovascular diseases (CVDs). The World Health Organization. 2021. 
+Accessed April 28, 2023. https://  www.  who.  int/ news-  room/  fact- sheets/  
+detail/  cardi ovasc  ular- disea  ses- (cvds)   2. Health topics – heart disease and heart attack. Centers for Disease 
+Control and Prevention. 2021. Accessed January 20, 2023. https://  
+www.  cdc. gov/ policy/  polar  is/ healt  htopi  cs/ heart  disea  se/ index.  html
+ 3. Heart disease prevalence. Centers for Disease Control and Prevention. 
+2022. Accessed January 20, 2023. https://  www.  cdc. gov/ nchs/  hus/ 
+topics/  heart-  disea  se- preva  lence.  htm
+ 4. Health, United States spotlight: racial and ethnic disparities in heart dis -
+ease. Centers for Disease Control and Prevention. Accessed January 
+20, 2023. https://  www.  cdc. gov/ nchs/  hus/ spotl  ight/ Heart  Disea  seSpo  
+tlight_  2019_  0404.  pdf
+ 5. Stringhini S, Carmeli C, Jokela M, Avendaño M, Muennig P, Guida F, 
+Ricceri F, D’Errico A, Barros H, Bochud M, et al. Socioeconomic sta -
+tus and the 25 × 25 risk factors as determinants of premature mortality: 
+a multicohort study and meta-analysis of 1·7 million men and women. 
+Lancet . 2017;389:1229–1237. doi:  10.1016/s0140-6736(16)32380-7
+ 6. White-Williams C, Rossi LP, Bittner VA, Driscoll A, Durant RW, Granger 
+BB, Graven LJ, Kitko L, Newlin K, Shirey M. Addressing social de -
+terminants of health in the care of patients with heart failure: a sci -
+entific statement from the American Heart Association. Circulation . 
+2020;141:e841–e863. doi:  10.1161/CIR.0000000000000767
+ 7. Hacker K, Auerbach J, Ikeda R, Philip C, Houry D. Social determinants 
+of health—an approach taken at CDC. J Public Health Manag Pract . 
+2022;28:589–594. doi:  10.1097/phh.0000000000001626
+ 8. Goldberg EM, Levy PD. New approaches to evaluating and monitor -
+ing blood pressure. Curr Hypertens Rep . 2016;18:49. doi:  10.1007/
+s11906-016-0650-9
+ 9. Goel K, Hon SM, Farber HW, George MP. Pulmonary arterial hyperten -
+sion: what rare diseases tell us about disparities in disease registries, 
+clinical trials, and treatment algorithms. Chest . 2021;160:1981–1983. 
+doi: 10.1016/j.chest.2021.06.010
+ 10. Banerjee A. Bridging the global digital health divide for cardiovascu -
+lar disease. Circ Cardiovasc Qual Outcomes . 2017;10:e004297. doi:  
+10.1161/CIRCOUTCOMES.117.004297
+ 11. Gold R, Cottrell E, Bunce A, Middendorf M, Hollombe C, Cowburn S, 
+Mahr P, Melgar G. Developing electronic health record (EHR) strategies 
+related to health center patients’ social determinants of health. J Am 
+Board Fam Med . 2017;30:428–447. doi:  10.3122/jabfm.2017.04.170046
+ 12. Paradies Y, Ben J, Denson N, Elias A, Priest N, Pieterse A, Gupta A, 
+Kelaher M, Gee G. Racism as a determinant of health: a Systematic 
+review and meta-analysis. PLoS One . 2015;10:e0138511.
+ 13. Schultz WM, Kelli HM, Lisko JC, Varghese T, Shen J, Sandesara P, 
+Quyyumi AA, Taylor HA, Gulati M, Harold JG, et  al. Socioeconomic 
+status and cardiovascular outcomes. Circulation . 2018;137:2166–2178. 
+doi: 10.1161/CIRCUL ATIONAHA.117.029652
+ 14. Kelli HM, Mehta A, Tahhan AS, Liu C, Kim JH, Dong TA, Dhindsa DS, 
+Ghazzal B, Choudhary MK, Sandesara PB, et al. Low educational attain -
+ment is a predictor of adverse outcomes in patients with coronary artery dis -
+ease. J Am Heart Assoc . 2019;8:e013165. doi:  10.1161/JAHA.119.013165
+ 15. Alcalá HE, Albert SL, Roby DH, Beckerman J, Champagne P, 
+Brookmeyer R, Prelip ML, Glik DC, Inkelas M, Garcia R-E, et al. Access 
+to care and cardiovascular disease prevention: a cross-sectional 
+study in 2 Latino communities. Medicine . 2015;94:e1441. doi:  10.1097/
+MD.0000000000001441
+ 16. Singh RA-O, Javed ZA-O, Yahya TA-O, Valero-Elizondo JA-O, Acquah 
+IA-O, Hyder AA-OX, Maqsood MA-O, Amin ZA-O, Al-Kindi SA-O, 
+Cainzos-Achirica MA-O, et  al. Community and social context: an 
+important social determinant of cardiovascular disease. Methodist 
+Debakey Cardiovasc J . 2021;7:15–27. doi:  10.14797/mdcvj.846
+ 17. Diez Roux AV, Mujahid MS, Hirsch JA, Moore K, Moore LV. The im -
+pact of neighborhoods on CV risk. Glob Heart . 2017;11:353–363. doi:  
+10.1016/j.gheart.2016.08.002
+ 18. Vable AM, Nguyen TT, Rehkopf D, Glymour MM, Hamad R. Differential 
+associations between state-level educational quality and cardiovascu -
+lar health by race: early-life exposures and late-life health. SSM Popul 
+Health . 2019;8:100418. doi:  10.1016/j.ssmph.2019.100418
+ 19. Kim MH, Schwartz GL, White JS, Glymour MM, Reardon SF, Kershaw 
+KN, Gomez SL, Collin DF, Inamdar PP, Wang G, et  al. School racial 
+segregation and long-term cardiovascular health among Black adults in 
+the US: a quasi-experimental study. PLoS Med . 2022;19:e1004031. doi:  
+10.1371/journal.pmed.1004031
+ 20. Everson-Rose SA, Lutsey PL, Roetker NS, Lewis TT, Kershaw KN, 
+Alonso A, Diez Roux AV. Perceived discrimination and incident car -
+diovascular events: the Multi-Ethnic Study of Atherosclerosis. Am J 
+Epidemiol . 2015;182:225–234. doi:  10.1093/aje/kwv035
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 10 ---
+J Am Heart Assoc. 2023;12:e030571. DOI: 10.1161/JAHA.123.030571 10
+McNeill et al Addressing CVD and Health Equity With SDOH Data 21. McClurkin MA, Yingling LR, Ayers C, Cooper-McCann R, Suresh V, 
+Nothwehr A, Barrington DS, Powell-Wiley TM. Health insurance status 
+as a barrier to ideal cardiovascular health for U.S. adults: data from 
+the National Health and Nutrition Examination Survey (NHANES). PLoS 
+One. 2015;10:e0141534. doi:  10.1371/journal.pone.0141534
+ 22. Craig KJT, Fusco N, Gunnarsdottir T, Chamberland L, Snowdon JL, 
+Kassler WJ. Leveraging data and digital health technologies to assess 
+and impact Social Determinants of Health (SDoH): a State-of-the-Art 
+Literature Review. Online J Public Health Inform . 2021;13:E14. doi:  
+10.5210/ojphi.v13i3.11081
+ 23. Khaing W, Vallibhakara SA, Attia J, McEvoy M, Thakkinstian A. Effects 
+of education and income on cardiovascular outcomes: a systematic re -
+view and meta-analysis. Eur J Prev Cardiol . 2017;24:1032–1042. doi:  
+10.1177/2047487317705916
+ 24. Parekh T, Xue H, Cheskin LJ, Cuellar AE. Food insecurity and housing 
+instability as determinants of cardiovascular health outcomes: a sys -
+tematic review. Nutr Metab Cardiovasc Dis . 2022;32:1590–1608. doi:  
+10.1016/j.numecd.2022.03.025
+ 25. Kino S, Hsu Y-T, Shiba K, Chien Y-S, Mita C, Kawachi I, Daoud A. A 
+scoping review on the use of machine learning in research on social de -
+terminants of health: trends and research prospects. SSM Population 
+Health . 2021;15:100836. doi:  10.1016/j.ssmph.2021.100836
+ 26. Zhao Y, Wood EP, Mirin N, Cook SH, Chunara R. Social determinants 
+in machine learning cardiovascular disease prediction models: a sys -
+tematic review. Am J Prev Med . 2021;61:596–605. doi:  10.1016/j.
+amepre.2021.04.016
+ 27. Tricco AC, Lillie E, Zarin W, O’Brien KK, Colquhoun H, Levac D, Moher 
+D, Peters MD, Horsley T, Weeks L. PRISMA extension for scoping 
+reviews (PRISMA-ScR): checklist and explanation. Ann Intern Med . 
+2018;169:467–473. doi:  10.7326/M18-0850
+ 28. Veritas Health Innovation. Covidence Systematic Review Software. 
+Veritas Health Innovation. Accessed Februrary 2022. https://  www.  
+covid  ence.  org/ 
+ 29. Social Determinants of Health. Healthy People 2030. U.S. Department 
+of Health and Human Services Office of Disease Prevention and Health 
+Promotion. Accessed January 5, 2022. https://  health.  gov/ healt  hypeo  
+ple/ objec tives  - and- data/  socia  l- deter  minan  ts- health
+ 30. World Bank Country and Lending Groups. The World Bank. 2022. 
+Accessed April 28, 2023. https://  datah elpde  sk. world bank.  org/ knowl  
+edgeb  ase/ artic les/ 90651  9- world  - bank-  count  ry- and- lendi  ng- groups
+ 31. New York Medicaid Electronic Health Record Incentive Program. New 
+York State Department of Health. 2010. Accessed April 26, 2023. 
+https://  www.  health.  ny. gov/ health_ care/  medic  aid/ redes ign/  ehr/ overv  
+iew. htm
+ 32. Institute of Medicine Committee on the Recommended Social 
+Behavioral Domains Measures for Electronic Health Records. Capturing 
+Social and Behavioral Domains in Electronic Health Records Phase 2 . 
+National Academies Press; 2014.
+ 33. Codagnone C, Lupiañez-Villanueva F. Benchmarking Deployment of 
+eHealth among General Practitioners. In: Digital Agenda for Europe 2013.
+ 34. Lupiáñez-Villanueva F, Folkvord F, Faulí C. Benchmarking Deployment 
+of eHealth among General Practitioners . Brussels: The European 
+Comission; 2018:2018. doi:  10.2759/511610
+ 35. Jung J, Uejio CK, Kintziger KW, Duclos C, Reid K, Jordan M, Spector 
+JT. Heat illness data strengthens vulnerability maps. BMC Public 
+Health . 2021;21:1999. doi:  10.1186/s12889-021-12097-6
+ 36. van Rheenen S, Watson TW, Alexander S, Hill MD. An analysis of spatial 
+clustering of stroke types, In-hospital mortality, and reported risk fac -
+tors in Alberta, Canada, using geographic information systems. Can J 
+Neurol Sci . 2015;42:299–309. doi:  10.1017/cjn.2015.241
+ 37. Krauland MG, Frankeny RJ, Lewis J, Brink L, Hulsey EG, Roberts MS, 
+Hacker KA. Development of a synthetic population model for assess -
+ing excess risk for cardiovascular disease death. JAMA Netw Open . 
+2020;3:e2015047. doi:  10.1001/jamanetworkopen.2020.15047
+ 38. Dalton JE, Perzynski AT, Zidar DA, Rothberg MB, Coulton CJ, Milinovich 
+AT, Einstadter D, Karichu JK, Dawson NV. Accuracy of cardiovascu -
+lar risk prediction varies by neighborhood socioeconomic position a 
+retrospective cohort study. Ann Intern Med . 2017;167:456–464. doi: 
+10.7326/M16-2543
+ 39. Hong YR, Mainous AG. Development and validation of a county-level 
+social determinants of health risk assessment tool for cardiovascular 
+disease. Ann Fam Med . 2020;18:318–325. doi:  10.1370/afm.2534
+ 40. Bacelar-Nicolau L, Rodrigues T, Fernandes E, Lobo MF, Nisa CF, 
+Azzone V, Teixeira-Pinto A, Costa-Pereira A, Normand SLT, Miguel JP. Picturing inequities for health impact assessment: linked electronic re -
+cords, mortality and regional disparities in Portugal. Impact Assess Proj 
+Apprais . 2018;36:90–104. doi:  10.1080/14615517.2017.1364016
+ 41. Baum A, Barnett ML, Wisnivesky J, Schwartz MD. Association be -
+tween a temporary reduction in access to health care and long-
+term changes in hypertension control among veterans after a 
+natural disaster. JAMA Netw Open . 2019;2:e1915111. doi:  10.1001/
+jamanetworkopen.2019.15111
+ 42. Chan PY, Perlman SE, Lee DC, Smolen JR, Lim S. Neighborhood-level 
+chronic disease surveillance: utility of primary care electronic health re -
+cords and emergency department claims data. J Public Health Manag 
+Pract . 2022;28:E109–E118. doi:  10.1097/PHH.0000000000001142
+ 43. Exeter DJ, Zhao J, Hanham G, Grey C, Wells S, Kerr A. Construction 
+and use of mapping techniques to describe the geographical distribu -
+tion of medication dispensing for the secondary prevention of athero -
+sclerotic CVD in New Zealand: VIEW-2. N Z Med J . 2014;127:70–80.
+ 44. Gabert R, Thomson B, Gakidou E, Roth G. Identifying high-risk neigh -
+borhoods using electronic medical records: a population-based ap -
+proach for targeting diabetes prevention and treatment interventions. 
+PLoS One . 2016;11:e0159227. doi:  10.1371/journal.pone.0159227
+ 45. Jewett L, Mirian A, Connolly B, Silver FL, Sahlas DJ. Use of geospa -
+tial modeling to evaluate the impact of Telestroke on access to stroke 
+thrombolysis in Ontario. J Stroke Cerebrovasc Dis . 2017;26:1400–1406. 
+doi: 10.1016/j.jstrokecerebrovasdis.2017.03.023
+ 46. Le-Scherban F, Ballester L, Castro JC, Cohen S, Melly S, Moore K, 
+Buehler JW. Identifying neighborhood characteristics associated 
+with diabetes and hypertension control in an urban African-American 
+population using geo-linked electronic health records. Prev Med Rep . 
+2019;15:15. doi:  10.1016/j.pmedr.2019.100953
+ 47. Lee DC, Long JA, Wall SP, Carr BG, Satchell SN, Braithwaite RS, 
+Elbel B. Determining chronic disease prevalence in local popula -
+tions using emergency department surveillance. Am J Public Health . 
+2015;105:e67–e74. doi:  10.2105/AJPH.2015.302679
+ 48. Lee DC, Swartz JL, Koziatek CA, Vinson AJ, Athens JK, Yi SS. 
+Assessing the reliability of performing citywide chronic disease surveil -
+lance using emergency department data from sentinel hospitals. Popul 
+Health Manag . 2017;20:427–434. doi:  10.1089/pop.2016.0168
+ 49. Prudent N, Houghton A, Luber G. Assessing climate change and 
+health vulnerability at the local level: Travis County, Texas. Disasters . 
+2016;40:740–752. doi:  10.1111/disa.12177
+ 50. Roussot A, Cottenet J, Gadreau M, Giroud M, Béjot Y, Quantin C. The 
+use of national administrative data to describe the spatial distribution of 
+in-hospital mortality following stroke in France, 2008-2011. Int J Health 
+Geogr . 2016;15:2. doi:  10.1186/s12942-015-0028-2
+ 51. Duncan DT, Ruff RR, Chaix B, Regan SD, Williams JH, Ravenell J, Bragg 
+MA, Ogedegbe G, Elbel B. Perceived spatial stigma, body mass index 
+and blood pressure: a global positioning system study among low-in -
+come housing residents in New York City. Geospat Health . 2016;11:399. 
+doi: 10.4081/gh.2016.399
+ 52. Huang D, Huang Y, Khanna S, Dwivedi P, Slopen N, Green KM, He 
+X, Puett R, Nguyen Q. Twitter-derived social neighborhood character -
+istics and individual-level cardiometabolic outcomes: cross-sectional 
+study in a nationally representative sample. JMIR Public Health Surveill . 
+2020;6:e17969. doi:  10.2196/17969
+ 53. Kihal-Talantikite W, Weber C, Pedrono G, Segala C, Arveiler D, Sabel 
+CE, Deguen S, Bard D. Developing a data-driven spatial approach to 
+assessment of neighbourhood influences on the spatial distribution 
+of myocardial infarction. Int J Health Geogr . 2017;16:22. doi:  10.1186/
+s12942-017-0094-8
+ 54. Mazumdar S, Learnihan V, Cochrane T, Phung H, O’Connor B, Davey 
+R. Is walk score associated with hospital admissions from chronic dis -
+eases? Evidence from a cross-sectional study in a high socioeconomic 
+status Australian city-state. BMJ Open . 2016;6:e012548. doi:  10.1136/
+bmjopen-2016-012548
+ 55. Mirowsky JE, Devlin RB, Diaz-Sanchez D, Cascio W, Grabich SC, 
+Haynes C, Blach C, Hauser ER, Shah S, Kraus W, et al. A novel ap -
+proach for measuring residential socioeconomic factors associated 
+with cardiovascular and metabolic health. J Expo Sci Environ Epidemiol . 
+2017;27:281–289. doi:  10.1038/jes.2016.53
+ 56. Nguyen TT, Nguyen QC, Rubinsky AD, Tasdizen T, Deligani AHN, 
+Dwivedi P, Whitaker R, Fields JD, DeRouen MC, Mane H, et al. Google 
+Street View-derived neighborhood characteristics in California associ -
+ated with coronary heart disease, hypertension, diabetes. Int J Environ 
+Res Public Health . 2021;18:10428. doi:  10.3390/ijerph181910428
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+

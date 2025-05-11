@@ -1,0 +1,610 @@
+===== PDF METADATA =====
+/CrossMarkDomains[2]: elsevier.com
+/CrossmarkMajorVersionDate: 2010-04-23
+/CreationDate: D:20210929144042+05'30'
+/Subject: Advances in Nutrition
+/Author: Saiuj Bhat
+/Creator: Elsevier
+/Keywords: food is medicine; chronic diseases; global burden of disease; food policy; nutrition; diet; food pharmacy; food insecurity; culinary medicine; public health
+/Producer: Acrobat Distiller 6.0 for Windows
+/ElsevierWebPDFSpecifications: 6.5
+/CrossmarkDomainExclusive: true
+/robots: noindex
+/ModDate: D:20221105002209+05'30'
+/doi: 10.1093/advances/nmab039
+/CrossMarkDomains[1]: sciencedirect.com
+/Title: Healthy Food Prescription Programs and their Impact on Dietary Behavior and Cardiometabolic Risk Factors: A Systematic Review and Meta-Analysis
+=======================
+
+===== EXTRACTED TEXT (First 10 pages) =====
+--- Page 1 ---
+REVIEW
+HealthyFoodPrescriptionProgramsandtheir
+ImpactonDietaryBehaviorandCardiometabolicRiskFactors:ASystematicReviewand
+Meta-Analysis
+SaiujBhat,1DaisyHCoyle,2KathyTrieu,2BruceNeal,2,3DariushMozaﬀarian,4MattiMarklund,2,5andJasonHYWu2
+1School of Medicine, The University of Western Australia, Crawley, Australia;2The George Institute for Global Health, University of New South Wales, Sydney,
+Australia;3School of Public Health, Imperial College London, London, United Kingdom;4Friedman School of Nutrition Science and Policy, Tufts University,
+Boston, MA, USA; and5Bloomberg School of Public Health, Johns Hopkins University, Baltimore, MD, USA
+ABSTRACT
+The enormous burden of diet-related chronic diseases has prompted interest in healthy food prescription programs. Yet, the impact of such
+programs remains unclear. The aim of this study was to conduct a systematic review of healthy food prescription programs and evaluate theirimpact on dietary behavior and cardiometabolic parameters by meta-analysis. A systematic search was carried out in Medline, Embase, Scopus,
+and Cochrane Central Register of Controlled Trials databases since their inception to 3 January, 2020 without language restriction. A systematic
+search of interventional studies investigating the eﬀect of healthy food prescription on diet quality and/or cardiometabolic risk factors includi ng
+BMI,systolic(SBP)anddiastolicbloodpressure(DBP),glycatedhemoglobin(HbA1c),orbloodlipidswascarriedout.Thirteenstudieswereidentiﬁ ed
+for inclusion, most of which were quasi-experimental (pre/post) interventions without a control group ( n=9). Pooled estimates revealed a 22%
+(95% CI: 12, 32; n=5s t u d i e s , n=1039 participants; I
+2=97%) increase in fruit and vegetable consumption, corresponding to 0.8 higher daily
+s e rv i n g s( 9 5 %C I :0 . 2 ,1 . 4 ;I2=96%). BMI decreased by 0.6 kg/m2(95% CI: 0.2, 1.1; I2=6.4%) and HbA1c by 0.8%(95% CI:0.1, 1.6; I2=92%). No
+signiﬁcantchangewasobservedinothercardiometabolicparameters.Theseﬁndingsshouldbeinterpretedwithcautioninlightofconsiderableheterogeneity, methodologicallimitations of the included studies, and moderateto very low certainty of evidence. Our results support the needforwell-designed,large,randomizedcontrolledtrialsinvarioussettingstofurtherestablishtheeﬃcacyofhealthyfoodprescriptionprogramson
+dietqualityandcardiometabolichealth. Adv Nutr2021;12:1944–1956.
+StatementofSignificance:Thisistheﬁrstsystematicreviewandmeta-analysistoevaluatetheimpactofhealthyfoodprescriptionprograms
+ondietarybehaviorandcardiometabolicparameters.
+Keywords: food is medicine, chronic diseases, global burden of disease, food policy, nutrition, diet, food pharmacy, food insecurity, culinary
+medicine,publichealth
+Introduction
+A poor-quality diet is a leading risk factor for noncommu-
+nicable diseases worldwide ( 1,2), with 1 of every 5 deaths
+acrosstheglobeattributabletoasuboptimaldiet( 3).Further-
+more, diet-related diseases including obesity, diabetes, andcardiovascular disease place a tremendous financial burdenon healthcare systems ( 4–6), with costs projected to rise
+over the coming decades (7, 8). Food insecurity, defined as
+lack of access to nutritionally adequate food, is associatedwith the greater consumption of inexpensive nutrient-poor
+foods (9–14), lower intake of fruit and vegetables and otherhealthy foods ( 15,16) ,a n dh i g h e rr i s ko fc a r d i o m e t a b o l i c
+diseases. Food insecurity is also linked to lower self-efficacyin managingchronicdiseasesowingto mentalandfinancial
+strains, such as high costs of medications and other out-of-pockethealthcareexpenses( 17–20).
+B a s e do nt h ec r i t i c a lr o l e so fp o o rd i e tq u a l i t ya n df o o d
+insecurity in chronic disease, there is a growing interest
+in incorporating “food is medicine” interventions into
+healthcaresystemstoprovidehealthyfoodsasatreatmentofvulnerable patients ( 21). One approach gaining momentum
+is“produceprescription,”wherebyaphysicianorhealthcare
+1944 C/circlecopyrtTheAuthor(s)2021.PublishedbyOxfordUniversityPressonbehalfoftheAmericanSocietyforNutrition.Allrightsreserved.Forpermissions,plea see-mail:
+journals.permissions@oup.com. Adv Nutr2021;12:1944–1956; doi: https://doi.org/10.1093/advances/nmab039.
+
+--- Page 2 ---
+worker identifies patients, based on disease and/or food
+security criteria, eligible to receive free or discountedhealthy produce. Eligibility criteria typically include a food
+insecurityorlow-incomecriterion,andadiet-relatedhealth
+conditioncriterionsuchasthepresenceofdiabetes,obesity,
+and/orhypertension.Patientsareprovidedsubsidizedorfree
+healthy foods, with uptake options including redemption ofprescribedcouponsatlocalfoodstores,orprovisionoffresh
+produce at the healthcare center or delivered to the home
+(22,23).
+Despite the rapidly growing interest in healthy food pre-
+scription programs by governments, payers, and healthcareproviders, the impact of such programs on dietary behaviorandcardiometabolicriskfactorshas notbeen systematically
+evaluated. Some individual studies have reported increases
+in participants’ awareness of healthy dietary behaviors(24,25), with mixed findings for actual dietary behaviors
+and/orcardiometabolicriskprofiles( 26–28).Theaimofthe
+present work was to perform a systematic review and meta-analysisofinterventionalstudiesthatevaluatedhealthyfood
+“prescription” programs to gain insight into study designs,
+intervention types, and their effects on participants’ dietary
+behaviorandcardiometabolicriskfactors.
+Methods
+This systematic review followed the Preferred Reporting
+Items for Systematic Reviews and Meta-Analyses(PRISMA) guidelines and was registered on PROSPERO
+(CRD42020162553).
+Searchstrategy
+A systematic literature search up to 3 January, 2020 wasconducted in Medline, Embase, Scopus, and Cochrane
+Central Register of Controlled Trials since their inception
+without language restriction using the following searchterms: “fruit” and “vegetable” or “produce” or “food” adj3
+“prescription” or “voucher” or “incentive” or “program” and
+“bloodpressure”or“weight”or“bodymassindex”or“BMI”or “waist circumference” or “glucose” or “A1c” or “lipid” or
+“LDL”or“HDL”or“triglycerides”or“consum ∗”or“intake.”
+Reference lists of eligible studies were manually scanned to
+identifyadditionalrelevantpublications.
+Eligibilitycriteria,searchstrategy,anddataextraction
+Interventionalstudiesthatinvestigatedtheimpactofhealthy
+food prescription programs on dietary behavior and/or
+Sourcesofsupport:KT,BN,DC,MM,andJHYWareresearcherswithinaNationalHealthand
+MedicalResearchCouncilCentreforResearchExcellenceinreducingsaltintakeusingfood
+policyinterventions(APP1117300).JHYWissupportedbyaUniversityofNewSouthWales
+ScientiaFellowship.DMissupportedbyaNIHgrant(2R01HL115189).DHCissupportedbyan
+AustralianGovernmentResearchTrainingScholarship.Authors’disclosures:Theauthorsreportnoconflictsofinterest.SupplementalTables1–4areavailablefromthe“Supplementarydata”linkintheonline
+postingofthearticleandfromthesamelinkintheonlinetableofcontentsat
+https://academic.oup.com/advances/ .
+MMandJHYWcontributedequallytothisproject.AddresscorrespondencetoJHYW(e-mail: jwu1@georgeinstitute.org.au ).
+Abbreviationsused:DBP,diastolicbloodpressure;GRADE,GradesofRecommendation,Assessment,Development,andEvaluationWorkingGroup;HbA1c,glycatedhemoglobin;RCT,randomizedcontrolledtrial;SBP,systolicbloodpressure;USD,UnitedStatesDollarequivalent.cardiometabolic risk factors including BMI, systolic (SBP)
+and diastolic blood pressure (DBP), glycated hemoglobin(HbA1c), or blood lipids in participants aged 18 y or older
+wereeligibleforinclusion.Ourpreliminaryliteraturereview
+revealed that patient populations that were often the target
+of healthy food prescription programs were those with
+type2diabetesmellitus,hypertension,and/orcardiovasculardisease.Wethereforewantedtoassesshowhealthyfoodpre-
+scription interventions would impact well-established clini-
+cal markers of cardiometabolic disease risk that were mostcommonly reported by studies in the field. Included studies
+were either quasi-experimental (pre/post with or without
+an external control group) or randomized controlled trials(RCTs).Inaddition,healthyfoodprescriptionprogramshad
+to be integrated into the healthcare system, with patients
+identified and referred by a healthcare provider or otherallied health staff member (e.g., dietitian). Studies involving
+pregnant or breastfeeding women, those investigating only
+financial or economic implications, and those only examin-ingpatientknowledgeandattitudes,orethicalconsiderations
+were excluded. Observational studies, school-based food
+programs and government-led food security programs not
+linked to healthcare systems and workers and not adminis-
+tered with the primary purpose of tackling health outcomeswere excluded. Qualitative studies that did not measure
+changes in dietary behavior or cardiometabolic risk factors
+were excluded, as were commentary or opinion pieces. Tworeviewers(SBandeitherKTorDC)independentlyscreened
+studies for eligibility and extracted the following data into
+prepiloted forms: period of data collection, study locationand setting, study design, inclusion criteria, sample size,
+average participant age, proportion of female participants,
+duration of follow-up, program details, participation rate,effect size estimates, and data required to calculate variance
+of effect estimates (CIs, SEs, or Pvalues). As studies were
+conducted in different countries and years, the value of
+the reported incentive offered to participants was converted
+into a standardized United States Dollar (USD)-equivalent
+amount adjusted for inflation to January 2020. We assessed
+the quality of RCTs using version 2 of Cochrane’s Risk of
+Bias tool (RoB2) ( 29) and nonrandomized studies using
+Cochrane’sRiskofBiasinNon-RandomisedStudies-ofInter-
+vention(ROBINS-I) tool (30). Disagreementswere resolved
+byconsensusorviainvolvementofathirdreviewer(JHYW).The overall certainty of evidence was evaluated using the
+GradesofRecommendation,Assessment,Development,and
+EvaluationWorkingGroup(GRADE)framework( 31).
+Statisticalanalysis
+Theprimaryoutcomeswerechangesindietarybehaviorand
+cardiometabolicriskfactorsduetohealthyfoodprescription
+programs, standardized as percent differences from either
+studybaselineorcomparedwithexternalcontrolgroups.Forstudies without a separate comparison group, we evaluated
+the pre/post difference. For RCTs (including parallel inter-
+vention and crossover studies) and studies with a separatecomparison group, we evaluated the difference at the end
+Systematic review of healthy food prescription programs 1945
+
+--- Page 3 ---
+Two investigators 
+independently reviewed 
+the full texts and applied 
+the selection criteriaOne investigator 
+screened all titles and 
+abstracts
+IDENTIFICATION SCREENING ELIGIBILITYMedline
+(n= 621)EMBASE
+(n= 46)Scopus
+(n= 75)CENTRAL
+(n= 332)
+Studies identified
+(n= 1074)
+Studied excluded
+(n= 1024)
+Full texts reviewed
+(n= 50)
+Duplicates removed(n= 11)
+Studies meeting 
+inclusion criteria
+(n= 13)Articles identified through searching of reference lists and by expert review(n= 11)
+INCLUSIONStudies excluded (n = 37):No healthcare workers involved ( n= 27)
+Qualitative studies ( n= 4)
+No full text ( n= 2)
+Other ( n= 4)
+FIGURE1 Flowdiagramforthescreeningandinclusionofpublicationsinthesystematicreview.
+of the study between the intervention and control group if
+onlypostinterventiondatawereavailable,andthedifference-
+in-difference (end-study differences between the treatment
+and control group accounting for baseline) if both baseline
+and follow-up data were available. The SEs of the percentdifferences in outcome data were calculated as described
+previously( 32).
+Meta-analysisStudy-specific effect estimates were pooled using inverse-
+variance weighted random effects meta-analysis, accordingto the method of DerSimonian and Laird ( 33). Pooled
+effects are presented as percent difference (PD), indicatingpercentage change compared with baseline (for pre/poststudy design) or compared with a control group (for RCT
+o rc r o s s o v e rs t u d yd e s i g n ) ,o ra sa b s o l u t ec h a n g ei nt h e
+respective outcome measures. For the 1 study ( 34)t h a td i d
+n o tr e p o r tm e a s u r e so fu n c e r t a i n t y( S Do rS E )o rs t a t i s t i c s
+to derive these parameters, the SD was imputed from the
+pooledSDoftheotherstudiesincludedinthemeta-analysis(35). Sensitivity analysis was performed by excluding this
+study from the meta-analysis to ascertain the impact of
+such an approach to the overall results. The I
+2statistic was
+used to assess the heterogeneity of included studies, withvalues <25%, 25 to 50%, and >50% corresponding to low,
+moderate, and high degrees of heterogeneity, respectively
+(36). Publication bias was assessed by visual inspection
+o ff u n n e lp l o t sa n ds t a t i s t i c a l l yu s i n gE g g e r ’ sa n dB e g g ’ stests. Too few studies were identified to allow stratified
+analyses and investigation of sources of heterogeneity by
+metaregression. Data are presented as mean ±SD or mean
+(95%CI)unlessstatedotherwise.Allstatisticalanalyseswere
+conducted in STATA version 16 (Stata Corp), with 2-tailed α
+of0.05.
+Results
+Studycharacteristics
+Of 1074 studies identified by our search strategy, 13
+met inclusion and exclusion criteria and were included
+for analysis ( Figure 1 and Table 1)(24–27,34,37–44).
+1946 Bhat et al.
+
+--- Page 4 ---
+TABLE1 Characteristics of the healthy food prescription studies included in the systematic review1
+Study Country Setting DesignMedicalinclusion
+criteriaFoodinsecurity
+criteria nAge,2
+y%
+FemaleFollow-up
+(mo) RoB3
+Bihan(37) France Healthcarecenter RCT None Yes 135 44.6 ±8.1 56.3 3 Someconcerns
+Buyuktuncer(24) UK Primarycareclinics Pre/post None No 124 ≥16 71.8 5 Serious
+Weinstein( 38) USA Primarycareor
+diabetesclinicsRCT Diabetesmellitus,
+BMI>25kg/m2and
+HbA1c >7%No 79 55 ±10.8 69 3 High
+Seligman( 43) USA Primarycareclinics Pre/post HbA1c ≥6.5%or
+previouslydiagnosed
+diabetesYes 687 56.6 74 6 Critical
+Bryce(26) USA Healthcarecenter Pre/post Diabetesmellitusand
+HbA1c >6.5%No 65 52.5 ±10.6 70.8 3.25 Serious
+Cavanagh(27) USA Healthcarecenter Retrospective
+case-controlDiabetesmellitus,
+BMI>30kg/m2
+and/orhypertensionNo 108 NR NR 18 Serious
+Feinberg ( 34) USA Healthcarecenter Pre/post Diabetesmellitusand
+HbA1c >=8%Yes 95 NR NR 18 Critical
+Izumi(39) USA Healthcarecenter Pre/post None No 9 NR 100 5.75 Serious
+Trapl (40) USA Healthcarecenter Pre/post Hypertension Yes 137 60.3 ±10.9 71.1 6 Serious
+Emmert-Aronson
+(41)USA Healthcarecenter Pre/post Diabetesmellitus,
+prediabetes,cardiacdisease,hypertension,dyslipidemia,obesity,anxiety,and/ordepressionYes 49 59.1 ±10.6 63.3 6 Serious
+Forbes (25) USA Healthcarecenter Pre/post Atriskofchronicillness
+ormetabolicdisease,asdeterminedbyprimarycarephysiciansYes 9 NR 55.6 1.5 Serious
+Orsega-Smith(42) USA Pediatricianclinics Pre/post Overweight Yes 41 NR NR 12 Serious
+Ferrer (44) USA Primarycareclinic RCT HbA1c >9% Yes 58 54 62 7 High
+1HbA1c,glycatedhemoglobin;NR,notreported;RCT,randomizedcontrolledtrial;RoB,riskofbias.
+2Valuesaremean ±SD.
+3DetailedderivationoftheoverallriskofbiasisprovidedinSupplementalTable1.
+Systematic review of healthy food prescription programs 1947
+
+--- Page 5 ---
+Thirty-seven studies were excluded after reviewing the full
+texts(23, 28,45–79).Moststudies( n=11)wereconducted
+in the USA, 1 was conducted in France, and 1 in the
+UK. About half ( n=8) of the recruited participants
+experiencing food insecurity, and three-quarters (n =9) of
+thepatientshadspecificexistingcardiometabolicconditions
+including overweight or obesity, hypertension, or type 2diabetes mellitus. The most common study designs were
+pre/postinterventionstudieswithoutacontrolgroup( n=9)
+and pre/post intervention study with an externally matched
+control group ( n=1 ) ,f o l l o w e db yR C T s( n=3). Most
+studies recruited middle-aged to older participants (meanage ranged between 45 and 60 y) and had a median samplesize of 79 (range, nfrom 9 to 687). The median follow-up
+duration was 6 mo, and 3 studies had extended follow-upranging from 12 to 18 mo. Amongst the 10 nonrandomizeds t u d i e s ,7w e r ed e e m e dt oh a v es e r i o u sr i s ko fb i a sa n dt h e
+remaining 3 were deemed to have critical risk of bias due
+to confounding (Supplemental Table 1) .O ft h e3R C T s ,2
+were deemed to have high risk of bias whereas the other
+was categorized as having some methodological concerns
+(Supplemental Table 2) . The primary sources of funding
+were academic grants (n =5), not-for-profit organizations
+(n=3), government social support programs including
+food banks ( n=2), insurance companies ( n=2), and
+pharmaceuticalcompanies( n=1).
+KeydesignfeaturesoftheinterventionprogramsPrimary care physicians were the exclusive referring health-
+care providers in 5 studies; the remaining studies em-
+ployed other members of the healthcare team, with orwithout primary care providers, to prescribe healthy food
+interventions (Table 2 ). Most studies ( n=9) utilized
+food subsidies as the means to provide access to healthy
+foods, although the amount subsidized varied widely from
+USD 14 to 189 per month, lasting from 1 to 6 mo. Four
+studies gave participants varying amounts of food suppliesat no cost. For studies that provided subsidies, participants
+were able to redeem vouchers at various locations, most
+commonly at local supermarkets or farmers’ markets (n=7), although other studies chose less conventional
+settings such as mobile fresh food produce vans or foodpantrieslocatedwithinahealthcarecenter(n =4).Themost
+commonly prescribed foods were fruits and/or vegetables(n=10); 3 studies further incorporated other foods
+such as whole grains and lean proteins into their list of
+redeemable products. In addition to monetary incentives,
+most studies incorporated other intervention componentsintotheirprogramssuchasdietaryeducationclasses( n=9).
+Completion rate, calculated as the proportion of individualswho agreed to participate in the program and completed
+it, ranged from 15 to 100% with a median completion rate
+of68%.
+Eﬀec
+tofhealthyfoodprescriptionondietaryoutcomes
+Ninestudiesreporteddietaryoutcomes.Threedidnotreportsignificant changes in dietary behavior following healthyfood prescription programs whereas 6 reported an increase
+infruitand/orvegetableintakeasaresultoftheprescriptionprogram ( Table 3). Raw pre- and postintervention data,
+where available, are provided in Supplemental Table 3.
+When results were pooled across studies, healthy food
+prescription programs increased daily combined fruit and
+vegetable intake by 22% (95% CI: 12, 32), and fruit intakeby 39% (95% CI: 12, 67), with a similar but nonsignificant
+change in vegetable intake of 29% (95% CI: –8, 65) (Figure
+2andTable 4). This translated to an increase in combined
+fruitandvegetableintakeof0.8servings/d(95%CI:0.2,1.4)
+and fruit consumption by 0.6 servings/d (95% CI: 0.3, 0.9),
+with a trend towards an increase in vegetable consumptionby 0.5 servings/d (95% CI: −0.0, 1.1) (Table 4 ). There was
+no evidence of publication bias by Egger’s and Begg’s testsor by visual inspection of the funnel plots. A high level ofheterogeneitywasobservedforeachoutcome( I
+2>50%)but
+we were unable to meaningfully explore potential sourcesof heterogeneity due to the limited number of studiesavailable. Excluding the study with imputed SD ( 34), based
+onpooledSDofotherstudiesfromthemeta-analyses,hadnosubstantial impact on the overall pooled estimates (data not
+shown). The detailed GRADE assessment for each studied
+outcomeispresentedin Supplemental Table 4 .Basedonthe
+GRADE criteria, the overall certainty of evidence was rated
+“moderate” for treatment effect on fruit intake, “very low”
+forvegetableintake,and“low”forfruitandvegetableintakecombined.
+Eﬀectofhealthyfoodprescriptionsoncardiometabolic
+outcomesTheeffectofhealthyfoodprescriptionsonplasmalipidswas
+e v a l u a t e di n2s t u d i e s ,B M Ii n3s t u d i e s ,b l oodp r e s s u r ei n4
+studies,andHbA1cin5studies(Table 3 andTable 4).Pooled
+resultsidentifiedamodestchangeinBMIof–1.6%(95%CI:
+–2.8, –0.3), which corresponded to an absolute change of –
+0.6kg/m
+2(95%CI:–1.1,–0.2).Likewise,apercentchangein
+HbA1c of –8.6% (95% CI: –16.9, –0.4), corresponding to an
+absolutechangeof–0.8%(95%CI:–1.6,–0.1),wasobserved
+acrossstudies.Nosignificanttreatmenteffectswereobservedfor SBP, DBP, LDL, HDL, or triglycerides ( Table 4). There
+was no evidence of publication bias by Egger’s and Begg’st e s t so rb yv i s u a li n s p e c t i o no ft h ef u n n e lp l o t s .B a s e do n
+the GRADE criteria, the certainty of evidence for treatment
+effectsoncardiometabolicoutcomeswasrated“low”or“verylow.”
+Discussion
+This systematic review and meta-analysis identified 13healthy food prescription programs integrated into the
+healthcaresystem,whichprovidedeithermonetarysubsidies
+forordirectprovisionoffruitsandvegetablesasatreatmentfor patients, most often those experiencing food insecurity
+and/orwithspecificcardiometabolicconditions.Thepooled
+findings suggest that these programs increase fruit andvegetableconsumptionandreduceBMIandHbA1c,without
+significant identified effects on other cardiometabolic risk
+1948 Bhat et al.
+
+--- Page 6 ---
+TABLE2 Key design features of the healthy produce prescription studies included in the systematic review
+Intervention
+Study Referrer Type Description Duration Foodsincluded LocationAdditional
+componentsCompletion
+rate(%)
+Bihan(37) Dietitian Subsidy 17to67USD1/mo23mo Fruitsandvegetables Supermarkets Dietaryadvice 45
+Buyuktuncer(24) Generalpractitioners,
+nurses,health
+visitors,and
+midwivesSubsidy Discountof3USDfor
+every8USDspent
+pertransaction1mo Fruitsandvegetables Supermarket Dietaryadviceand
+cookingsessions43.5
+Weinstein(38) Primarycarephysicians Subsidy 30USD/mo 3mo Fruitsandvegetables Farmers’market Dietaryadvice 98.7
+Seligman(43) Primarycarephysicians Foodprovision Prepackedboxesof
+foodequivalentto18USDperbox,every1–2wk6mo Wholegrains,lean
+meats,beans,fruit,vegetables,milk,yogurt,cheese,and
+breadFoodbank Dietaryadviceand
+recipes58
+Bryce(26) Communityhealthand
+socialservicesSubsidy 14USD/mo 1mo Fruitsandvegetables Farmers’market None 29
+Cavanagh( 27) Nutritionist Subsidy 35USD/mo 6mo Fruitsandvegetables Mobilefresh
+producevanNone 100
+Feinberg ( 34) Primarycarephysicians Foodprovision Foodsuppliestomake
+10meals/wkfortheentirefamily18mo Fruitsandvegetables,
+wholegrains,andleanproteinsFoodpantryina
+clinicalcenterDiabeteseducation NR
+3
+Izumi(39) Communityhealth
+workerSubsidy Subsidized
+membershipcostof95USDpershare
+permonthof
+community
+supportedagricultureprogram6mo Vegetables Farmers’market Dietaryadvice 36
+Trapl(40) Nonphysician
+healthcareprovidersSubsidy 44USD/mo 3mo Fruitsandvegetables Farmers’market None 61
+Emmert-Aronson
+(41)Primarycare
+physicians,dietitians,pharmacists,social
+workers,and
+medicalassistantsSubsidy 44USD/mo 4mo Vegetables Foodpantryina
+clinicalcenterPhysicalactivity,
+mindfulnessmeditationgeneral
+healtheducation,
+nutritioneducation,plant-basedsnacks,
+andgroupcoaching100
+Forbes (25) Primarycarephysicians Subsidy 189USD/mo 6mo Fruitsandvegetables Farmers’market Dietaryadvice 90
+Orsega-Smith( 42) Pediatricians Foodprovision 15–25pounds/moof
+freshproduce12mo Fruitsandvegetables Mobilefresh
+producevanNone 100
+Ferrer (44) Primarycarephysician Foodprovision 10poundsoffresh
+producebiweekly6 Fruits,vegetables,
+cannedfood,ﬁsh,
+chickenFoodpantryin
+clinicalcentreDietaryadviseand
+homevisitsby
+communityhealth
+workers74
+1UnitedStatesDollarequivalentinﬂationadjustedtoJanuary2020.
+2Thevalueofsubsidywasadaptedtofamilycompositionanddependedonnumberofchildrenandtheircaregivers.
+3Notreported.
+Systematic review of healthy food prescription programs 1949
+
+--- Page 7 ---
+TABLE3 Summary of changes in dietary and cardiometabolic outcomes in the healthy food prescription studies included in the systematic review1
+Changesinoutcomesevaluated
+Study Design Dietarybehavior BMI BP Plasmalipids HbA1c Details2
+Buyuktuncer(24) Pre/post ND NR NR NR NR Fruitconsumption(portions/d)didnotdiﬀerbetweenbaseline(median
+3;range0to7)andfollow-up(median2.5;range0to6).
+Vegetableconsumption(portions/d)didnotdiﬀerbetweenbaseline
+(median2;range0to7)andfollow-up(median2;range0to4).
+Izumi(39) Pre/post ND NR NR NR NR Changeinfrequencyofvegetableintake ≥2cups/d =25%.
+Trapl(40) Pre/post + NR NR NR NR Changeinfruitintake =0.8(0.6to1.0)servings/d.
+Changeinvegetableintake =0.8(0.6to1.0)servings/d.
+Forbes (25) Pre/post + NR NR NR NR Changeinfrequencyoffruitintake ≥1/d=25%.
+Changeinfrequencyofdarkgreenvegetables ≥1/wk=25%.
+Changeinfrequencyoforange-coloredvegetables ≥1/wk =50%.
+Changeinfrequencyofothervegetables ≥1/wk=25%.
+Statisticalsigniﬁcancenottested
+Orsega-Smith( 42) Pre/post + NR NR NR NR Changeinfruitintake =0.4(0.1to0.7)servings/d.
+Changeinvegetableintake =0.2(–0.1to0.6)servings/d.
+Bihan(37) RCT ND ND ND ND NR Changeinfruitandvegetableintake =0.12(–0.42to0.66)servings/d.
+Weinstein(38)R CT + NR ND ND ND Changeinfruitintake =0.5(0.1to0.9)servings/d.
+Seligman(43) Pre/post + NR NR NR + Changeinfruitandvegetableintake =0.3servings/d.
+ChangeinHbA1c =–0.15%.
+Emmert-Aronson( 41) Pre/post ++ + NR NR Changeinfruitandvegetableintake =1.2(1.1to1.4)servings/d.
+ChangeinSBP =–6.7(–7.5to–6.0)mmHg.
+ChangeinBMI =–0.4(–0.9to0.1)kg/m2.
+Ferrer (44) RCT NR ND NR NR + ChangeinHbA1c =–1.4%(–2.7,–0.1).
+Bryce(26) Pre/post NR NR ND NR + ChangeinHbA1c =–0.7%.
+Cavanagh( 27) Pre/postwith
+externallymatched
+controlsNR + NR NR NR ChangeinBMI =–1.1(–2.0to–0.2)kg/m2.
+Feinberg ( 34) Pre/post NR NR NR ++ ChangeinHbA1c =–2.1%.
+1BP,bloodpressure;HbA1c,glycatedhemoglobin;ND,nodiﬀerence;NR,notreported;RCT,randomizedcontrolledtrial; +,indicatesbeneﬁcialchangeinthemeasuredparameters.
+2Showsrawdatacorrespondingtooutcomesthatshowedabeneﬁcialchange( +).ForRCTsandnonrandomizedtrialswithpre-andpostmeasurementsinbothtreatmentandcontrolgroups,weassessedgroupdiﬀerencesin
+change(mean, ¯xchange;SEchange),usingformulae[1]and[2]:
+¯xchange=¯xd−¯xc
+¯xc−¯xb−¯xa
+¯xa[1]
+SEchange=SE¯xd−¯xc
+¯xc−¯xb−¯xa
+¯xa=/radicalbigg
+SE2
+¯xb−¯xa
+¯xa+SE2
+¯xd−¯xc
+¯xc[2]
+where¯xa=controlgroupmeanatbaseline, ¯xb=controlgroupmeanatstudyend, ¯xc=interventiongroupmeanatbaseline,and ¯xd=interventiongroupmeanatstudyend.Forpre/poststudydesignswithoutcontrolgroups,
+weassessedchangeovertimewithformulae[3]and[4]:
+¯xchange=¯xd−¯xc
+¯xc[3]
+SEchange=SE¯xd−¯xc
+¯xc=¯xd
+¯xc/radicalBig
+SE2
+d+SE2c−2·r·SEd·SEc[4]
+whereristhecorrelationcoeﬃcientwithinindividuals,assumedtobe0.5( 80).ForRCTsornonrandomizedtrialswithcontrolgroupandmeasurementsonlyatstudyend,weassessedgroupdiﬀerencesattheendofthestudy,
+usingformulae[5]and[6]:
+¯xchange=¯xd−¯xb
+¯xb[5]
+SEchange=SE¯xd−¯xb
+¯xb=¯xd
+¯xb/radicalBig
+SE2b+SE2d[6]
+1950 Bhat et al.
+
+--- Page 8 ---
+Figure 2
+Study Outcome PD (95% CI)Weight 
+(%)A
+B
+p
+p
+p
+Percent decrease Percent increasePercent decrease Percent increase(I2 = 97%, P = 0.000)
+(I2 = 90%, P = 0.000)
+(I2 = 98%, P = 0.000) 28.55 (–7.85, 64.96)0.99 (–25.18, 27.15)
+FIGURE2 Forestplotillustratingthechangeinfruitand/orvegetableintakeperday(percentagediﬀerence,PD)followingparticipation
+inhealthyfoodprescriptionprograms.Fruitandvegetable(F&V)intakewasreportedbothasacompositevariable(A)andseparately(B).
+Datawerepooledusingrandomeﬀectsmeta-analysis.
+factors. However, our systematic review also highlights that
+t h efi n d i n g sa r em o s t l yb a s e do nn o n r a n d o m i z e ds t u d y
+designs, with significant heterogeneity in the amount and
+duration of the food prescriptions, and with only a small
+number of studies evaluating cardiometabolic outcomes.
+Overall, these findings provide encouraging evidence thathealthy food prescription programs may lead to improve-
+mentsindietqualityand,evenoverafewmonths,BMIand
+HbA1c, with the magnitude of effect on HbA1c comparabletothatachievedwithcommonlyprescribedglucoseloweringmedications ( 81,82). Our novel results strongly support the
+need for additional appropriately designed and adequatelyp o w e r e dR C T st ot e s tt h ei m p a c to ff o o dp r e s c r i p t i o n
+programs.
+A key finding from this review is the heterogeneity in
+criteriapertainingtofoodsecurity,householdincome,med-icalcomorbidities,monetaryvalueofsubsidiesoramountof
+fresh produce supplied, and duration of interventions. For
+Systematic review of healthy food prescription programs 1951
+
+--- Page 9 ---
+TABLE4 Pooled change in cardiometabolic outcomes as a result of healthy produce prescription programs1
+Percentchange AbsolutechangeCertaintyofevidence
+(GRADE) Outcome Studies(n) Reference Participants(n) Estimate(95%CI) P2I2(%) Estimate(95%CI) P2I2(%)
+Fruitandvegetable
+intake,servings/d35( 37,40–43) 1039 22(12,32) <0.001 97 0.79(0.23,1.35) 0.004 96 LOW4,5⊕⊕/229d/229d
+Fruitintake,servings/d 3 ( 38,40,42) 257 39(12,67) 0.005 90 0.59(0.32,0.87) <0.001 59 MODERATE6⊕⊕⊕/229d
+Vegetableintake,
+serving/d2( 40,42) 178 29(–8,65) 0.124 98 0.53(–0.04,1.10) 0.068 87 VERYLOW7,8,9⊕/229d/229d/229d
+SBP,mmHg 4 (26, 37,38,41) 328 –1.8(–5.9,2.3) 0.383 86 –2.39(–7.77,2.99) 0.383 85 VERYLOW10,11,12⊕/229d/229d/229d
+DBP,mmHg 4 (26, 37,38,41) 328 0.0(–1.2,1.3) 0.966 15 0.02(–0.95,0.99) 0.964 13 LOW10,12⊕⊕/229d/229d
+HbA1c,% 5 ( 26,34,38,43,
+44)1064 –8.6(–16.9,–0.35) 0.041 99 –0.81(–1.56,–0.06) 0.035 92 VERYLOW10,13,14⊕/229d/229d/229d
+LDL,mM 2 (37,38) 214 –1.1(–12.4,10.3) 0.855 58 –0.03(–0.33,0.27) 0.856 50 LOW15,16⊕⊕/229d/229d
+HDL,mM 2 (37, 38) 214 2.9(–4.9,10.8) 0.468 0 0.04(–0.06,0.14) 0.463 0 LOW15,16⊕⊕/229d/229d
+TG,mM 2 ( 37,38) 214 22.5(–44.2,89.2) 0.509 52 0.23(–0.44,0.90) 0.502 49 LOW15,16⊕⊕/229d/229d
+BMI,kg/m23( 27,41,44) 215 –1.6(–2.8,–0.3) 0.013 27 –0.61(–1.06,–0.16) 0.008 6.4 LOW17,18⊕⊕/229d/229d
+1DBP,diastolicbloodpressure;GRADE,GradesofRecommendation,Assessment,Development,andEvaluationWorkingGroup;HbA1c,glycatedhemoglob in;RCT,randomizedcontrolledtrial;SBP,systolicbloodpressure;TG,triglycerides.
+2Pvalueof Z-testforsigniﬁcanceofpooledchangeand95%CI.
+3Wherepossible,fruitandvegetableintake(inservings/d)reportedseparatelywithinastudywasconvertedtocombinedfruitandvegetableintakebymethodsdescribedpreviously( 83)andmeta-analyzedusingthemethoddescribedinthe
+footnoteof Table 3.
+4Downgradedby1forriskofbias: ≥4studiesnon-RCTs; ≥3studieswith >10%losstofollow-up(riskofselectionbiasandattritionbias).
+5Downgradedby1forinconsistency:signiﬁcantunexplainedheterogeneity.
+6Downgradedby1forriskofbias: ≥2studiesnon-RCTs; ≥1studywith >10%losstofollow-up(riskofselectionandattritionbias).
+7Downgradedby1forriskofbias: ≥2studiesnon-RCTs;1studywith >10%losstofollow-up(riskofselectionbiasandattritionbias).
+8Downgradedby1forinconsistency:signiﬁcantunexplainedheterogeneity.
+9Downgradedby1forimprecision:doesnotmeetoptimalinformationsizecriterion.
+10Downgradedby1forriskofbias: ≥2studiesnon-RCTs; ≥2studieswith >10%losstofollow-up(riskofselectionbiasandattritionbias).
+11Downgradedby1forinconsistency:signiﬁcantunexplainedheterogeneity.
+12Downgradedby1forimprecision:doesnotmeetoptimalinformationsizecriterion.
+13Downgradedby1forinconsistency:signiﬁcantunexplainedheterogeneity.
+14Downgradedby1forimprecision:doesnotmeetoptimalinformationsizecriterion.
+15Downgradedby1forriskofbias: ≥1studywith >10%losstofollow-up(riskofattritionbias).
+16Downgradedby1forimprecision:doesnotmeetoptimalinformationsizecriterion.
+17Downgradedby1forriskofbias: ≥2studiesnon-RCTs(riskofselectionbias).
+18Downgradedby1forimprecision:doesnotmeetoptimalinformationsizecriterion.
+1952 Bhat et al.
+
+--- Page 10 ---
+some studies, the input of the healthcare professional(s) to
+the intervention and interaction with the healthcare systemwere not clearly described. Likewise, details of the nutrition
+education component of the programs were often not fully
+reported.Althoughitispossiblethatnutritioneducationacts
+toenhancetheefficacyoffoodsubsidies( 84–86),therewere
+insufficient data to tease out the independent or interactive
+effect of different components of the healthy food prescrip-
+tion interventions on dietary outcomes. Future studies are
+needed to evaluate the effectiveness of such programs inenhancingthenutritionalknowledgeofparticipants.
+We also identified considerable methodological limita-
+tions and variable quality of the healthy food prescriptionstudies. Most were quasi-experimental (nonrandomized)
+and did not have a control group, increasing the risk of bias
+andchanceofoverestimatedfindings,andprecludingstrongcausalinterpretations.Severalstudiesweresmall,short-term
+pilot programs that were not powered to detect clinically
+meaningfulchangesindietaryorespeciallycardiometabolicoutcomes,alimitationthatcouldunderestimatethepositive
+impacts. These limitations are reflected in the serious or
+critical risk of bias identified in the nonrandomized studies
+and the high or concerning risk of bias in the randomized
+trials, and the moderate to very low strength of evidencefor outcomes as determined by the GRADE assessment.
+These evaluations highlight the need for more rigorously
+designed and adequately powered RCTs to further evaluatethe impact of healthy food prescription on dietary behavior
+and cardiometabolic outcomes. Future studies should also
+investigate potential sources of heterogeneity that wereobserved in our pooled estimates. Many of the studies did
+not simultaneously assess change in dietary behavior and
+cardiometabolic risk factors, making it difficult to ascertainwhether a sufficiently large change in dietary behavior had
+occurred to alter the cardiometabolic parameters studied.
+Self-reporting of fruit and vegetable intake is subject tosignificantrecallbias(whichcouldoverestimateeffects)and
+measurement error (which could underestimate effects). All
+studies were conducted in high-income Western nations
+(particularly the USA), and therefore findings may not be
+applicable to other countries with different medical and so-cialsecuritysystems.Finally,morefoodprescriptionstudies
+in different countries with varying healthcare systems and
+dietarycontextsareneededtofurtherunderstandtheimpactof food prescription programs on diet and cardiometabolic
+health.
+The focus of most healthy food prescriptions so far has
+been on fruit and vegetables. Other dietary components,including nuts, beans, whole grains, and fish are recognized
+as important for cardiometabolic health (87, 88), and the
+impact of including these dietary components remains to
+be evaluated. Of note, healthy food prescription programs
+couldbemoreeffectiveiftheywerecombinedwithpoliciestoaddressotherbarrierstohealthyeatingsuchaslimitedaccess
+to food stores, lack of cooking skills, and/or access to high-
+quality kitchens ( 80,89–92,93). We note that other “food
+is medicine” initiatives such as “medically tailored meal”programsarealsobeingevaluatedandseektoovercomethesefood security barriers by delivering preprepared meals toparticipants ( 76). The impact of “medically tailored meal”
+programsondietarybehaviorandcardiometabolicoutcomesalsorequiresfurtherevaluation.
+The strengths of our investigation include its compre-
+hensive search strategy and standardization of the reportedchangeindietaryandcardiometabolicoutcomesthatenabled
+meta-analysis. The moderate to long durations of many of
+the included studies were comparable to prior evaluationof community-based nutrition intervention programs ( 94),
+and suggest healthy food prescription programs may enablesustained change in dietary behavior. Two-thirds of theindividual studies, including 1 of the randomized trials,
+reportedapositiveeffectondietaryoutcomesoverthistime
+frame.
+I nc o n c l u s i o n ,t h i ss y s t e m a t i cr e v i e wa n dm e t a - a n a l y s i s
+suggests that healthy food prescription programs may bebeneficial in increasing consumption of fruit and vegetablesandmodestlyreduceBMIandHbA1c.Thisinvestigationalso
+identified substantial heterogeneity and varying method-
+ological limitations of these studies. Our results support the
+needforfutureRCTsinarangeofsettingsthatareadequately
+designed and powered with appropriate comparison groupsto assess robustly the efficacy of healthy food prescription
+programsondietqualityandcardiometabolicwell-being.
+Acknowledgments
+The authors’ contributions were as follows—SB, MM, BN,and JHYW: contributed to research design; SB, DHC, and
+KT:conductedtheresearch;SB:analyzedthedata;SB,DHC,andKT:draftedthemanuscript;allauthors:providedcritical
+review and feedback for the manuscript; SB: had primary
+responsibility for final content; and all authors: read andapprovedthefinalmanuscript.
+References
+1. He FJ, Nowson CA, MacGregor GA. Fruit and vegetable consumption
+andstroke:meta-analysisofcohortstudies.Lancet2006;367(9507):320–
+6.
+2. CarterP,GrayLJ,TroughtonJ,KhuntiK,DaviesMJ.Fruitandvegetable
+intakeandincidenceoftype2diabetesmellitus:systematicreviewandmeta-analysis.BMJ2010;341:c4229.
+3. AfshinA,SurPJ,FayKA,CornabyL,FerraraG,SalamaJS,MullanyEC,
+Abate KH, Abbafati C, Abebe Z, et al. Health effects of dietary risks in195 countries, 1990–2017: a systematic analysis for the Global BurdenofDiseaseStudy2017.Lancet2019;393(10184):1958–72.
+4. Lee CM, Colagiuri R, Magliano DJ, Cameron AJ, Shaw J, Zimmet P,
+Colagiuri S. The cost of diabetes in adults in Australia. Diabetes ResClinPract2013;99(3):385–90.
+5. Colagiuri S, Lee CM, Colagiuri R, Magliano D, Shaw JE, Zimmet PZ,
+Caterson ID. The cost of overweight and obesity in Australia. Med JAust2010;192(5):260–4.
+6. JardimTV,MozaffarianD,Abrahams-GesselS,SyS,LeeY,LiuJ,Huang
+Y, Rehm C, Wilde P, Micha R, et al. Cardiometabolic disease costsassociated with suboptimal diet in the United States: a cost analysisbasedonamicrosimulationmodel.PLoSMed2019;16(12):e1002981.
+7. Bommer C, Sagalova V, Heesemann E, Manne-Goehler J, Atun R,
+Barnighausen T, Davies J, Vollmer S. Global economic burden ofdiabetes in adults: projections from 2015 to 2030. Diabetes Care2018;41(5):963–70.
+Systematic review of healthy food prescription programs 1953
+

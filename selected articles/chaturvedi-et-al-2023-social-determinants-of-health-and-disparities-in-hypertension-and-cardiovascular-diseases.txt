@@ -1,0 +1,873 @@
+===== PDF METADATA =====
+/Creator: Adobe InDesign 15.1 (Windows)
+/ModDate: D:20250109125257-08'00'
+/Trapped: /False
+/CreationDate: D:20240207140357+05'30'
+/Producer: Adobe PDF Library 15.0; modified using iText 4.2.0 by 1T3XT
+/Subject: Hypertension 2024.81:387-399
+/Title: Social Determinants of Health and Disparities in Hypertension and Cardiovascular Diseases
+=======================
+
+===== EXTRACTED TEXT (First 10 pages) =====
+--- Page 1 ---
+HypertensionHypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354 March 2024  387
+Hypertension is available at www.ahajournals.org/journal/hypREVIEW
+Social Determinants of Health and Disparities in 
+Hypertension and Cardiovascular Diseases
+Abhishek Chaturvedi ,* Anqi Zhu ,* Naga Vaishnavi Gadela, Dorairaj Prabhakaran ,† Tazeen H. Jafar †
+ABSTRACT: High blood pressure causes over 10 million preventable deaths annually globally. Populations in low- and 
+middle-income countries suffer the most, experiencing increased uncontrolled blood pressure and cardiovascular disease 
+(CVD) deaths. Despite improvements in high-income countries, disparities persist, notably in the United States, where 
+Black individuals face up to 4× higher CVD mortality than White individuals. Social determinants of health encompass 
+complex, multidimensional factors linked to an individual’s birthplace, upbringing, activities, residence, workplaces, 
+socioeconomic and environmental structures, and significantly affect health outcomes, including hypertension and CVD. 
+This review explored how social determinants of health drive disparities in hypertension and related CVD morbidity from 
+a socioecological and life course perspective. We present evidence-based strategies, emphasizing interventions tailored 
+to specific community needs and cross-sector collaboration to address health inequalities rooted in social factors, which 
+are key elements toward achieving the United Nations’ Sustainable Development Goal 3.4 for reducing premature CVD 
+mortality by 30% by 2030. (Hypertension. 2024; 81:387–399. DOI: 10.1161/HYPERTENSIONAHA.123.21354.) 
+• Supplement Material.
+Key Words: blood pressure ◼ cardiovascular diseases ◼ health equity ◼ hypertension ◼ social determinants of health
+High blood pressure (BP) is the leading preventable 
+risk factor for global mortality, causing over 10 mil-
+lion deaths annually.1 Low- and middle-income 
+countries (LMICs) suffer the most, with <20% of individ-
+uals achieving adequate BP control, and hypertension- 
+related cardiovascular disease (CVD) deaths have 
+been rising over the past 3 decades. In high-income 
+countries (HICs), BP control is ≈50% with decreasing 
+hypertension-related CVD deaths, but disparities persist, 
+particularly among low-income, rural, and racial/ethnic 
+minorities. In the United States, Black individuals experi-
+ence about 4× the hypertension-related CVD mortality 
+than White individuals.2,3Social determinants of health (SDOH) are a multi-
+dimensional measure encompassing factors related to 
+where people are born, raised, engage in activities, reside, 
+and work, which exert a significant influence on health 
+outcomes, including hypertension and CVD. These fac-
+tors include a wide array of elements that span socioeco-
+nomic and environmental structures and have a significant 
+impact on both community- and individual-level health. 
+They encompass issues such as housing and living con-
+ditions, neighborhood poverty, food security, access to 
+green spaces, transportation, racial or other forms of dis-
+advantaged minority segregation, structured racism, and 
+various psychosocial stressors. Collectively, these factors 
+ 
+The American Heart Association celebrates its 100th anniversary in 2024. This article is part of a series across the entire AHA Journal portfolio written by international 
+thought leaders on the past, present, and future of cardiovascular and cerebrovascular research and care. To explore the full Centennial Collection, visit https://www.
+ahajournals.org/centennial
+Correspondence to: Tazeen H. Jafar, Program in Health Services and Systems Research, Duke-NUS Medical School, Singapore. Email tazeen.jafar@duke-nus.edu.sg
+*A. Chaturvedi and A. Zhu contributed equally as joint first authors.
+†D. Prabhakaran and T.H. Jafar contributed equally as joint last authors.
+Supplemental Material is available at https://www.ahajournals.org/doi/suppl/10.1161/HYPERTENSIONAHA.123.21354.
+For Sources of Funding and Disclosures, see page 396.
+© 2023 The Authors. Hypertension is published on behalf of the American Heart Association, Inc., by Wolters Kluwer Health, Inc. This is an open access article under 
+the terms of the Creative Commons Attribution Non-Commercial-NoDerivs License, which permits use, distribution, and reproduction in any medium, provided that the 
+original work is properly cited, the use is noncommercial, and no modifications or adaptations are made.
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 2 ---
+REVIEW
+388  March 2024 Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354
+Chaturvedi et al SDOH in Hypertension and CVDshape individuals’ health behaviors, fostering unhealthy 
+practices that directly impact stress levels, leading to 
+heightened sympathetic activity, markers of inflammation, 
+and enhanced susceptibility to hypertension and CVD 
+with potential epigenetic transmission to offspring.4
+Limited access to affordable, high-quality health care 
+compounds these challenges, hindering timely diagnosis 
+and treatment, and leading to accelerated progression of 
+vascular disease with high morbidity and mortality. Exter-
+nal factors like climate change, environmental pollution, 
+natural disasters, wars, and conflicts further exacerbate the prevalence of hypertension and CVD. These profound 
+impacts of SDOH on hypertension and CVD are illustrated 
+in Figure 1. Catastrophic health expenses from CVD dis-
+proportionately affects low-income communities, perpetu-
+ating suffering, and deepening socioeconomic disparities.5
+This review summarizes how SDOHs contribute to 
+hypertension and related CVD disparities from a global 
+perspective focusing on comparisons between LMICs 
+and HIC, as well as rural-urban and racial/ethnic dis-
+parities within HICs. Additionally, we discuss adaptable 
+evidence-based strategies and comprehensive solutions 
+that integrate social and clinical interventions to tackle 
+SDOHs and disparities in hypertension and related CVD. 
+These equity-focused approaches offer a promising path 
+toward achieving United Nation’s Sustainable Develop-
+ment Goals 3.4 for reducing premature CVD mortality by 
+2030 and the Healthy People 2030’s goal for equitable 
+health.6,7
+DISPARITIES IN BURDEN OF 
+HYPERTENSION AND CVD
+Over the past 3 decades, the global hypertension 
+prevalence has doubled to 626 million in women and 
+652 million in men, with disproportionately steeper 
+Figure 1. Socioecological and life course approaches of social determinants of health leading to hypertension and 
+cardiovascular disease (CVD).
+Social determinants of health (SDOHs) encompass socioeconomic, political, and environmental contexts, including neighborhood poverty and 
+poor housing conditions, social policies and built environment, public health policies and legislation, climate change and pollution, and crisis 
+events. These SDOHs contribute to an increased risk of premature CVD and major adverse cardiac events (MACE) through health care system 
+and psychosocial stress pathway, such as sympathetic-adreno-medullar and hypothalamic-pituitary-adrenal axis activation. BP indicates blood 
+pressure; CKD, chronic kidney disease; CRP, C-reactive protein; and UPF, ultra-processed food.Nonstandard Abbreviations and Acronyms
+BP blood pressure
+CVD cardiovascular disease
+HIC high-income country
+LMIC  low- and middle-income countries
+REGARDS Reasons for Geographic and Racial 
+Differences in Stroke
+SDOH social determinants of health
+SEP  socioeconomic position
+UPF ultra-processed foods
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 3 ---
+REVIEW
+Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354 March 2024  389
+Chaturvedi et al SDOH in Hypertension and CVDrise in LMICs (Figure 2).8,9 In 2019, high systolic BP 
+was linked to 10.9 million deaths and 235.4 million 
+disability-adjusted life years worldwide.10 Hypertension-
+related disability-adjusted life years decreased in HICs 
+but increased in LMICs between 1990 and 2019, with 
+HICs reporting significantly lower age-adjusted mortal-
+ity rates due to high systolic BP (72 per 100 000) than 
+LMICs (187 per 100 000).11
+Despite favorable trends in HICs, substantial dis-
+parities persist, with higher CVD mortality rates in rural 
+areas and racial/ethnic minorities. In the United States, 
+although age-adjusted CVD mortality rates declined for 
+Black and White individuals from 2000 to 2019 with 
+a simultaneous decrease in Black-White disparities, 
+Black individuals consistently demonstrated the high-
+est mortality rates than other ethnicities, especially in 
+rural areas (Figure 3; Figure S1).12 Moreover, existing 
+racial disparities were exacerbated during the COVID-
+19 pandemic, as indicated by the widening Black-White 
+disparities in stroke mortality (Figure S2).13 Non-
+Hispanic Black individuals have higher hypertension 
+rates, early CVD onset, and increased CVD mortality 
+compared with Whites.2,14 Although the gap in racial 
+disparities in BP control seemed to be narrowing in 
+some regional studies in the United States, more recent 
+data from a national cohort showed that BP differ-
+ences and respective control rates have not changed 
+much in the past 20 years.15,16 Canadian studies also reveal significantly higher hypertension rates among 
+Black and South Asian individuals, particularly women, 
+compared with Whites.17 In the United Kingdom, Black 
+patients with chronic condition have significantly poorer 
+BP control than White patients.18 Even in Taiwan, where 
+BP control rates are among the world’s highest, indig-
+enous women face substantially worse BP levels.19
+SOCIOECOLOGICAL AND LIFE COURSE 
+PERSPECTIVES OF SDOH RELATED TO 
+HYPERTENSION AND CVD
+SDOH is a multidimensional concept encompassing 
+social, environmental, economic, and psychosocial fac-
+tors that interact over an individual’s lifetime. These fac-
+tors are closely linked to the life course theory, which 
+examines how early and later life biological, behavioral, 
+social, and psychological exposures affect an individu-
+al’s health.20 The Whitehall longitudinal cohort studies 
+led by Sir Michael Marmot, for example, have signifi-
+cantly advanced our understanding of health dispari-
+ties by emphasizing the impact of both early and later 
+life circumstances on health outcomes, including CVD 
+mortality.21
+In line with the life course theory, substantial evidence 
+has accumulated that early life stress, especially during 
+the periconceptual and prenatal periods, is linked with 
+Figure 2. Trends in the number of people with hypertension who reported a diagnosis, who used treatment, and whose blood 
+pressure was effectively controlled, globally and by region, 1990 to 2019.
+Data derived from Zhou et al.8
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 4 ---
+REVIEW
+390  March 2024 Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354
+Chaturvedi et al SDOH in Hypertension and CVDthe subsequent development of hypertension and CVD, 
+primarily through epigenetic alterations.4 For instance, 
+studies on famine episodes demonstrated associations 
+between maternal undernutrition and an increased risk 
+of hypertension and coronary heart disease in offspring.22 
+Additionally, preterm and low birth weight infants have 
+higher systolic BP later in life.23 Maternal malnutrition 
+and low birth weight are still highly prevalent, especially 
+in low-income countries, where 40% of childbearing-age 
+women are anemic, and 25% of newborns have low birth 
+weights.24
+Hypertension in childhood, along with other car-
+diovascular risk factors (body mass index and cho-
+lesterol level), can lead to intermediate CVD markers 
+and potentially fatal CVD events in adulthood (Figure 
+S3).25,26
+Early childhood growth patterns independently 
+impact hypertension and CVD development.4 For exam-
+ple, in the Helsinki Birth Cohort, adults with coronary 
+events often had low birth weights followed by rapid 
+childhood weight gain, linked to insulin resistance later 
+in life.27
+Through a life course and socioecological perspective, 
+we explore the impact of key SDOHs on hypertension 
+and CVD. We also provide an overview of widely refer-
+enced SDOH frameworks (Table S1).
+Neighborhood Poverty, Poor Housing 
+Environment, and Living Conditions
+While BP was once positively associated with national 
+income and urbanization, this relationship had weakened 
+by 2015, suggesting hypertension is disproportionally 
+affecting the poor population globally.9 Of note, over 2 
+billion of the world’s poor population live in rural areas 
+or informal urban settlements in LMICs, facing a con-
+stant threat of eviction and harsh living conditions.28 
+An analysis of 138 LMICs showed that countries with 
+higher gross domestic product, more health investment, and improved multidimensional poverty index have lower 
+hypertension prevalence, highlighting the importance of 
+favorable policies and equitable health care spending for 
+better BP control.29
+In HICs, residing in underprivileged neighborhoods 
+was associated with an elevated risk of developing coro-
+nary heart disease, even after adjusting for individuals’ 
+income, educational attainment, and occupation.30 In the 
+United States, individuals living in rural areas exhibit a 
+higher incidence of hypertension (40%) compared with 
+their urban counterparts (29%).31 Studies conducted in 
+impoverished neighborhoods in LMICs and rural areas 
+in HICs reveal that individuals in these settings often 
+prioritize basic necessities like stable housing, food, and 
+electricity over health.32
+Food Insecurity and Unhealthy Lifestyle 
+Behaviors
+Social disadvantaged individuals often face limited 
+opportunities for healthy lifestyle choices, leading to 
+adoption of unhealthy behaviors due to structural social 
+and environmental factors.
+Food Insecurity
+Food insecurity, defined as “limited or uncertain access 
+to sufficient food,” is associated with obesity, a known 
+risk factor for hypertension, particularly in women in 
+HICs.33 This is mainly driven by the consumption of 
+energy-dense ultra-processed foods (UPFs) during 
+scarcity.34 Moreover, a low-sodium diet rich in fruits, 
+vegetables, grains, and low-fat dairy products is rec-
+ommended for lowering BP.35 However, in impover-
+ished neighborhoods, food insecurity is compounded 
+by unfavorable trade policies, making fresh produce 
+unaffordable. For example, in LMICs, the cost of rec-
+ommended fruit and vegetable servings can account 
+for up to half of household income, while in HICs, it is 
+< 2%.36
+Figure 3. Estimated age-adjusted 
+mortality rates for cardiovascular 
+disease in the United States, 2000 to 
+2019, by year and racial group.
+This figure displays age-adjusted mortality 
+rates (AAMRs) for cardiovascular disease 
+in the United States from 2000 to 2019, 
+delineated by racial groups. Shaded areas 
+indicate 95% uncertainty intervals. Data 
+source: the Institute for Health Metrics and 
+Evaluation, 2023.12
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 5 ---
+REVIEW
+Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354 March 2024  391
+Chaturvedi et al SDOH in Hypertension and CVDIn 2015, over 42 million people in the United States 
+lived in food-insecure households, including 13 million 
+children.37 Moreover, roughly 40% individuals with CVD 
+experienced food insecurity, which is twice as high as 
+those without CVD with a disproportionate impact on 
+Black and Hispanic adults.38
+Cheap and Widely Accessible UPF
+A concerning trend is the rising popularity of UPFs, 
+due to their affordability, palatability, convenience, and 
+long shelf life. However, they are nutritionally poor and 
+high in unhealthy fat, sugar, and salt levels.39 This trend 
+is prominent globally with higher sales in developed 
+regions and increasing consumption in developing 
+countries.40
+Recent evidence has connected high UPF consump-
+tion to a 12% greater risk of CVD, including a 13% higher 
+risk of coronary heart disease and an 11% higher risk 
+of stroke.41 Low-income neighborhoods, both in HICs 
+and LMICs, often have easier access to cheaper UPFs, 
+overshadowing healthier but pricier options.42 Food and 
+beverage companies further exacerbate this by targeting 
+marketing at low-income neighborhoods, racial/ethnic 
+minorities, adolescents, and children.43
+Low Physical Activity, Tobacco, and Alcohol Use
+Physical activity is an established protective factor 
+against hypertension and CVD events.35 However, peo-
+ple with low socioeconomic position (SEP), character-
+ized by lower income, education, and employment, are 
+less physically active due to factors like time constraints, 
+lack of motivation, neighborhood safety, and limited rec-
+reational facilities.44,45 While tobacco may not be a direct 
+hypertension risk factor, it significantly increases the 
+risk for all CVD subtypes, especially in individuals with 
+hypertension.46 Additionally, data consistently show no 
+safe alcohol limits for incident CVD, especially stroke.47 
+Studies in the United States observed higher rates of 
+alcohol and tobacco use in non-Hispanic Blacks com-
+pared with Whites, and in rural compared with urban 
+residents.48
+Low SEP
+Marmot’s Social Gradient in Health concept illustrates 
+the positive correlation between health status and 
+SE P.49,50 In HICs, low SEP is directly associated with 
+higher hypertension risk.51 However, this link was not 
+evident in most LMICs until the 1990s when CVD, previ-
+ously predominant among affluent individuals, begins to 
+increasingly affect those with low SEP due to epidemio-
+logical transition from infectious to chronic disease.52,53
+Individuals with lower SEP experience elevated risk 
+of CVD and mortality primarily because of the higher 
+prevalence of unhealthy behaviors, increased psycho-
+social stress, and limited health care access within this 
+population.54Data from both LMICs and HICs consistently high-
+light the strong association between lower education 
+levels and hypertension/CVD. The INTERHEART study 
+found that individuals with lower education levels had 
+a higher risk for myocardial infarction compared with 
+those with higher education levels.55 Similarly, the Pro-
+spective Urban Rural Epidemiology study showed that 
+low education level was a significant risk factor for inci-
+dent CVD and associated mortality, especially in LMICs 
+(Figure 4).56 Moreover, educational opportunities are 
+closely linked with employment rates and economic 
+stability, which, in turn, significantly influence cardiovas-
+cular outcomes.57 In the United States, the REGARDS 
+study (Reasons for Geographic and Racial Differences 
+in Stroke) revealed that socially determined vulnerabili-
+ties, such as low education and income levels, living in 
+high-poverty areas, and lacking health insurance, were 
+associated with a higher risk of developing hypertension 
+and mortality.58
+Psychosocial Experiences
+Adverse psychosocial experiences during the life 
+course such as structural racism, poor social cohesion, 
+and work-related stress are associated with adverse 
+cardiovascular outcomes through various plausible 
+pathways,59 including sympathetic nervous system and 
+inflammation leading to impaired vascular reactivity 
+and endothelial function,60 and indirect influences from 
+unhealthy coping habits such as poor diet and physical 
+inactivity.61
+Adverse Childhood Experiences
+Adverse childhood experiences, including mistreatment, 
+abuse, or dysfunctional home environments, are asso-
+ciated with increased risk of hypertension and CVD in 
+adulthood. Adverse childhood experiences amplify sus-
+ceptibility to unhealthy behaviors, epigenetic alterations, 
+and systemic inflammation, thereby increasing vulner-
+ability to CVD.48,61 Notably, a significant percentage of 
+the world poorest households lack adequate child super-
+vision, with ≈40% of children out of school, and 48% of 
+these households lack anyone with at least 5 years of 
+education.28
+Structural Racism
+In HICs, racial/ethnic disparities in hypertension and 
+CVD burden are evident, which are primarily attributed 
+to inequities and undertreatment experienced by racial/
+ethnic minority groups (Blacks, Hispanics, and Southeast 
+Asians), resulting in poorer BP control and subsequently 
+increasing CVD risk.62,63 In the United States, 33% of 
+the Black-White disparity in uncontrolled BP could be 
+explained by SDOHs, including low-income, low edu-
+cation, disadvantaged neighborhoods, and residing in 
+health professional shortage areas.64
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 6 ---
+REVIEW
+392  March 2024 Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354
+Chaturvedi et al SDOH in Hypertension and CVDPoor Social Cohesion and Work-Related Stress
+Social isolation adversely affects health behaviors, car-
+diovascular risk factors, and mortality.65,66 Conversely, 
+increased social contact was associated with a 13% 
+lower prevalence of treatment-resistant hypertension 
+among Black people.67 Furthermore, job strain (charac-
+terized by high psychological demands and low decision 
+latitude on the job) and night shift work have been asso-
+ciated with elevated BP and CVD risk.68
+Mechanistic Insights Into Psychosocial Stress, 
+Hypertension, and CVD
+A growing body of evidence links psychosocial stress 
+to cardiovascular health, including hypertension.69,70 
+Data suggest that psychosocial stress from perceived 
+adverse neighborhood conditions is associated with 
+hypertension, likely due to abnormal epigenetic alter-
+nations including DNA methylation, histone modifica-
+tion, and RNA regulation.4,71,72 Stress activates both the 
+sympathetic-adrenal-medullary and the hypothalamic-  
+pituitary-adrenal axis, leading to increased catechol-
+amines, glucocorticoids, and inflammatory cytokines.73,74 
+Perceived stress, gauged by amygdala activity, predicts 
+future CVD via increased hematopoietic activity and arterial inflammation, suggesting the existence of a neural-  
+hematopoietic-arterial axis.75,76 A study showed 
+that stress-related neural activity is associated with 
+increased vascular inflammation in individuals from 
+racial/ethnic minority communities and resource-  
+limited neighborhoods, providing further insights into 
+how adverse social conditions can increase hyperten-
+sion and CVD risk.60
+Health Systems
+A major barrier to implementing proven strategies for 
+chronic disease prevention is the design and functioning 
+of health care systems involving health financing, gover-
+nance, workforce, information, medical technologies, and 
+health care delivery.77 In many LMICs, screening services 
+for chronic conditions are frequently lacking, particularly 
+in impoverished and rural areas. Inadequate infrastructure, 
+including poorly maintained roads, long travel distances, and 
+transportation costs, hinder routine and emergency care.
+Studies in LMICs indicate that less than half of indi-
+viduals with hypertension are diagnosed, and less than 
+a third effectively controlled their BP. A recent pooled 
+analysis of 1201 studies showed grossly suboptimal BP 
+control rates (under 25%) in Nepal, Indonesia, and some 
+Figure 4. Forest plot of multivariable analysis for all-cause mortality and major cardiovascular disease (CVD) by level of 
+education and wealth across country income strata.
+This forest plot presents the results of multivariable models adjusting for education, wealth, age, sex, urban vs rural settings, baseline CVD, and 
+INTERHEART risk score in low-income, middle-income, and high-income countries. Hazard ratios (HRs) and 95% CIs are displayed for total 
+mortality and major CVD, with the participants with the highest level of education (trade school, college, or university) and the richest third of 
+the participants serving as the reference group. HIC indicates high-income country; LIC, low-income country; and MIC, middle-income country. 
+*Adjusted HR. ** Secondary/High school/ Higher secondary. Note: P for interaction is for testing the interaction between country income and 
+education or wealth. Data derived from Rosengren et al.56
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 7 ---
+REVIEW
+Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354 March 2024  393
+Chaturvedi et al SDOH in Hypertension and CVDsub-Saharan African and Oceanian nations. Even more 
+concerning, certain North African, Central and South 
+Asian, and Eastern European countries exhibit control 
+rates below 10%.8 Ill-equipped primary care facilities 
+lacking readily available medications add another barrier 
+to optimal hypertension management in these regions.78
+Underdiagnosis and undertreatment of hypertension 
+in LMICs lead to a higher CVD burden. Patients with 
+acute CVD events often arrive too late for life-saving 
+reperfusion therapy. The situation is worse in rural areas 
+due to limited resources and transportation barriers, 
+causing increased mortality.
+In the United States, 1 in 10 individuals lacks afford-
+able health insurance, and these uninsured individuals 
+are more likely to have poorer BP control.79,80 Similar 
+to LMICs, rural areas in HICs face additional barriers in 
+hypertension care due to physician and equipment short-
+ages, and lack of transportation.31
+Climate Change and Pollution
+Climate change has a detrimental impact on hypertension 
+and CVD. Activities like burning fossil fuels and defor-
+estation release greenhouse gases, leading to extreme 
+temperatures and water-related disasters, contribute to 
+hypertension- and CVD-related morbidity and mortality, 
+partly by disrupting access to medications and health care 
+services for chronic diseases.81–83 Ambient air pollution is 
+a known risk factor for hypertension and CVD.84 These 
+adverse effects of climate change and pollution are com-
+pounded in socially deprived populations in LMICs.
+Crisis Events: Pandemic and Displaced 
+Populations
+The COVID-19 pandemic has significantly impacted 
+social, economic, and psychological aspects of lives, 
+impacting individuals and communities alike. It has ampli-
+fied preexisting disparities in cardiovascular care, under-
+lining accessibility challenges.13,85,86 Studies showed 
+significantly higher hypertension rates among hospital-
+ized COVID-19 patients, reaching up to 50% to 56%, 
+which were correlated with disease severity, intensive 
+care unit admission likelihood, and mortality risk.87 Data 
+indicate disproportionately higher mortality in Black, 
+Latino, and South Asian populations in the United States 
+during the pandemic.88
+POTENTIAL SOLUTIONS AND CALL 
+TO ACTION TO ADDRESS SDOH AND 
+ELIMINATE DISPARITIES IN BP CONTROL 
+AND CARDIOVASCULAR HEALTH
+Hypertension is the leading preventable risk fac-
+tor for CVD mortality on a global scale. The increasing disparities in BP control between LMICs and HICs are 
+fundamentally driven by SDOHs. Among HICs, like the 
+United States, a significant 15-year life expectancy gap 
+persists between privileged and underprivileged individu-
+als, emphasizing the need to view hypertension manage-
+ment strategies through a social equity lens.89 Therefore, 
+addressing the SDOHs related to hypertension and CVD 
+via community and clinical interventions needs to be a 
+national and global priority.
+Achieving this goal necessitates a multifaceted 
+approach, integrating SDOH measures into evidence-
+based health systems initiatives and policy reforms. 
+These reforms should emphasize BP control while simul-
+taneously targeting reductions in tobacco and alcohol 
+use, promoting healthy lifestyles, reducing obesity, and 
+facilitating referrals to address context-specific SDOHs, 
+such as food subsidies and transportation. Moreover, 
+combating structural racism, climate change, and envi-
+ronmental pollution will be instrumental in achieving 
+these goals.
+While eliminating all social and environmental fac-
+tors may not be entirely feasible, implementing stress 
+management techniques, particularly for the socially 
+disadvantaged, can help mitigate their negative impact 
+on cardiovascular health.4,90 Furthermore, community 
+engagement and empowerment are essential for the 
+long-term sustainability of these efforts.91,92 The Sustain-
+able Development Goals 3.4 has set a clear target to 
+reduce premature CVD mortality by 30% by 2030, rela-
+tive to 2015 levels.6 Improving BP control in the socially 
+vulnerable populations globally will be key to achieving 
+those targets, and it cannot be possible without address-
+ing SDOHs. The key priorities to achieve these objec-
+tives are outlined (Table):
+1. Enhance national coordination of hypertension and 
+CVD prevention and mitigate SDOH impact on 
+socially vulnerable populations
+National health ministries must prioritize enhanc-
+ing hypertension care, especially in marginalized com-
+munities in low-income neighborhoods, rural areas, and 
+among racial/ethnic minorities. Establishing a dedicated 
+task force is essential to ensure that initiatives related to 
+hypertension care across the health care system work 
+together effectively. In addition to health care services, 
+this task force should foster collaboration with various 
+sectors, including education, housing, food, transpor-
+tation, and others, to address SDOHs that influence 
+hypertension and CVD within socially disadvantaged 
+populations.
+2. Integrate social determinants in hypertension care
+Nonconventional, team-based care models with 
+trained nonphysician health workers, like community 
+health workers, show promise in improving hyperten-
+sion awareness, prevention, and control, particularly in 
+resource-limited settings, as reflected in the recent World 
+Health Organization guidelines.93 Studies conducted in 
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 8 ---
+REVIEW
+394  March 2024 Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354
+Chaturvedi et al SDOH in Hypertension and CVDLMICs, such as the Control of Blood Pressure and Risk 
+Attenuation-Bangladesh, Pakistan, Sri Lanka, demon-
+strate the effectiveness of multicomponent interventions, including the engagement of nonphysician health work-
+ers, in BP control.94 The intervention was cost-effective  
+and acceptable to the stakeholders for scaling up Table. Strategies to Address Social Determinants of Health for Hypertension and Cardiovascular Disease Control
+Objectives Strategies 
+Enhance national coordination of hypertension 
+and CVD prevention and mitigate SDOH impact 
+on socially vulnerable populationsEnhance access to hypertension care in marginalized communities.
+Establish a national dedicated task force for hypertension management and CVD prevention
+Foster multisectoral partnerships to address hypertension and CVD risk.
+Integrate social determinants in hypertension 
+careIncorporate SDOH measures and solutions into hypertension management guidelines and treatment plans.
+Leverage NPHWs and expand existing care teams for priority hypertension interventions.
+Provide counseling on coping strategies and motivation for adopting healthy behavior.
+Partner with nonhealth sector for social services referrals.
+Ensure access to essential medications for 
+hypertension and CVD among the socially 
+disadvantaged and expand social insurance 
+schemesImprove access to essential antihypertensive and CVD medications, particularly for socially disadvantaged 
+populations.
+Promote the availability and affordability of fixed-dose combination antihypertensive pills .
+Develop comprehensive health care financing schemes that ensure affordable access to quality care for all.
+Leverage maternal and child health and  
+infectious disease care delivery platformsEncourage the integration of opportunistic hypertension screening, awareness campaigns, and treatment within 
+existing health care platforms.
+Ensure maternal and childcare programs target socially disadvantaged populations to identify high-risk groups 
+for long-term hypertension and CVD prevention.
+Leverage existing health care infrastructure developed for infectious disease care to enhance the equitable 
+delivery of hypertension care to high-risk populations.
+Start hypertension and CVD preventive efforts 
+early in children and adolescentsInitiate preventive efforts early through school-based educational interventions that promote healthy lifestyle.
+Enhance partnerships between primary health care facilities and educational foundations to facilitate school 
+enrollment.
+Provide pro-poor healthy food and  
+environmental policies and subsidiesPromote healthy behaviors to reduce hypertension and CVD risk in society.
+Implement national policies to reduce salt and sugar sweetened beverage consumptions and subsidies to make 
+nutritious foods affordable for marginalized groups.
+Leverage existing programs and charitable initiatives to provide nutritious meals to socially disadvantaged 
+groups to improve hypertension and CVD management.
+Address racism as a social issue Tailor hypertension interventions for socially disadvantaged groups to address racial and socioeconomic  
+disparities.
+Provide health care providers with cultural competency training to ensure sensitivity and inclusivity in care.
+Promote diversity in the healthcare workforce to enhance representation and equity in hypertension care.
+Leverage digital technology and enhance 
+digital literacyUse EHR-based surveillance and machine learning to understand how SDOH impact hypertension and CVD risk.
+Investigate wearable BP monitoring devices, along with home and ambulatory BP monitoring, for more accurate 
+and convenient BP measurement.
+Integrating novel technologies like clinical decision support system and mHealth in the existing health care infra-
+structure.
+Collaborate across sectors to address digital disparities, including expanding digital outreach and enhancing 
+digital literacy.
+International agencies and donor support for 
+hypertension carePrograms and initiatives aim to improve global cardiovascular health and reduce disparities in care (eg, WHO 
+Global Action Plan, WHO HEARTS, Resolve to Save Lives organization, Pan American Health Organization, 
+Lancet Commission on Hypertension and NCDI Poverty, Healthy People 2030, CHRONIC Care Act, World 
+Hypertension Day, May Measurement Month campaign, proposed Global Hypertension Care Task Force, World 
+Heart Federation call to African Nations, The American Heart Association’s 2024 Health Equity Impact Goal).
+Encourage industry/corporate sector to expand programs such as the Walmart $4 Prescriptions program.
+Research and capacity strengthening Scale up evidence-based interventions for hypertension control.
+Human resource development and capacity-building initiatives to bridge the knowledge gap and improve  
+hypertension management skills of primary care physicians.
+Strengthen national and local data collection and interpretation to monitor CVD risk factors and related SDOH.
+Develop performance metrics measure health care systems performance in managing hypertension.
+BP indicates blood pressure; CHRONIC, Creating High-Quality Results and Outcomes Necessary to Improve Chronic; CVD, cardiovascular disease; EHR, electronic 
+health record; NCDI, noncommunicable diseases and injuries; NPHW, nonphysician health workers; SDOH, social determinants of health; and WHO, World Health 
+Organization.
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 9 ---
+REVIEW
+Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354 March 2024  395
+Chaturvedi et al SDOH in Hypertension and CVDnationally.95,96 Trials in Colombia, Malaysia, China, and 
+Nepal with similar intervention components showed con-
+sistent results.97–99 In the United States, the Black Bar-
+bershop trial found that the engagement of nonphysician 
+health workers with barbers in Los Angeles County was 
+cost-effective and successful in reducing BP.100
+Studies suggest that incorporating SDOHs into 
+treatment plans of patients with hypertension and con-
+current depression may significantly improve their BP 
+control.101,102 The Center for Medicare & Medicaid Ser-
+vices in the United States has developed a screening 
+tool for unmet health-related social needs, including 
+housing instability, food insecurity, transportation difficul-
+ties, utility assistance needs, and interpersonal safety.103 
+To maximize the impact, these measurements should be 
+integrated into hypertension care at every step, such as 
+providing subsidies for healthy food to socially disadvan-
+taged populations.
+3. Ensure access to essential medications for hyper-
+tension and CVD among the socially disadvan-
+taged populations and expand social insurance 
+schemes.
+Inadequate access to antihypertensive and CVD medi-
+cations poses a significant barrier to effective BP control. 
+Addressing this challenge entails fostering public-private 
+partnerships to ensure consistent supply of essential 
+medications and reducing co-payment costs to improve 
+outcomes.104,105
+Additionally, health care financing schemes must 
+encompass transportation options for socially disadvan-
+taged individuals. These efforts also align closely with 
+the Sustainable Development Goals, which advocate for 
+equitable and affordable access to high-quality care for 
+all.6
+4. Leverage maternal and child health and infectious 
+disease care delivery platforms.
+Opportunistic screening, awareness, and treatment of 
+hypertension should be encouraged by leveraging the 
+existing outreach infrastructure established for mater-
+nal and child health services and infectious diseases 
+(eg, COVID-19, tuberculosis, HIV) in LMICs.106 Such 
+approaches ensure equitable care delivery while keeping 
+the marginal cost of scaling up the intervention low.
+5. Start hypertension and CVD preventive efforts 
+early in children and adolescents.
+Initiating prevention efforts early in childhood and ado-
+lescence through school-based interventions promoting 
+physical activity and healthy eating, while encouraging 
+parental involvement can significantly reduce body mass 
+index and BP.107 Unfortunately, in the world’s poorest 
+communities, as many as 40% of children do not attend 
+school.28 To address this issue, primary health care facili-
+ties can partner with educational foundations to enroll 
+children in school.
+6. Provide pro-poor healthy food and environmental 
+policies and subsidies.Societies should prioritize healthier lifestyles by 
+reducing salt, sugar, tobacco, and alcohol consumption, 
+while promoting increased intake of fruit and vegetable, 
+and physical activity. National policies and interventions 
+should ensure affordable seasonal produce and offer 
+subsidies for marginalized groups to promote health 
+equity.2,36
+7 . Address racism as a social issue.
+Efforts to ensure health equity in hypertension care 
+require proactive antiracism measures, encompassing 
+advocacy, policy development, and practical implementa-
+tion strategies. These measures must include adapting 
+interventions to the specific needs of the socially disad-
+vantaged, equipping health care providers with the cul-
+tural competencies necessary for unbiased and shared 
+decision-making, promoting diversity within the health 
+care workforce, and enforcing anti-discriminatory poli-
+cies.108 Findings from ongoing REGARDS study suggest 
+that racial disparities in cardiovascular health can partly 
+be attenuated by interventions targeting neighborhood 
+physical environment, neighborhood safety, social cohe-
+sion, and discrimination.109
+8. Leverage digital technology and enhance digital 
+literacy.
+Digital health initiatives, such as mobile-based health 
+(mHealth) applications, have shown effectiveness in 
+improving BP control by improving medication adherence 
+in both HICs and LMICs.110,111 Additionally, wearable BP 
+monitoring devices can be integrated into a virtual-first 
+hypertension care model; however, their accuracy valida-
+tion remains a challenge.112 Concerns also exist regard-
+ing the accessibility of digital services in remote areas 
+and a lack of digital literacy. Addressing these challenges 
+requires collaborative efforts involving both the health 
+and nonhealth sectors.
+9. International agencies and donor support for 
+hypertension care.
+World Health Organization Global Action Plan targets 
+a 25% reduction in hypertension prevalence by 2025 
+relative to 2010.113 This goal is achievable through effec-
+tive collaboration between governmental and nongov-
+ernmental entities.11,90 Key global and regional initiatives 
+aiming to eliminate dipartites in BP control and cardio-
+vascular health are listed in the Table.
+10. Research and capacity strengthening.
+Efforts are needed to scale up the evidence-based 
+interventions for hypertension care for socially disadvan-
+taged populations. National data on hypertension, along 
+with other CVD risk factors and related SDOHs, should 
+be systematically collected and reported on a regular 
+basis. Equally important is the generation and interpreta-
+tion of local data, health system performance monitor-
+ing, and the establishment of mechanisms for continuous 
+quality improvement in hypertension care. This requires 
+investing in professionals with expertise spanning quan-
+titative, qualitative, and social sciences, along with skills 
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
+--- Page 10 ---
+REVIEW
+396  March 2024 Hypertension. 2024;81:383–395. DOI: 10.1161/HYPERTENSIONAHA.123.21354
+Chaturvedi et al SDOH in Hypertension and CVDin implementation research. Similarly, human resource 
+development and capacity-building initiatives, focused 
+on-the-job training programs, can improve hypertension 
+care by bridging the knowledge gap among primary care 
+physicians and strengthening the referral system in a 
+sustained manner.114,115
+CONCLUSIONS
+Despite numerous clinical practice guidelines for hyper-
+tension management, uncontrolled BP remains the 
+leading cause of preventable deaths, especially among 
+socially disadvantaged groups. In this review, we have 
+provided a comprehensive overview of the SDOHs signif-
+icantly influencing the burden of hypertension and CVD. 
+Our examination took a socioecological and life course 
+perspective, emphasizing the interconnected behavioral, 
+biological, and psychological pathways at play. It is cru-
+cial to underscore that addressing the SDOHs related 
+to hypertension and CVD demands concerted efforts on 
+both national and global levels complemented by robust 
+community engagement, social financing, and strategic 
+partnerships with nonhealth sector entities, including 
+municipal organizations, faith-based institutions, schools, 
+small businesses, and psychosocial support systems. 
+Creating an enabling environment conducive to healthy 
+behaviors, such as promoting a nutritious diet and provid-
+ing accessible green spaces for physical activity, along 
+with tobacco control measures, is essential. Additionally, 
+ensuring access through efficient transportation and 
+digital technology is vital. When implemented collectively, 
+these measures hold great promise for achieving equita-
+ble BP control, preventing CVD, and ultimately eliminating 
+related disparities in line with the Sustainable Develop-
+ment Goals 3.4 and Healthy People 2030 mission.
+ARTICLE INFORMATION
+Affiliations
+Georgetown University, MedStar Washington Hospital Center, Washington, DC 
+(A.C.). Program in Health Services and Systems Research, Duke-NUS Medical 
+School, Singapore (A.Z., T.H.J.). Virginia Commonwealth University, Pauley Heart 
+Center, Richmond, VA (N.V.G.). Centre for Chronic Disease Control, New Delhi, India 
+(D.P.). Public Health Foundation of India, Gurugram, India (D.P.). Aga Khan Univer-
+sity, Karachi, Pakistan (T.H.J.). Duke Global Health Institute, Durham, NC (T.H.J.).
+Acknowledgments
+T.H. Jafar is recipient of Senior Clinician Scientist Award from National Medical 
+Research Council, Singapore.
+Author Contributions
+T.H. Jafar and D. Prabhakaran conceptualized the idea. T.H. Jafar wrote the initial 
+outline. A. Chaturvedi wrote the first draft of the article with contributions from A. 
+Zhu, N.V. Gadela, and T.H. Jafar. All authors contributed to the interim drafts and 
+approved the final version of the article.
+Sources of Funding
+None.
+Disclosures
+None.Supplemental Material
+Table S1
+Figures S1–S3
+REFERENCES
+ 1. Unger T, Borghi C, Charchar F, Khan NA, Poulter NR, Prabhakaran D, Ramirez A, 
+Schlaich M, Stergiou GS, Tomaszewski M, et al. 2020 International Society 
+of Hypertension Global Hypertension Practice guidelines. Hypertension. 
+2020;75:1334–1357 . doi: 10.1161/HYPERTENSIONAHA.120.15026
+ 2. Ferdinand KC, Brown AL. Will the 2021 USPSTF hypertension screen-
+ing recommendation decrease or worsen racial/ethnic disparities in blood 
+pressure control. JAMA Network Open. 2021;4:e213718–e213718. doi: 
+10.1001/jamanetworkopen.2021.3718
+ 3. Ogunniyi MO, Commodore-Mensah Y, Ferdinand KCR. Ethnicity, hyper-
+tension, and heart disease: JACC focus seminar 1/9. J Am Coll Cardiol. 
+2021;78:2460–2470. doi: 10.1016/j.jacc.2021.06.017
+ 4. Lurbe E, Ingelfinger J. Developmental and early life origins of cardio-
+metabolic risk factors: novel findings and implications. Hypertension. 
+2021;77:308–318. doi: 10.1161/HYPERTENSIONAHA.120.14592
+ 5. Gheorghe A, Griffiths U, Murphy A, Legido-Quigley H, Lamptey P, Perel P. 
+The economic burden of cardiovascular disease and hypertension in low- 
+and middle-income countries: a systematic review. BMC Public Health. 
+2018;18:975. doi: 10.1186/s12889-018-5806-x
+ 6. Frieden TR, Cobb LK, Leidig RC, Mehta S, Kass D. Reducing premature 
+mortality from cardiovascular and other non-communicable diseases by one 
+third: achieving sustainable development goal indicator 341. Glob Heart. 
+2020;15:50. doi: 10.5334/gh.531
+ 7 . Healthy People 2030, U.S. department of health and human ser-
+vices, office of disease prevention and health promotion. Accessed 
+October 20, 2023. https://health.gov/healthypeople/priority-areas/
+social-determinants-health
+ 8. Collaboration NCDRF. Worldwide trends in hypertension prevalence and 
+progress in treatment and control from 1990 to 2019: a pooled analysis of 
+1201 population-representative studies with 104 million participants. Lan-
+cet. 2021;398:957–980. doi: 10.1016/S0140-6736(21)01330-1
+ 9. Zhou B, Perel P, Mensah GA, Ezzati M. Global epidemiology, health burden 
+and effective interventions for elevated blood pressure and hypertension. 
+Nat Rev Cardiol. 2021;18:785–802. doi: 10.1038/s41569-021-00559-8
+ 10. Global Burden of Disease Study 2019 (GBD 2019). Seattle, United States: 
+Institute for Health Metrics and Evaluation (IHME). 2020. Accessed Octo-
+ber 20, 2023. https://vizhub.healthdata.org/gbd-results/
+ 11. Schutte AE, Srinivasapura Venkateshmurthy N, Mohan S, Prabhakaran D. 
+Hypertension in low- and middle-income countries. Circ Res. 2021;128:808–
+826. doi: 10.1161/CIRCRESAHA.120.318729
+ 12. Institute for Health Metrics and Evaluation (IHME). United States mortality 
+rates by causes of death and life expectancy by county, race, and ethnicity 
+2000-2019. Seattle, United States of America: Institute for Health Met-
+rics and Evaluation (IHME). 2023. Accessed November 23, 2023. https://
+vizhub.healthdata.org/subnational/usa
+ 13. Yang Q, Tong X, Schieb L, Coronado F, Merritt R. Stroke mortality among 
+Black and White adults aged ≥35 years before and during the COVID-19 
+pandemic—United States, 2015–2021. Morb Mortal Wkly Rep. 2023;72:431. 
+doi: 10.15585/mmwr.mm7216a4
+ 14. Flack JM, Ferdinand KC, Nasser SA. Epidemiology of hypertension and 
+cardiovascular disease in African Americans. J Clin Hypertens (Greenwich). 
+2003;5:5–11. doi: 10.1111/j.1524-6175.2003.02152.x
+ 15. Bartolome RE, Chen A, Handler J, Platt ST, Gould B. Population care man-
+agement and team-based approach to reduce racial disparities among 
+African Americans/Blacks with hypertension. Perm J. 2016;20:53–59. doi: 
+10.7812/TPP/15-052
+ 16. Hardy ST, Chen L, Cherrington AL, Moise N, Jaeger BC, Foti K, Sakhuja S, 
+Wozniak G, Abdalla M, Muntner P. Racial and ethnic differences in blood 
+pressure among US adults, 1999-2018. Hypertension. 2021;78:1730–
+1741. doi: 10.1161/HYPERTENSIONAHA.121.18086
+ 17 . Anand SS, Yusuf S, Vuksan V, Devanesen S, Teo KK, Montague PA, 
+Kelemen L, Yi C, Lonn E, Gerstein H, et al. Differences in risk factors, ath-
+erosclerosis, and cardiovascular disease between ethnic groups in Canada: 
+the Study of Health Assessment and Risk in Ethnic groups (SHARE). Lan-
+cet. 2000;356:279–284. doi: 10.1016/s0140-6736(00)02502-2
+ 18. Schofield P, Saka O, Ashworth M. Ethnic differences in blood pressure moni-
+toring and control in south east London. Br J Gen Pract. 2011;61:190–196. 
+doi: 10.3399/bjgp11X567126
+Downloaded from http://ahajournals.org by on January 9, 2025
+
+
