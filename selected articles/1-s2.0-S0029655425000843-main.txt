@@ -1,0 +1,734 @@
+Contents lists available at ScienceDirect
+Nursing Outlook
+journal homepage: www.nursingoutlook.org
+Comparing the influence of social risk factors on machine learning model 
+performance across racial and ethnic groups in home healthcar e
+Mollie Hobensack , PhD, RN a,⁎, Anahita Davoudi , PhD b, Jiyou n Song , PhD, APRN c,  
+Kenrick Cato, PhD, RN c,d, Kathryn H. Bow les, PhD, RN b,c, Maxim Topaz , PhD, RN b,e,f
+a Icahn School of Medicine at Mount Sinai, New York, NY 
+b Center for Home Care Policy & Resear ch, VNS Health, New York, NY 
+c Univ ersity of Pennsy lvania School of Nursing, Philadelphia, PA 
+d Children’s Hospital of Philadelphia, Philadelphia, PA 
+e Columbia Univ ersity School of Nursing, New York, NY 
+f Data Science Institute, Columbia Univ ersity , New York, NY 
+article info
+Article history : 
+Received 21 August 2024 
+Received in revised form 12 April 2025 
+Accep ted 15 April 2025 
+Available online xxxx
+Keywords: 
+Home healthcare
+Hospitalization
+Social determinants of health
+Machine learning
+Nursing informaticsabstract
+This study examined the impact of social risk factors on machine learning model performance for predict ing 
+hospitalization and emergency department visits in home healthcare. Using retrospectiv e data from one U.S. 
+home healthcare agency , four models were develo ped with unstructured social information documented in 
+clinical notes. Performance was compared with and without social factors. A subgroup analy ses was conducted by 
+race and ethnicity to assess for fairness. LightGBM performed best overall. Social factors had a modest effect, but 
+findings highlight the feasibility of integr ating unstructured social information into machine learning models and 
+the importance of fairness evaluation in home healthcare.
+© 2025 Elsevier Inc. All rights are reserv ed, including those for text and data mining, AI training, and similar 
+techno logies. 
+Introduction
+In the United States, man y patients exhibit a prefer ence for 
+recei ving healthcare services at home rather than in a hospital 
+setting, valuing the conv enience, enhanced quality of life, and 
+personalized care this pathw ay offers (Arieli et al., 2023; Le et al., 
+2022 ). Home healthcare (HHC) embodies this prefer ence by al-
+lowing patients transi tioning from acute care or referr ed from the 
+community to access healthcare services in their own homes for 
+periods ranging from 30 to 60 days. During this time, patients 
+benefit from a comprehensi ve arra y of inter disciplinary services, 
+including skilled nursing, physical therap y, occupational therap y, 
+speech therap y, and social work services (Centers for Medicare and 
+Medicaid Services, 2003). Despite strong evidence supporting the 
+advantages of HHC (Admi et al., 2015; How ard et al., 2019; 
+Romagnoli et al., 2013), about 20% of patients admitted to HHC are 
+hospitalized or visit the emergency department (ED) (Busby et al., 
+2015; CMS, n.d.).To decrease rates of hospitalization and ED visits, resear ch has 
+lever aged machine learning to identify patients at risk for dete-
+rioratio n (Huang et al., 2021). Machine learning can predic t high- 
+risk patients by analyzing routinel y collect ed, clinician-gener ated 
+data from the electronic health recor ds (EHR). Previous findings 
+from the team indicate that machine learning can effectiv ely 
+identify HHC patients at risk for hospitalization or ED visits 
+(Hobensack et al., 2023b ). How ever , one limitation of machine 
+learning is it can perpetuate existing health disparities refle cted 
+within data (Rajkomar et al., 2018). Recent resear ch has advo cated 
+for evaluating machine learning model fairness by comparing 
+performance acro ss subgroups (e.g., F-score ), which can reveal 
+biases that occur when a machine learning model systematicall y 
+favors one social group over another (Barton et al., 2023 ; Huang 
+et al., 2022 ). Bias within model performance can lead to disparities 
+in treatment and interv entions, exacerbating ineq uities in health 
+delivery (Obermey er et al., 2019).
+The Biopsy chosocial Model emphasizes a holistic approach to 
+understanding health outcomes by integr ating biological, psy-
+chological, and social factors (Borell-Carrió et al., 2004; Enge l, 
+1977; Lehman et al., 2017). The biological dimension encompasses 
+physiological charact eristics; the psychological dimension Nursing Outlook 73 (2025) 10243 1 
+https ://doi.org/1 0.1016/j.outlook.2025. 10243 1 
+0029-6554/© 2025 Elsevier Inc. All rights are reserve d, including those for text and data mining, AI training, and similar technologies.   
+]]]] 
+]]]]]] 
+⁎ Corresponding author: M. Hobensack, Icahn School of Medicine at Mount Sinai, 
+One Gusta ve L. Levy Place Box 1070, New York, NY 10029. 
+E-mail address: mollie.hobensack@mssm.edu (M. Hobensack ). 
+
+includes emotions and health beha viors; and the social dimension 
+includes socioeconomic circumstances (Lehman et al., 2017). A 
+prior study report ed impro ved machine learning performance 
+when patient charact eristics from all three dimensions were in-
+cluded, compared with models that relied on a single dimension 
+alone (Chan et al., 2023). Yet, within HHC, only a limited number of 
+studies have employ ed machine learning models that integr ate all 
+three dimensions, and few have included social factors (Hobensack 
+et al., 2023b). 
+Social dete rminants of health—such as economic stability , edu-
+cation, healthcare access, social conte xt, and the built en-
+vironment —are estimated to account for over 50% of health 
+outcomes (Truong et al., 2020). Social risk factor s represent the ad-
+verse aspects of these determinants (e.g., lack of social support 
+vs. presence of social support) that negati vely impact health. Prior 
+resear ch suggests that social risk factors are more frequently docu -
+mented in unstructured, free-text clinical notes than in structured 
+fields such as drop -down assessments (Patr a et al., 2021). Emerging 
+resear ch suggests that incorporating social risk factor s into machine 
+learning models may help mitigate performance disparities among 
+raciall y and ethnically minoritized populations by better accounting 
+for the underl ying social comple xities of health (Obermey er et al., 
+2019; Rajkomar et al., 2018). Howev er, no previou s study has ex-
+amined whether social risk factor s documented in clinical notes 
+influence machine learning model performance in the HHC setting 
+or compared performance across racial and ethnic subgroups to 
+evaluate fairness. 
+In prior work, natural language processing (NLP) was used to 
+extract six social risk factors from HHC clinical notes and found 
+that their presence was significantly associated with hospitaliza -
+tion and ED visits (Hobensack et al., 2023a). A follow -up study 
+report ed that social risk factors were more freq uently documented 
+in the clinical notes of patients from racially and ethnically min -
+oritized groups suggesting potential differences in social com -
+plexity, clinician percep tion, or documentation practices 
+(Hobensack et al., 2025). While these studies suggest a relati on-
+ship between social risk factors documented in clinical notes and 
+hospitalization and ED visits, they did not evaluate the predi ctive 
+utility of these factors in machine learning models. Building on this 
+foundational work, the present study investigat ed two key ques-
+tions: (a) whether incorporating NLP-extract ed social risk factors 
+influenced machine learning model performance in predicting 
+hospitalization and ED visits in the HHC setting, and (b) whether 
+the inclusion of these factors affected model performance acro ss 
+racial and ethnic subgroups. 
+Methods 
+Setting and Sample 
+The study included a cohort of Medicare Fee-For -Service bene -
+ficiaries who recei ved services from one not-for-profit HHC agency 
+in the Northeastern United States betwee n January 2015 and 
+December 2017. The dataset included 86,866 HHC episodes of care 
+(i.e., the period during which patients recei ved HHC services) for 
+65,593 uniq ue patients. The two types of EHR data included were 
+structured (i.e., Outcome and Assessment Information Set [OASIS]) 
+and unstructured free-text clinical notes (e.g., visit and care co-
+ordination notes) (Centers for Medicare and Medicaid Services, 
+2017). The OASIS is a standar dized assessment tool mandated by 
+Medicare and Medicaid Services for all HHC patients and is ad-
+minister ed upon admission and discharge. It includes over 100 
+variables assessing patients’ demographics, clinical charact eristics, 
+and functional status. The study’s outcome, hospitalization, or ED 
+visit was also extract ed from the OASIS. In total, 2,34 1,018 clinical 
+notes were included in the analy sis. Machine Learning Pipeline 
+All analy ses were conduct ed using Anaconda Python (versi on 
+2.3.1) (Anaconda, Inc. New York, NY), and the unit of analy sis was at 
+the episode level. The machine learning pipeline focused on pre-
+dicting if a HHC episode would result in a hospitalization or ED visit 
+and involved sever al key steps: 
+Step 1: Text Prepr ocessing 
+First, the text was prepr ocessed before appl ying the machine 
+learning models. This included lemmatization to simplify the words 
+into their root meaning, transforming words like “caring” into “care .” 
+Then, stop words (e.g., “the,” “and,” “is,” etc.) and nonalphanumeric 
+symbols (e.g., “-”, “!”) were remo ved. These actions reduced the 
+“noise” in the text, enhancing the efficiency of the machine learning 
+models. 
+Step 2: Term Freq uency Inverse Document Frequency 
+Term frequency -inverse document frequency (TF-IDF) was used 
+to convert frequently occurring words from the clinical notes into 
+features for the machine learning model (Nadkarni et al., 2011). TF- 
+IDF considers both the frequency of a word within a clinical note and 
+its prev alence across the entire corpus of clinical notes, highlighting 
+the relev ance of more meaningful words. A higher TF-IDF score in-
+dicates great er distinctiv eness and informativ eness of a term within 
+a given conte xt. The top 5,000 TF-IDF features were included in the 
+machine learning models to enhance model performance (Chen 
+et al., 2018). 
+Step 3: Development of Machine Learning Models 
+Based on a prior study , all significant predictors from an adjusted 
+logistic regression model were included as binary variables in the 
+machine learning models (Hobensack et al., 2023a). The NLP-social 
+risk factors extract ed from clinical notes included Social Envir on-
+ment, Physical Environment, Education and Liter acy, Food Insecurity , 
+Access to Care, and Housing and Economic Circumstances. Featur es 
+selecte d for the machine learning model were mapped to the 
+Biopsy chosocial Model to ensure a comprehensi ve and holistic ap-
+proach. Full details of this study are described elsewher e (Hobensack 
+et al., 2023a). 
+Step 4: Dataset Creation and Cross- Validation 
+Two datasets were creat ed: (a) a baseline dataset with char -
+acteristics from the OASIS + TF-IDF tokens and (b) a dataset with 
+char acteristics from the OASIS + TF-IDF tokens + NLP-social risk fac-
+tors. Fivefold cross-v alidation was applied at the episode leve l by 
+dividing the data into five equal parts or “folds.” This ensured reli-
+able machine learning performance estimates and reduced the 
+overfitting risk (Tougui et al., 2021). 
+Step 5: Machine Learning Models 
+Four machine learning models were applied to both datasets to 
+identify the best-performing machine learning model to predict 
+hospitalization and ED visits among HHC patients. The four models 
+included Logistic Regression, Support Vector Machine, Light 
+Gradient Boosting Machine (LightGBM), and AutoGluon. The defi-
+nition and rationale for selecting each model is detailed in  
+Supplemental File A. 
+Step 6: Evaluation of the Machine Learning Models 
+Performance was evaluated using Accuracy , Precision, Recall, and 
+F-scor e. Accur acy measures the proportion of predictions that the 
+machine learning model identified correctl y. Precision measures the 
+ratio of correctly identified notes to the total number of notes that 
+resulted in a hospitalization or ED visit. Recall measures the model’s 
+ability to correctl y identify notes that result ed in a hospitalization or M. Hobensack , A. Davoudi, J. Song et al. Nursing Outlook 73 (2025) 102431 
+2 
+
+ED visit. F-score is the harmonic mean of Precision and Recall. Values 
+closer to zero indicate poor performance and values closer to one 
+indicate better performance. 
+Step 7: Application of the Best-P erforming Model Among Different 
+Racial and Ethnic Groups 
+To assess fairness, model performance was compared across racial 
+and ethnic subgroups. The best-performing machine learning model 
+(identified in Step 6) was applied across the following grou ps: Hispanic, 
+Non-Hispanic Black, Non-Hispanic White, and “Other” (i.e., Asian, Native 
+American, Pacific Islander , and Other). These groups were predefi ned by 
+categ ories in the OASIS (Centers for Medicare and Medicaid Services, 
+2017). Two datasets were creat ed for each group (following the meth -
+odology outlined in Step 4) and model performance was assessed using 
+Accur acy, Precision, Recall, and F-score. 
+Findings 
+Cohort Char acteristics 
+Among the 86,86 6 HHC episodes, appro ximat ely 14% (n = 12,308) 
+led to hospitalization or ED visits. The average age of the cohort was 
+78.7 years old (standard deviation = 11.8). A majority of the sample 
+was reported as female (63.9%) and Non-Hispanic White (62.8%). 
+Appro ximat ely 18% of the patients were reported as Non-Hispanic 
+Black and appro ximat ely 14% were report ed as Hispanic. Table 1 
+display s select charact eristics of the total cohort, those who were 
+hospitalized, and those who were not hospitalized. The full list of 
+cohort char acteristics is reported in Supplemental File B. 
+Biopsyc hosocial Model 
+In addition to the 5,000 TF-IDF keywor ds, there were 56 featur es 
+included in the machine learning models (from OASIS and the clinical 
+notes). Most features mapped to the biological dimension (n = 32; 
+56.1%); 11 featur es mapped to the psychological dimension (19.3%); and 
+9 features mapped to the social dimension (15.8%). The NLP-social risk 
+factors represented 67% (n = 6) of the featur es in the social dimension. 
+The three additional social factors from the OASIS were relat ed to a 
+patient’s insurance status, living arrang ements, and race. A fourth di-
+mension, labeled “Other ,” was intro duced to include features relat ed to a 
+patient’s hospital utilization, such as length of stay and risk of hospita -
+lization. The full mapping is present ed in Table 2. 
+Evaluation of Machine Learning Models 
+Across all four models, Accuracy rang ed from 0.77 to 0.88 and F- 
+score rang ed from 0.41 to 0.59. When incorporatin g the NLP-social 
+risk factors, there were minimal changes (< 5% variation) in 
+Precision, Recall, and Accur acy and no change in F-score. LightGBM 
+achieved the highest overall performance with an Accur acy of 0.88 
+and an F-scor e of 0.59. Incorporating social risk factors led to a 2% 
+increase in Precision (from 0.53 to 0.55) and a 3% decrease in Recall 
+(from 0.68 to 0.65). Detailed results for all models are report ed in  
+Table 3. 
+LightGBM Performance Across Patients From Different Race or Ethnicity 
+Subgroups 
+Before integ rating the NLP-social risk factors , LightGBM con-
+sistentl y performed across all groups. The lowest performance was 
+noted among individuals in the “Other” group (F-score = 0.55), while 
+the highest performance was observed among individuals in the 
+Hispanic group (F-score = 0.60). With the addition of the NLP-social 
+risk factors, the F-scor e rang ed from 0.59 to 0.65. There were 
+minimal changes in F-scores (1%) among Non-Hispanic White, Non- Hispanic Black, and Hispanic individuals when the NLP-social risk 
+factor s were included. The exception was individuals in the 
+“Other” group, where the F-scor e notabl y increased by 10% 
+(0.55–0.65). Across all groups, Prec ision and Accur acy increased with 
+the inclusion of the NLP-social risk factors. The most notable change 
+was an 8% increase in Precision (from 0.48 to 0.56) among in-
+dividuals in the “Other” grou p. Conv ersely , the great est decrease 
+(5%) was observ ed in Recall (from 0.68 to 0.63) among individuals in 
+the Non-Hispanic Blac k grou p. Full results are reported in Figur e 1. 
+Discussion 
+This study is the first in the HHC setting to integr ate social risk 
+factor s extract ed from clinical notes into predicti ve models and 
+evaluate fairness through comparing model performance across ra-
+cial and ethnic subgroups. Guided by the Biopsy chosocial Model, the 
+machine learning models incorporat ed features from the biological, 
+psychological, and social domains, ensuring a comprehens ive ap-
+proach to predicting hospitalization and ED visits. Among the eval-
+uated models, LightGBM demonstra ted the highest overall 
+performance with minimal differ ences in subgroup performance 
+metrics across racial and ethnic groups. 
+This study provides early evidence supporting the feasibility of 
+incorporatin g social risk factors documented in clinical notes into 
+machine learning models within the HHC setting. While machine 
+learning has shown promise in reducing adverse events in various 
+care envir onments (Du et al., 2023; Romero-B rufau et al., 2020; 
+Rossetti et al., 2021), its application in HHC remains limit -
+ed—especiall y with respect to the inclusion of social risk factors 
+(Hobensack et al., 2023b). Policymakers and healthcare organiza -
+tions should incentivize the adoption of machine learning-based 
+tools that explicitly account for social comple xities, promoting 
+health equity and enhancing clinical decision-making. 
+The impact of social risk factors in impr oving machine learning 
+model performance is mixed (Li et al., 2022; Obuobi et al., 2021; 
+Vest & Ben-Assuli, 2019; Zhao et al., 2021). While some studies 
+suggest that individual-lev el social risk factors documented in 
+clinical notes enhance the prediction of health outcomes (e.g., 
+service referrals, risk of 30-day readmission) (Chen et al., 2020), 
+othe r studies report no significant difference s in model perfor -
+mance (Hammond et al., 2020; Seligman et al., 2018). A study by  
+Zhang et al. (2020) found that social risk factors increased model 
+performance among patients with different insurance types and 
+ages. Another study by Segar et al. (2022) report ed that among 
+Black patients with heart failure, including social risk factors (e.g., 
+zip-code) led to impro ved risk prediction for hospital mortality . 
+This inconsistency underscore s the comple xity and conte xtual 
+nature of social determinants, indicating that further investigation 
+is necessary to fully understand their influence across diverse pa-
+tient populations and healthcare conte xts. 
+It is crucial to recognize that racial and ethnic categ ories are 
+heter ogeneous and that social risk factors may influence individuals 
+differen tly within these grou ps (National Academies of Sciences, 
+Engineering, and Medicine et al., 2017). Grounded in the Inter-
+sectionality Frame work— which posits that overlapping social and 
+political identities shape uniq ue experiences of privileg e and dis-
+crimination (Crensha w, 1989), future research should examine how 
+these intersecting identities inter act with social risk factors. This 
+approach may enhance understanding of how such factors influence 
+the predicti ve accuracy of machine learning models in healthcare 
+and, more critically , how they contribute to the perpetuation of 
+health disparities (Ronquillo et al., 2022; Ying Yang et al., 2023). 
+This study examined the impact of six social risk factors in ma-
+chine learning models as binary variables, meaning it did not eval-
+uate the cumulativ e effect of these factors , previousl y referred to in 
+the liter atur e as social risk factor burden . Prior resear ch has reported M. Hobensack , A. Davoudi, J. Song et al. Nursing Outlook 73 (2025) 102431 
+3 
+
+Table 1 
+Cohort Charact eristics      
+Variables Total  
+(n = 86,86 6) (%) Hospitalized  
+(n = 12,308) (%) Not Hospitalized  
+(n = 74,558) (%)  
+Demogr aphics 
+Age (years) (Mean [SD]) 78.7 (11.8) 78.9 (11.9) 78.5 (11.7) 
+Length of stay (day s)* (Mean [SD]) 57.7 (80.1) 76.8 (110.6) 38.6 (49.6) 
+Sex    
+Female (reference) 55,543 (63.9) 7,567 (61.5) 47,976 (64.3) 
+Male 31,323 (36.1) 4,741(38.5) 26,582 (35.7) 
+Race    
+Non-Hispanic White (refer ence) 54,563 (62.8) 7,019 (57.0) 47,544 (63.8) 
+Non-Hispanic Black 15,207 (17.5) 2,650 (21.5) 12,55 7 (16.8) 
+Hispanic 11,710 (13.5) 2,039 (16.6) 9,67 1 (13.1) 
+Other (i.e., Asian, Nativ e American, and Pacific Islander) 5,296 (6.1) 600 (4.9) 4,696 (6.3) 
+Insurance    
+Dual 5,693 (6.6) 1,145 (9.3) 4,548 (6.1) 
+Medicare 81,099 (93.4) 11,154 (90.6) 69,945 (93.8) 
+Medicaid 21 (0.0) 4 (0.0) 17 (0.0) 
+Other (i.e., private) 52 (0.1) 4 (0.0) 48 (0.1)  
+Past medical history 
+Risk of hospitalization    
+Multiple prior hospitalizations 21,655 (24.9) 4,904 (39.8) 16,75 1 (22.5) 
+Taking more than five medications 69,04 1 (79.5) 10,313 (83.3) 58,7 28 (78.8) 
+Decline in mental, emotional, or beha vioral status 12,839 (14.8) 2,178 (17.7) 10,66 1 (14.3) 
+Over all status    
+Stable 5,83 7 (6.7) 721 (5.9) 5116 (6.9) 
+Temporary high risk 67,824 (78.1) 9,015 (73.2) 58,809 (78.9) 
+Remain high risk 12,70 0 (14.6) 2,44 7 (19.9) 10,253 (13.8) 
+Serious conditions could lead to death within a year 505 (0.6) 125 (1.0) 380 (0.5)  
+Social history 
+Risk factors    
+Smoking 5,906 (6.8) 930 (7.6) 4,976 (6.7) 
+Obesity 11,754 (13.5) 1,953 (15.9) 9,80 1 (13.1) 
+Alcohol dependency 989 (1.1) 172 (1.4) 817 (1.1) 
+Drug dependency 465 (0.5) 99 (0.8) 366 (0.5) 
+Living arrang ements    
+Lives in congregat e care 2,738 (3.2) 461 (3.7) 2,277 (3.1)  
+Functional status 
+ADLs (Mean [SD])    
+Severity 16.6 (7.3) 17.62 (7.8) 15.50 (6.8) 
+Needed 8.1 (1.4) 8.26 (1.3) 8.03 (1.5)  
+Clinical assessment 
+Integumentary    
+Risk for pressur e ulcer 35,7 28 (41.1) 6,340 (51.5) 29,388 (39.4) 
+Presence of an unhealed pressur e ulcer 6,493 (7.5) 1,770 (14.4) 4,723 (6.3) 
+Presence of a surgical wound 23,07 6 (26.6) 2,179 (17.7) 20,89 7 (28.0) 
+Presence of skin lesion or open wound 17,979 (20.7) 3,50 0 (28.4) 14,479 (19.4) 
+Respirat ory status    
+Shortness of breath    
+With minimal exertion 33,754 (4.3) 975 (7.9) 2,779 (3.7) 
+When walking more than 20 feet or climbing stairs 32,630 (37.6) 5,282 (42.9) 27,348 (36.7) 
+Elimination    
+Urinary tract infection 5,967 (6.9) 1,211 (9.8) 4,756 (6.4) 
+Presence of urinary incontinence    
+Incontinent 41,563 (47.8) 6,690 (54.4) 34,87 3 (46.8) 
+Catheter 3,080 (3.5) 885 (7.2) 2,195 (2.9) 
+Neur o, emotional, and beha vioral status    
+Cognitiv e functioning    
+Alert and oriented 53,958 (62.1) 6,804 (55.3) 47,154 (63.2) 
+Requires promp ting 21,616 (24.9) 3,456 (28.1) 18,160 (24.4) 
+Requires assistance 7,131 (8.2) 1,229 (10.0) 5,902 (7.9) 
+Not alert and oriented 2,948 (3.4) 542 (4.4) 2,406 (3.2) 
+Totall y dependent 1,213 (1.4) 277 (2.3) 936 (1.3)  
+Social risk factors identified from clinical notes 
+NLP-social risk factors    
+Social envir onment 13,525 (15.6) 2,881 (23.4) 10,64 4 (14.3) 
+Physical envir onment 13,81 5 (15.9) 2,943 (23.9) 10,87 2 (14.6) 
+Education and liter acy 4,528 (5.2) 1,052 (8.5) 3,476 (4.7) 
+Food insecurity 2,80 1 (3.2) 628 (5.1) 2,173 (2.9) 
+Access to care 5,146 (5.9) 1,210 (9.8) 3,936 (5.3) 
+Housing and economic circumstances 7,018 (8.1) 1,499 (12.2) 5,519 (7.4) 
+Note. ADL, activities of daily living; NLP, natural language processing; SD, standard deviation.  
+* Since this is an episode-level analys is, rang es over 60 days are considered outliers.  M. Hobensack , A. Davoudi, J. Song et al. Nursing Outlook 73 (2025) 102431 
+4 
+
+that the cumulativ e impact of social risk factors increases the odds of 
+adverse outcomes (Reshetn yak et al., 2020; Wray et al., 2022 ). Futur e 
+studies should explore the benefits of incorporating features that 
+captur e the combined presence of multiple social risk factor s to 
+better understand their overall impact. This study adds to the growing liter ature demonstrating the 
+capability of the machine learning model, LightGBM, in clinical 
+prediction (Daoud, 2019; Wang & Wang, 2020 ). Key strengths of 
+LightGBM include its high performance, predicti ve accura cy, stabi -
+lity, and efficiency (Banerjee et al., 2019). Although LightGBM is Table 2 
+Featur es Mapped to Biopsych osocial Model     
+Biopsych osocial Dimension Source of Data Features Included in the Machine Learning Model  
+Biological (n = 32) OASIS Age, sex, comorbidities (acute myocardia l infarction, arthritis, cancer , cardiac dysr hythmias, dementia, diabetes , heart 
+failure, pulmonary disease, peripheral vascular disease, renal disease, and skin ulcer), conditions within the past 14 days 
+(urinary incontinence, indwelling catheter , intractable pain, impaired decision-making, disrupti ve beha vior, and memory 
+loss), overall status, sensory status (vision, ability to hear , and frequency of pain), integumentary (risk for pressur e ulcer , 
+presence of an unhealed pressur e ulcer , presence of a surgical wound, and presence of skin lesion or open wound), 
+respira tory status (shortness of breath), elimination (urinary tract infection, presence of urinary incontinence), 
+and activities of daily livin g (severity , needed) 
+Psych ological (n = 11) OASIS Neuro, emotional, and beha vioral status (cognitiv e functioning, anxious), cognitive sympt oms (memory deficit, impaired 
+decision-making, verbal disruption, physical aggression, disrupti ve, and delusional), and risk factors (smoking, obesity , 
+alcohol dependency , and drug dependency) 
+Social (n = 9) OASIS Insurance status, living arrang ements (living in congregat e care), and race 
+Clinical notes Social envir onment, physical envir onment, education and liter acy, food insecurity , access to care, and housing and 
+economic circumstances 
+Other (n = 4) OASIS Length of stay, risk of hospitalization (multiple prior hospitalizations, taking more than five medications, and decline in 
+mental, emotional, or beha vioral status) 
+Note. OASIS, outcome and assessment information set. 
+The total number of features was 56. Information in parenthesis repr esents the multiple feature s within each cate gory included in the machine learning model.  
+Table 3 
+Evaluation of Machine Learning Models            
+Logistic Regression SVM LightGBM AutoGluon 
+Baseline +NLP -Social Risk Factors Baseline +NLP -Social Risk Factors Baseline +NLP -Social Risk Factors Baseline +NLP -Social Risk Factors  
+Precision  0.32  0.32  0.36  0.37  0.53  0.55  0.45  0.44 
+Recall  0.57  0.58  0.52  0.50  0.68  0.63  0.60  0.62 
+Accura cy  0.77  0.77  0.80  0.81  0.88  0.88  0.84  0.83 
+F-score  0.41  0.41  0.43  0.43  0.59  0.59  0.51  0.51 
+Note. LightGBM, light gradient boosting machine; NLP, natural language processing; SVM, support vect or machines. 
+All models also included TF-IDF tokens. 
+LightGBM had the best performance across the other algorith ms and thus is highlighted.  
+Figure 1. Machine learning performance across different racial and ethnic groups. Note. All models included TF-IDF tokens. The highest value for each metric is one indicating best 
+performance. TF-IDF , term frequency -inverse document frequency . M. Hobensack , A. Davoudi, J. Song et al. Nursing Outlook 73 (2025) 102431 
+5 
+
+gener ally considered less interpr etable among tree-based models, 
+recent resear ch has introd uced new methods to clarify how each 
+feature contribut es to model performance. These methods include 
+Local Interpr etable Model-Agnostic Explanations and Shapley Ad-
+ditiv e Explanations (Khanna et al., 2023; Omobola ji Alabi et al., 
+2022). A prior study reported that the explainability of a machine 
+learning model is vital to fostering clinician trust and utilization in 
+practice (Schw artz et al., 2022). Futur e work should explore sup-
+plemental methodologies to increase LightGBM’s explainability to 
+proacti vely support clinical integr ation. 
+The minimal racial and ethnic subgroup differences observed in 
+model performance may reflect sever al factors. First, because the da-
+taset came from a single agen cy in the Northeast ern United States, 
+consistent documentation norms and clinical practice s across patient 
+subgroups may have reduced variability , there by potentially mini -
+mizing observ able disparities (Rajkomar et al., 2018). Additionall y, ag-
+gregating smaller racial and ethnic populations into an 
+“Other” categ ory might obscure nuanced performance differences 
+(Movv a et al., 2023). Limited subgroup sample sizes could further re-
+strict the detectio n of meaningful disparities (Movv a et al., 2023). 
+Lastly , the inclusion of structured clinical data and NLP-deri ved social 
+risk factors likely contributed to consistent performance by enhancing 
+the model’s predicti ve gener alizability across diverse patient sub-
+groups. Future resear ch should investigate how dataset diversity , sub-
+group representation, and feature selection influence model fairness. 
+Sever al limitations should be noted. The use of EHR data from 2015 
+to 2017 and a single HHC agency in the Northeastern United States 
+limits generalizability . Small sample sizes required combining Asian, 
+Native American, Pacific Islander , and other racial or ethnic group s into 
+an “Other” category , reducing the ability to explore subgroup nuances 
+between social risk factors and hospitalization or ED visits. Individual 
+contributions of the 5,000 TF-IDF keyw ords were not analy zed, nor 
+were indivi dual contributions or collinearity among specific NLP-ex-
+tract ed social risk factors evaluated. The NLP extraction method may 
+have introduced inaccuracies due to inconsist ent or biased clinician 
+documentation practice s. Future research should validate NLP-deriv ed 
+social risk factors against structured assessments, apply advanced NLP 
+techniq ues, and comprehe nsive ly analy ze social risk factors’ feature 
+importance and collinearity . Additionall y, this study assessed fairness 
+by comparing subgroup performance metrics; subseq uent studies 
+should explore other fairness metrics, mitigation strat egies, and how 
+variations in clinical workflow and documentation practice s influence 
+machine learning model performance across demographic groups. 
+Conclusion 
+This study is the first in the HHC setting to integr ate social risk 
+factors extract ed from clinical notes into machine learning models 
+and assess their impact on fairness across racial and ethnic groups. 
+Grounded in the Biopsy chosocial Model, the analy sis incorporat ed a 
+comprehensi ve set of biological, psychological, and social feature -
+s—offering one of the most holistic approache s to date for predicting 
+hospitalization and ED visits in HHC. The observed variability in 
+model performance across subgroups underscores the comple x and 
+conte xt-dependent role of social risk factors. These findings high -
+light the need for further resear ch into the intersectionality of pa-
+tient identities and the cumulati ve burden of social risks, both of 
+which are critical for advancing more accurat e, equitable, and 
+clinically meaningful predicti ve tools in home-based care. 
+Funding 
+This work was support ed by the National Institute of Nursing 
+Resear ch (NINR) (gran t T32NR0 07969 [M.H.], T32NR0 09356 [J.S.]), 
+the Jonas Scholarship (M.H.), and the Agency for Healthcare 
+Resear ch and Quality (gran t R01 HS02 7742). CRediT Statement 
+Mollie Hobensack: Writing- Revie w and Editing, Writing- Original 
+draft preparation, Project administration, Methodology , 
+Investigation, Formal analy sis, Concept ualization. Anahita Davoudi: 
+Writing- Review and Editing, Formal analy sis. Jiyoun Song: Writing- 
+Review and Editing, Methodology . Kenrick Cato: Writing- Review and 
+Editing, Supervision. Kathryn H. Bow les: Writing- Review and Editing, 
+Supervision. Maxim Topaz: Writing- Review and Editing, Supervision, 
+Methodology , Data curation, Concept ualization. 
+Declar ation of Competing Interest 
+The authors declare no conflicts of inter est. 
+Declar ation of gener ative AI and AI-assisted technologies in the 
+writing process 
+During the prepar ation of this work, the author(s) used ChatGPT 
+for editorial support. After using this tool/serv ice, the author(s) re-
+viewed and edited the content as needed and take(s) full responsi -
+bility for the content of the publication. 
+Acknow ledgments 
+This study also benefited from the gener ous support of my dis-
+sertation committe e. A special thanks to Drs. Greg ory Alexander and 
+Meghan Turchioe for their feedback on this paper . 
+Appendix A. Supporting information 
+Supplementary data associated with this article can be found in 
+the online version at doi:1 0.1016/j.outlook.2025. 10243 1. 
+References 
+Admi, H., Shadmi, E., Baruch, H., & Zisberg, A. (2015). From resear ch to reality : 
+Minimizing the effects of hospitalization on older adults. Rambam Maimonides 
+Medical Journal, 6(2), Article e0017. https://doi.org/1 0.504 1/RMMJ. 10201 
+Arieli, M., Kizon y, R., Gil, E., & Agmon, M. (2023). Participation in daily activities after acute 
+illness hospitalization among high-functioning older adults: A qualitative study. 
+Journal of Clinical Nursing, 32(13-14), 3456–3468. https://doi.org/1 0.1111/JOCN. 16418 
+Baciu, A., Negussie, Y., Geller, A., & Weinstein, J. N. National Academies of Sciences, 
+Engineering, and Medicine, Health and Medicine Division, Board on Population 
+Health and Public Health Practice, Committee on Community-Based Solutions to 
+Promo te Health Equity in the United States. (2017). The root causes of health 
+ineq uity. In J. N. Weinstein, A. Geller, Y. Negussie, & A. Baciu (Eds.). Communities in 
+action: Pathways to health equity (pp. 1–558). Nation al Academies of Sciences, 
+Engineering, and Medicine 10.17226/2462 4. 
+Banerjee, M., Reynolds, E., Andersson, H. B., & Nallamo thu, B. K. (2019). Tree-based 
+analy sis: A practical approach to creat e clinical decision making tools. Circulation 
+Cardio vascular Quality and Outcomes, 12(5), Article e004879. https://doi.org/1 0. 
+1161/CIRC OUTCOMES. 118.004879 
+Barton, M., Hamza, M., & Guevel, B. (2023). Racial equity in healthcare machine 
+learning: Illustrating bias in models with minimal bias mitigation. Cureus, 15(2), 
+https://doi.org/1 0.7759/CUREUS.3 5037 
+Borell-Carrió, F., Suchman, A. L., & Epstein, R. M. (2004). The biopsy chosocial model 25 
+years later : Principles, practice, and scientific inquiry. Annals of Family Medicine, 
+2(6), 576. https://doi.org/1 0.1370/AFM.2 45 
+Busby, J., Purdy, S., & Hollingworth, W. (2015). A syste matic revie w of the magnitude 
+and cause of geogr aphic variation in unplanned hospital admission rates and 
+length of stay for ambulatory care sensitiv e conditions. BMC Health Services 
+Resear ch, 15(1), 1–15. https://doi.org/1 0.1186/S1 2913-015-0964 -3 
+Centers for Medicare and Medicaid Services. (2003). Medicare and home health care. 
+US Department of Health and Human Services. https://www .cms.go v/Medicare/ 
+Quality-Initiati ves-Pa tient-Assessment-Instruments/HomeHealthQualityInits/ 
+Downloads/H HQIHHBenefits.pdf. 
+Centers for Medicare and Medicaid Services. (2017). Outcome and Assessment 
+Informati on Set (OASIS)-C2 Guidance Manual. Centers for MEdicare and Medicaid 
+Services. 
+Chan, L., Simmons, C., Tillem, S., Conley, M., Brazil, I. A., & Baskin-Sommers, A. (2023). 
+Classifying conduct disorder using a biopsyc hosocial model and machine learning 
+method. Biological Psychiatry : Cognitiv e Neuroscience and Neur oimaging, 8(6), 
+599–608. https://doi.org/1 0.1016/J.BPSC.2022.02.0 04 M. Hobensack , A. Davoudi, J. Song et al. Nursing Outlook 73 (2025) 102431 
+6 
+
+Chen, M., Tan, X., & Padman, R. (2020). Social determinants of health in electronic 
+health recor ds and their impact on analy sis and risk prediction: A syste matic 
+revie w. Journal of the American Medical Informatics Association, 27(11), 1764–1 773. 
+https://doi.org/1 0.1093/jamia/ocaa1 43 
+Chen, P. H., Zafar, H., Galperin-Aizenberg, M., & Cook, T. (2018). Integr ating natural 
+language processing and machine learning algorithms to cate gorize oncologic 
+response in radiology reports. Journal of Digital Imaging, 31(2), 178. https://doi. 
+org/1 0.1007/S1 0278-0 17-0027-X 
+CMS. (2025). Home health quality measures. Centers for Medicare and Medicaid 
+Services. Retrieved October 1, 2021, from https://www .cms.go v/Medicare/Quality - 
+Initiative s-Patient-Assessment-Instruments/HomeHealthQualityInits/Home- 
+Health-Quality-Measur es. 
+Crensha w, K. (1989). Demarginalizing the inter section of race and sex: A Black fem-
+inist critiq ue of antidiscrimination doctrine, feminist theory and antiracist poli-
+tics. University of Chicago Legal Forum, 1(8)http://chicagounbound.uchicag o.edu/ 
+uclfhttp://chicagounbound.uchicag o.edu/uclf/vol1 989/iss1/8. 
+Daoud, E. A. (2019). Comparison between XGBoost, LightGBM and CatBoost using a 
+home credit dataset. International Journal of Computer and Information Engineering, 
+13(1). 
+Du, Y., McNestry, C., Wei, L., Antoniadi, A. M., McA uliffe, F. M., & Mooney, C. (2023). 
+Machine learning-based clinical decision support syste ms for pregnancy care: A 
+systematic revie w. International Journal of Medical Informatics, 173, Article 105040. 
+https://doi.org/1 0.1016/J.IJMEDINF .2023. 105040 
+Engel, G. L. (1977). The need for a new medical model: A challenge for biomedicine. 
+Science, 196(4286), 129–1 36. https://doi.org/1 0.1126/SCIENCE.84 7460 
+Hammond, G., Johnston, K., Huang, K., & Joynt Maddo x, K. E. (2020). Social determi -
+nants of health impro ve predicti ve accuracy of clinical risk models for cardio -
+vascular hospitalization, annual cost, and death. Circulation: Cardio vascular Quality 
+and Outcomes, 13(6), Article e006752. https://doi.org/1 0.1161/CIR COUTC OMES. 
+120.0 06752 
+Hobensack, M., Scharp, D., Song, J., & Topaz, M. (2025). Documentation of social de-
+terminants of health across individuals from different racial and ethnic groups in 
+home healthcare. Journal of nursing scholarship: an official publication of Sigma 
+Theta Tau International Honor Society of Nursing, 57(1), 39–46. https://doi.org/1 0. 
+1111/jnu. 12980. 
+Hobensack, M., Song, J., Oh, S., Evans, L., Davoudi, A., Bow les, K. H., McDonald, M., 
+Barron, Y., Sridharan, S., Wallace, A., & Topaz, M. (2023a). Social risk factors are 
+associated with risk for hospitalization in home healthcare: A natural language 
+processing study. The Journal of Post-Acute and Long- Term Care Medicine. 
+Hobensack, M., Song, J., Scharp, D., Bow les, K. H., & Topaz, M. (2023b). Machine 
+learning applied to electronic health recor d data in home healthcare: A scoping 
+revie w. International Journal of Medical Informati cs, 170, Article 104978. https:// 
+doi.org/1 0.1016/J.IJMEDINF .2022. 104978 
+How ard, J., Kent, T., Stuck, A. R., Crowley, C., & Zeng, F. (2019). Improv ed cost and 
+utilization among medicare beneficiaries dispositioned from the ED to receiv e 
+home health care compared with inpatient hospitalization. The American Journal 
+of Accountable Care, 7(1), 10–16. 
+Huang, J., Galal, G., Etemadi, M., & Vaidy anathan, M. (2022). Evaluation and mitigation 
+of racial bias in clinical machine learning models: Scoping revie w. JMIR Medical 
+Informatics, 10(5), https://doi.org/1 0.2196/36388 
+Huang, Y., Talwar, A., Chatterjee, S., & Aparasu, R. R. (202 1). Application of machine 
+learning in predicting hospital readmissions: A scoping revie w of the liter ature. 
+BMC Medical Researc h Methodology, 21(1), 1–14. https://doi.org/1 0.1186/S1 2874- 
+021-01284-Z/T ABLES/3 
+Khanna, V. V., Chadaga, K., Sampathila, N., Prabhu, S., & Rajagopala Chadaga, P. (2023). 
+A machine learning and explainable artificial intellig ence triage-pr ediction 
+system for COVID-1 9. Decision Analytics Journal, 7, Article 100246. https://doi.org/ 
+10.1016/J.D AJOUR.2023. 100246 
+Le, N. C., Rahman, T., Kapralik, J. L., Ibrahim, Q., Lear, S. A., & Van Spall, H. G. C. (2022). 
+The hospital at home model vs routine hospitalization for acute heart failure: A 
+surve y of patients’ prefer ences. CJC Open, 4(3), 263–2 70. https://doi.org/1 0.1016/J. 
+CJCO.202 1.10.005 
+Lehman, B. J., David, D. M., & Gruber, J. A. (2017). Rethinking the biopsy chosocial 
+model of health: Understanding health as a dynamic system. Social and Personality 
+Psych ology Compass, 11(8), Article e12328. https://doi.org/1 0.1111/SPC3. 12328 
+Li, Y., Wang, H., & Luo, Y. (2022). Impro ving fairness in the prediction of heart failure 
+length of stay and mortality by integr ating social determinants of health. 
+Circulation: Heart Failur e, 15(11), Article E009473. https://doi.org/1 0.1161/ 
+CIRCHEARTF AILURE. 122.0 09473 
+Movv a, R., Tech, C., Shanmugam, D., Hou, K., Pathak, P., Guttag, J., Garg, N., & Pierson, E. 
+(2023). Coarse race data conceals disparities in clinical risk score performance. 
+Proceedings of Machine Learning Resear ch, 219, 1–34. 
+Nadkarni, P. M., Ohno-Machado, L., & Chapman, W. W. (2011). Natura l language pro-
+cessing: an introduction. Journal of the American Medical Informatics Association, 
+18(5), 544–55 1. https://doi.org/1 0.1136/amia jnl-20 11-000464 
+Obermey er, Z., Powe rs, B., Vogeli, C., & Mullainathan, S. (2019). Dissecting racial bias in 
+an algorithm used to manage the health of populations. Science, 366(646 4), 
+447–453. https://doi.org/1 0.1126/SCIENCE.AAX2342/SUPPL_FILE/AAX2342_ 
+OBERMEYER_SM.PDF 
+Obuobi, S., Chua, R. F. M., Besser, S. A., Tabit, C. E., S, O., RFM, C., SA, B., & CE, T. (202 1). 
+Social dete rminants of health and hospital readmissions: Can the HOSPIT AL risk score be impro ved by the inclusion of social factors. BMC Health Services Resear ch, 
+21(1), 5. https://doi.org/1 0.1186/S1 2913-020-05989-7 
+Omobola ji Alabi, R., Almangush, A., Elmusrati, M., Leivo, I., & Mäkitie, A. A. (2022). An 
+interpr etable machine learning prognostic system for risk stratification in or-
+opharyngea l cancer. International Journal of Medical Informatics, 168, Article 
+104896. https://doi.org/1 0.1016/J.IJMEDINF .2022. 104896 
+Patra, B. G., Sharma, M. M., Vekaria, V., Adekkanattu, P., Patterson, O. V., Glicksberg, B., 
+Lepow, L. A., Ryu, E., Biernacka, J. M., Furmanchuk, A., George, T. J., Hogan, W., Wu, 
+Y., Yang, X., Bian, J., Weissman, M., Wickr amaratne, P., Mann, J. J., Olfson, M., ... 
+Pathak, J. (202 1). Extracting social determinants of health from electronic health 
+recor ds using natural language processing: a syste matic revie w. Journal of the 
+American Medical Informatics Association, 2021, 1–12. https://doi.org/1 0.1093/ 
+JAMIA/OCAB1 70 
+Rajkomar, A., Hardt, M., How ell, M. D., Corra do, G., & Chin, M. H. (2018). Ensuring 
+fairness in machine learning to adva nce health equity. Annals of Internal Medicine, 
+169(1 2), 866–872. https://doi.org/1 0.7326/M1 8-1990 
+Reshetn yak, E., Ntamatungiro, M., Pinheiro, L. C., How ard, V. J., Carson, A. P., Martin, K. 
+D., & Safford, M. M. (2020). Impact of multiple social determinants of health on 
+incident stroke. Stroke, 51(8), 2445–2453. https://doi.org/1 0.1161/STR OKEAHA. 
+120.028530 
+Romagnoli, K. M., Handler, S. M., & Hochheiser, H. (2013). Home care: More than just a 
+visiting nurse. BMJ Quality & Safety, 22(1 2), 972. https://doi.org/1 0.1136/BMJQS- 
+2013-002339 
+Romero-Brufau, S., Wyatt, K. D., Boyum, P., Mickelson, M., Moore, M., & Cognetta- 
+Rieke, C. (2020). Implementation of Artificial Intellig ence-Based clinical decision 
+support to reduce hospital readmissions at a regional hospital. Applied Clinical 
+Informati cs, 11(4), 570–5 77. https://doi.org/1 0.1055/s-0 040-1 715827 
+Ronquillo, C. E., Mitchell, J., Alhuw ail, D., Peltonen, L. M., Topaz, M., & Bloc k, L. J. (2022). 
+The untapped potential of nursing and allied health data for impro ved re-
+presentat ion of social determinants of health and intersectionality in artificial 
+intellig ence applications: A rapid revie w. Yearbook of Medical Informatics, 31(1), 
+94–99. https://doi.org/1 0.1055/S-0 042-1 742504/BIB 
+Rossetti, S. C., Dykes, P. C., Knaplund, C., Kang, M. J., Schnock, K., Garcia, J. P., Fu, L. H., 
+Chang, F., Thai, T., Fred, M., Korach, T. Z., Zhou, L., Klann, J. G., Albers, D., Schw artz, 
+J., Low enthal, G., Jia, H., Liu, F., & Cato, K. (202 1). The Communicating Narr ative 
+Concerns Enter ed by Registered Nurses (CON CERN) clinical decision support early 
+warning syste m: Prot ocol for a cluster randomized pragmatic clinical trial. JMIR 
+Resear ch Protocols, 10(12), https://doi.org/1 0.2196/30238 
+Schw artz, J. M., George, M., Rossetti, S. C., Dykes, P. C., Minshall, S. R., Lucas, E., & Cato, 
+K. D. (2022). Factors influencing clinician trust in predicti ve clinical decision 
+support systems for in-hospital deterior ation: Qualitative descriptiv e study. JMIR 
+Human Factors, 9(2), https://doi.org/1 0.2196/33960 
+Segar, M. W., Hall, J. L., Jhund, P. S., Powe ll-W iley, T. M., Morris, A. A., Kao, D., Fonaro w, 
+G. C., Hernandez, R., Ibrahim, N. E., Rutan, C., Navar, A. M., Stevens, L. M., & Pande y, 
+A. (2022). Machine learning–based models incorporating social determinants of 
+health vs traditional models for predicting in-hospital mortality in patients with 
+heart failure. JAMA Cardiology, 7(8), 844–854. https://doi.org/1 0.1001/ 
+JAMA CARDIO.2022. 1900 
+Seligman, B., Tuljapur kar, S., & Rehkopf, D. (2018). Machine learning approache s to the 
+social determinants of health in the health and retir ement study. SSM - Population 
+Health, 4, 95–99. https://doi.org/1 0.1016/J.SSMPH.20 17.11.008 
+Tougui, I., Jilbab, A., & Mhamdi, J. El (202 1). Impact of the choice of cross-v alidation 
+techniq ues on the results of machine learning-based diagnostic applications. 
+Healthcare Informatics Resear ch, 27(3), 189. https://doi.org/1 0.4258/HIR.202 1.27.3. 
+189 
+Truong, H. P., Luke, A. A., Hammond, G., Wadhera, R. K., Reidhead, M., & Joynt Maddo x, 
+K. E. (2020). Utilization of social determinants of health ICD-1 0 Z-codes among 
+hospitalized patients in the United States, 2016-20 17. Medical Care, 58(1 2), 1037. 
+https://doi.org/1 0.1097/MLR.0 000000000001418 
+Vest, J. R., & Ben-Assuli, O. (2019). Prediction of emergency department revisits using 
+area- level social determinants of health measures and health information ex-
+change information. International Journal of Medical Informatics, 129, 205–2 10. 
+https://doi.org/1 0.1016/J.IJMEDINF .2019.06.0 13 
+Wang, Y., & Wang, T. (2020). Application of impro ved LightGBM model in blood glucose 
+prediction. Applied Sciences, 10(9), 3227. https://doi.org/1 0.3390/APP1 009322 7 
+Wray, C. M., Tang, J., López, L., Hoggatt, K., & Keyhani, S. (2022). Association of social de-
+terminants of health and their cumulativ e impact on hospitalization among a national 
+sample of community-dw elling US adults. Journal of General Internal Medicine, 37(8), 
+1935–1 942. https://doi.org/1 0.1007/S1 1606-02 1-07 067- Y/FIGURES/1 
+Yang, M.Y., Kwak, G.H., Pollard, T., Celi, L.A., & Ghassemi, M. (2023, August). Evaluating 
+the impact of social dete rminants on health prediction in the intensi ve care unit. 
+In Proceedings of the 2023 AAAI/A CM Conference on AI, Ethics, and Society (pp. 
+333-350). 
+Zhang, Y., Zhang, Y., Sholle, E., Abedian, S., Sharko, M., Turchioe, M. R., Wu, Y., & Ancker, 
+J. S. (2020). Assessing the impact of social determinants of health on predicti ve 
+models for potentially avoidable 30-day readmission or death. PLoS ONE, 15(6), 
+https://doi.org/1 0.1371/JOURN AL.PONE.0235064 
+Zhao, Y., Wood, E. P., Mirin, N., Cook, S. H., & Chunara, R. (202 1). Social determinants in 
+machine learning cardio vascular disease prediction models: A systematic revie w. 
+American Journal of Prev entiv e Medicine, 61(4), 596–605. https://doi.org/1 0.1016/J. 
+AMEPRE.202 1.04.0 16  M. Hobensack , A. Davoudi, J. Song et al. Nursing Outlook 73 (2025) 102431 
+7 
+

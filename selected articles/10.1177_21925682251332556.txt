@@ -1,0 +1,503 @@
+Original Research
+Global Spine Journal
+2025, Vol. 0(0) 1 –10
+© The Author(s) 2025
+Article reuse guidelines:sagepub.com/journals-permissions
+DOI: 10.1177/21925682251332556
+journals.sagepub.com/home/gsjPredictive Value of Social Determinants of
+Health on 90-Day Readmission and Health
+Utilization Following ACDF: A Comparative
+Analysis of XGBoost, Random Forest,
+Elastic-Net, SVR, and Deep Learning
+Samuel G. Reyes, BS1, Pranav M. Bajaj, BS1, Daniel E. Herrera, BS1,
+Steven S. Kurapaty, MD1, Austin Chen, BS1, Rushmin Khazanchi, BA1, Anitesh Bajaj, BS1,
+Wellington K. Hsu, MD1, Alpesh A. Patel, MD, MBA1, and Srikanth N. Divi, MD1
+Abstract
+Study Design: Retrospective cohort.
+Objective: Despite numerous studies highlighting patient comorbidities and surgical factors in postoperative success, the role
+of social determinants of health (SDH) in anterior cervical discectomy and fusion (ACDF) outcomes remains unexplored. Thisstudy evaluates the predictive impact of SDH on 90-day readmission and health utilization (HU) in ACDF patients using machinelearning (ML).
+Methods: We analyzed 3127 ACDF patients (2003-2023) from a multisite academic center, incorporating over 35 clinical and
+demographic variables. SDH characteristics were assessed using the Social Vulnerability Index. Primary outcomes included 90-day readmission and postoperative HU. ML models were developed and validated by the area under the curve (AUC) forreadmission and mean absolute error (MAE) for HU. Feature importance analysis identi ﬁed key predictors.
+Results: Balanced Random Forest (AUC = 0.75) best predicted 90-day readmission, with length of stay, Elixhauser score, and
+Medicare status as top predictors. Among SDH factors, minority status & language, household composition & disability,socioeconomic status, and housing type & transportation were in ﬂuential. Support Vector Regression (MAE = 1.96) best
+predicted HU, with perioperative duration, socioeconomic status, and minority status & language as key predictors.
+Conclusions: Findings highlight SDH ’s role in ACDF outcomes, suggesting the value of stratifying for interventions such as
+targeted resource allocation, language-concordant care, and tailored follow-up. While reliance on a single healthcare system andproxy SDH measures are limitations, this is the ﬁrst study to apply ML to assess SDH in ACDF patients. Further validation with
+direct patient-reported SDH data is needed to re ﬁne predictive models.
+Keywords
+machine learning, social determinants of health, ACDF, readmission, and health utilization
+1Department of Orthopaedic Surgery, Northwestern University Feinberg School of Medicine, Chicago, IL, USA
+Corresponding Author:
+Samuel G. Reyes, Department of Orthopaedic Surgery Feinberg School of Medicine, Northwestern University, 676 North St. Clair Street, Suite 1350, Ch icago,
+IL 60611, USA.Email: samuel.reyes@northwestern.edu
+Creative Commons Non Commercial No Derivs CC BY-NC-ND: This article is distributed under the terms of the Creative Commons
+Attribution-NonCommercial-NoDerivs 4.0 License ( https://creativecommons.org/licenses/by-nc-nd/4.0/ ) which permits non-commercial
+use, reproduction and distribution of the work as published without adaptation or alteration, without further permission provided the
+original work is attributed as speci ﬁed on the SAGE and Open Access pages ( https://us.sagepub.com/en-us/nam/open-access-at-sage ).
+
+Introduction
+Health encompasses physical, mental, and social well-being,
+all of which are in ﬂuenced by Social Determinants of Health
+(SDH). These components are vital for physicians to provide
+equitable and culturally competent care while delivering high-quality healthcare.
+1Key aspects of SDH include education,
+healthcare access, geographical location, and economicconditions, which collectively contribute to health disparitiesamong different demographics. Evidence shows that thesefactors affect patient outcomes across various medicaldisciplines.
+2,3In orthopaedic surgery, SDH in ﬂuences out-
+comes in surgeries involving the hand, shoulder, and joints.4,5
+Moreover, key elements such as housing, transportation, in-
+surance, language, disability, and socioeconomic status areneeded to further understanding the impact on spine surgery.
+6
+Nonetheless, there is a notable gap in research regarding theimpact of SDH on spine surgery.
+Anterior cervical discectomy and fusion (ACDF) is a
+workhorse approach for treating symptomatic cervical disease
+and is one of the most commonly performed spine proce-
+dures.
+7ACDF has been shown to alleviate pain and disability,
+and overall has lower complication rates compared to otherspine surgeries.
+8,9However, given the increasing volume of
+ACDFs performed nationwide, there is a lack of under-standing regarding speci ﬁc drivers of complications. While
+studies have linked various comorbidities to postoperativesuccess, little is known regarding the impact of SDH on
+cervical spine surgery.
+As with any large dataset, including SDH-related char-
+acteristics alongside clinical and surgical parameters presentschallenges for data analysis due to the increasing number ofvariables. Machine learning (ML) offers considerable ad-vantages in managing complex datasets, identifying patterns,and making accurate predictions. Unlike traditional statistics,which rely on preprogrammed rules and assumptions, ML
+algorithms learn based on the data provided and generate
+improved models over time.
+10It should be noted that ML is
+not intended to replace traditional statistics but rather harnessits predictive ability as another tool in a clinician ’s decision-
+making toolbox.
+ML has been applied to ACDF populations, focusing on its
+application and impact on clinical outcomes.
+11-14To sum-
+marize, patient demographics /C0such as age, obesity, and ASA
+classi ﬁcation/C0are amongst the most predictive factors.
+Moreover, prior research has established the 90-day postop-erative period as a meaningful time point for evaluating bothcost and surgical outcomes, with admission rates ranging from5-13%.
+15,16To our knowledge, no prior study has incorpo-
+rated a broad range of SDH variables. By integrating thesefactors, our study provides a more comprehensive under-
+standing, offering insights that may aid clinicians in risk
+mitigation and targeted intervention strategies /C0ultimately
+reducing cost and improving patient outcomes. The primaryobjective of this study is to predict 90-day readmission rates,as well as overall health utilization (HU) using an extensive
+array of demographic, clinical, surgical, and SDH variables inACDF patients. The secondary objective is to evaluate theimpact of SDH-related factors impact on ACDF outcomes,providing further evidence of their clinical signi ﬁcance.
+Methods
+Adult patients who underwent single or multilevel ACDF for
+degenerative cervical disease at a multi-center academichealth system between 2003-2023. Patients were identi ﬁed
+from the electronic medical record (EMR) using NorthwesternMedicine Enterprise Datawarehouse, with data extractionbeing classi ﬁed using standardized current procedural ter-
+minology (CPT) codes for information collection. To mini-
+mize selection bias, only patients with completed informationbelow and follow-up data were included in the ﬁnal analysis.
+A total of 40 clinical variables, including demographics
+(age, sex, body mass index [BMI], etc.), past medical history(American Society of Anesthesiologists [ASA] class, Elix-hauser Comorbidities score, etc.), past medication history(antibiotic, neuromodulator [gabapentin, pregabalin, etc.],
+benzodiazepine), past surgical history, total perioperative
+duration (de ﬁned by the total time spend in the operating room
+[OR], total surgery time from incision to closure, and totaltime under anesthesia), postoperative complications, 30-dayreadmission, and 90-day readmission were included. Patientswere excluded if they underwent surgery for malignancy,trauma, infection or if key clinical variables were missing.Data inconsistencies were managed by performing periodic
+chart reviews and cross-referencing EMR records for accu-
+racy. If discrepancies could not be resolved, the patient wereexcluded from the analysis.
+The Social Vulnerability Index (SVI) was used to assess
+SDH at the census tract level. SVI scores were derived fromthe U.S. Census Bureau, which provides validated demo-graphics metrics. The Geocodio platform was utilized to as-sign patient addresses to census tracts, ensuring alignment
+with census tract boundaries. The SVI ranks each tract based
+on 15 social factors (i.e., poverty, lack of vehicle access, andcrowded housing). These factors are grouped into four sub-domains: socioeconomic status, household composition, mi-nority status and language, housing type and transportation.Each sub-domain is scored from 0 to 1 at the census tract level,with higher scores re ﬂecting greater social vulnerability. The
+overall SVI score is computed by summing the sub-domain
+scores and normalizing them to percentile ranking. To validate
+the SVI assignment, the values were cross-referenced with theCenters for Disease Control and Prevention (CDC), a publiclyavailable geographic dataset.
+The primary outcomes were 90-day readmission and
+postoperative HU. 90-day readmission is de ﬁned as any in-
+patient admission within 90 days of ACDF. HU was calculatedas the sum of all emergency department or urgent care visits,
+invasive procedures (including cardiac catheterization, IVC2 Global Spine Journal 0(0)
+
+placement, and laryngoscopy), non-routine testing (e.g.,
+electromyography), and non-routine imaging (computed to-mography, magnetic resonance imaging) in the ﬁrst 90 days
+after surgery.
+Statistics
+Data was analyzed using RStudio v. 2024.12.0 + 467 (RStudioPBC Boston). Statistical analysis was completed to showcomparison between readmission vs non-readmission groups.A sub-analysis was conducted between single vs multi-levelfusions. Differences between groups were detected using thestudent ’sttest for means and chi-squared test for categorical
+variables. A P-value of <0.05 was considered signi ﬁcant.
+Machine Learning
+ML models were run using custom Python scripts and were
+validated by the area under the curve (AUC) for a 90-dayreadmission and mean absolute error (MAE) for HU. The datawas split into training/testing sets. An 80/20 train-test split wasselected as it provides a balance between training the model on
+sufﬁcient data while reserving enough unseen data to evaluate
+generalized performance. This proportion is commonly usedin ML studies to ensure model robustness while preventingoverﬁtting. Validation was performed on withheld test data
+following optimization. For 90-day readmission, ExtremeGradient Boosted Tree Classi ﬁer (XGBoostC), Balanced
+Random Forest (BRF), Elastic-Net Penalized Logistic Re-gression (ENet), and Deep Learning Neural Net (DNN) were
+used given the categorical nature of the outcome. Alterna-
+tively, Extreme Gradient Boosted Tree Regressor(XGBoostR), Random Forest (RF), and Support Vector Re-gression (SVR) were used for HU as a continuous type ofoutcome. The algorithms were selected based on their strengthin handling structured clinical data, prevalence within thecurrent literature, ability to manage class imbalance andnonlinear relationships.
+To further mitigate over ﬁtting, hyperparameter tuning was
+performed using Bayesian Search Algorithm over 15 itera-tions and across 5-fold cross-validation. This optimizationcriteria were model speci ﬁc: mean AUC was used for clas-
+siﬁcation models (XGBoostC, BRF, ENet, and DNN) and
+mean MAE for regression models (XGBoostR, RF, SVR). Thebest-performing hyperparameters were selected based onthese respective metrics. Tuned hyperparameters varied by
+model but included learning rate, tree depth, and number of
+estimators, among others. Furthermore, inverse classweighting based on frequencies were used to address classimbalances. This approach ensured robust parameters selec-tions while minimizing over ﬁtting and avoiding data
+imbalance.
+The DNN model was created using Sequential API
+(Tensor ﬂow Keras) library with an input layer connecting to a
+deeper connected layer, dropout layers to prevent over ﬁtting,and an output layer with a sigmoid activation function.
+Similarly, hypertuning and inverse class weighting were usedbased on previously mentioned methods.
+The best-performing models were determined by the
+highest mean AUC and lowest mean MAE. Feature selectionwas not conducted prior to model development; all featureswere included in training/testing to allow the models to au-tonomously determine relevant predictors. This approach was
+chosen to avoid potential bias from arbitrary feature exclu-
+sions and to ensure no potentially important variables wereomitted before model optimization. Feature importance wasevaluated using SHAP values to understand the relativecontribution of each feature. Additionally, the whole processwas repeated 50 times to ensure randomness was preserved,given the repeated data partition throughout the analysis.Feature importance plots were created based on the best-
+performing models. Standard deviations were calculated for
+AUC and feature importance. A histogram was created ofsome of the top predictors for 90-day readmission and HU. AllML models were run using their respective implementations inPython: scikit-learn, shap, Tensor ﬂow, and Keras packages.
+Results
+A total of 3127 patients met the inclusion criteria and were
+included in our sample, with demographics shown in Table 1 .
+The average age was 55.9 years (SD 12.0). Our cohort had aslightly higher number of males (50.2%), multilevel fusions(65%), and ASA class of either 1 or 2 (56.3%). The 30-day and90-day readmission rates were 7.1% and 9.8%, respectively.The comparison analysis showed a signi ﬁcant differenceTable 1. Demographic for ACDF Cohort.
+Age (years, SD) 55.9 (12.0)
+Body mass index (kg/m2, SD) 29.3 (5.6)
+Sex, n (%)
+Male 1569 (50.2)Female 1558 (49.8)
+ACDF level, n (%)
+Single 1093 (35.0)Multilevel 2034 (65.0)
+ASA class, n (%)
+1 9.7 (3.1)2 1665 (53.2)>3 1365 (43.7)
+30-day readmission, n (%) 223 (7.1)90-day readmission, n (%) 306 (9.8)HU (SD) 5 (3)
+Demographics, including sex, age, and body mass index are listed. Variables are
+given as number of samples [n] with percentages (%) or mean with standarddeviation (SD). ASA (American society of anesthesiologists) class represents apatient ’s health status before a procedure, with lower scores representing
+better pre-operative health. HU (health utilization) represents the degree ofmedical services used in the ﬁrst 90 days after surgery, with higher scores
+representing higher utilization.Reyes et al. 3
+
+between readmission patients for the following factors: age,
+BMI, LOS, total perioperative duration, ASA class, dischargestatus, insurance, preoperative neuromodulator use, priorsurgical history of cervical/thoracolumbar, Elixhauser andMFI-11 scores ( P< 0.05, Table 2 ). The sub-analysis was
+insigni ﬁcant comparing single vs multilevel fusions ( P=
+0.49). After ML, BRF performed the best for 90-day read-mission with an AUC of 0.75 ± 0.02 ( Table 3 ). Our analysisTable 2. Comparison Between Readmission vs Non-readmission Patients.
+Non-Readmission Readmission P-Value Signi ﬁcant ( P< 0.05)
+Age (mean ± SD) 55.36 ± 11.89 60.89 ± 12.00 1.679972e-13 *
+LOS (mean ± SD) 2.03 ± 2.89 4.28 ± 5.71 5.58542e-11 *
+BMI (mean ± SD) 29.17 ± 5.52 30.03 ± 5.91 0.01590992 *
+Surgery duration (hours, mean ± SD) 2.95 ± 1.50 3.36 ± 1.71 6.759281e-05 *OR duration (hours, mean ± SD) 3.58 ± 1.64 4.00 ± 1.81 0.00012301 *Anesthesia duration (hours, mean ± SD) 3.73 ± 1.65 4.14 ± 1.79 0.00013564 *Elixhauser score (mean ± SD) 1.84 ± 1.79 3.03 ± 2.32 1.619484e-16 *MFI-11 score (mean ± SD) 0.96 ± 1.06 1.55 ± 1.28 6.673315e-14 *Socioeconomic (mean ± SD) 0.33 ± 0.26 0.34 ± 0.27 0.3825936Household composition & disability (mean ± SD) 0.34 ± 0.25 0.36 ± 0.27 0.1334524Minority status & language (mean ± SD) 0.49 ± 0.24 0.48 ± 0.23 0.5770545Housing type & transportation (mean ± SD) 0.36 ± 0.28 0.37 ± 0.29 0.8323137Overall SVI rank (mean ± SD) 0.32 ± 0.27 0.34 ± 0.27 0.435618
+Antibiotic use (n) 1268 132 0.5859552
+ASA class (n)
+1 90 7 6.738308e-22 *2 1574 913 1138 19641 9 1 2
+Preoperative benzodiazepine use (n) 1570 182 0.2228001Fusion level (n)
+Single 992 101 0.4908564Multiple 1829 205
+Discharge disposition (n)
+Acute inpatient rehab 123 54 2.126382e-24 *
+Skilled nursing or subacute rehab facility 32 12Home 2666 240
+Gender (n)
+Female 1421 137 0.07170023Male 1400 169
+Tobacco history (n) 186 27 0.1766175Insurance (n)
+Medicare 687 152 6.673622e-20 *Medicaid 227 30Commercial/managed care 642 44BCBS 1136 71
+Worker ’s compensation 116 6
+Self-pay 5 2Tricare 8 1
+Language (n)
+English 2758 302 0.3933827Spanish 47 2Non-English/Spanish 16 2
+Preoperative neuromodulator use (n) 1271 179 9.954707e-06 *PSHx of cervical spine (n) 591 79 0.05776597PSHx of thoracolumbar spine (n) 271 44 0.01125707 *
+Variables included were either categorical (n = count number) or continuous (mean ± SD or Standard Deviation). LOS = length of stay. PSHx = prior surger yical
+history. These were analyzed against readmission vs non-readmission cohorts. * denotes a P-value of <0.05.4 Global Spine Journal 0(0)
+
+found that minority status & language, housing type &
+transportation, socioeconomic, household composition &disability, and overall SVI value in the top 20 most importantfactors for predicting readmission ( Figures 1 and2). Other top
+predictors included length of stay (LOS), Elixhauser score,
+and Medicare status. The mean HU score was 5 ± 3 with SVRperforming the best for health utilization (MAE 1.96 ± 0.07,Table 3 ). Socioeconomic status, minority status & language,
+and household composition & disability were amongst the top20 predictors of HU ( Figures 1b and2). Additionally, total
+perioperative duration variables —deﬁned by total operating
+room (OR) time, total surgery time (incision to closure), and
+total time under anesthesia —were the top predictors for HU
+following ACDF. Besides the similar SDH variables that werefound to be important towards the predictability of bothmodels, other overlapping features between the two outcomesincluded age, LOS, ASA Class 2, postoperative neuro-modulation use, BMI, insurance status (i.e., Medicare), bothElixhauser and MFI-11 scores ( Figure 1(a) and (b) ). To further
+illustrate the racial and ethnic breakdown of our cohort, we
+included a histogram of the Minority Status & Language
+variable ( Figure 3 ).
+Discussion
+SDH are recognized for their in ﬂuence on patient ’s health
+beyond conventional clinical parameters. These factors, suchas minority status and education, have been shown to sig-niﬁcantly in ﬂuence both clinical outcomes and patient lon-
+gevity.
+17In recent years, the application of ML in predicting
+surgical outcomes has increased. While traditional statisticsare crucial for understanding linear relationships throughhypothesis testing, ML excels at capturing complex patterns
+over large datasets while adapting new data to predictoutcomes more accurately. ML has been applied in various
+ﬁelds to improve the decision-making between clinicians and
+patients, with practical applications such as predicting read-mission for heart failure patients.
+2Several studies have uti-
+lized ML in predicting surgical outcomes in ACDFpopulations; however, no prior study has conducted an in-
+depth analysis of SDH ’si nﬂuence on 90-day readmission or
+HU using ML.
+12,14,18
+In this study, several ML models were utilized to predict
+90-day readmission and HU in ACDF patients. BRF per-formed the best for predicting 90-day readmission, achievingan AUC of 0.75. SVR produced the best MAE of 1.96 for HU(Table 3 ). These results, as previously mentioned, likely re ﬂect
+BRF’s ability to handle class imbalance while enhancing
+discriminative power, and SVR ’s strength in capturing
+complex, non-linear relationships with robust outliers.
+19
+Feature importance analysis revealed that, besides SDHfactors, other clinical variables such as LOS and total peri-operative duration were among the top predictors for both 90-day readmission and HU. Additionally, some of these pre-dictors were reinforced by the ﬁndings of our comparison
+analysis for 90-day readmission with factors such as LOS,
+Elixhauser score, insurance, age, BMI, ASA class, and
+perioperative duration being found to be statistically signi ﬁ-
+cant ( Table 2 ). Notably, multiple SVI-related variables, in-
+cluding socioeconomic status, household composition &disability, minority status & language, housing type &transportation, and the overall SVI ranking were not found tobe signi ﬁcant using traditional statistics but emerged as im-
+portant predictors in our ML model ( Figure 1(a) and (b) ). This
+underscores the advantage of ML in capturing complex,
+multifactorial relationships that in ﬂuence patient trajectories
+beyond isolated variable comparisons, offering a morecomprehensive approach to risk strati ﬁcation.
+To our knowledge, this is the ﬁrst study to assess the impact
+of SDH on ACDF outcomes. Our ﬁndings align with other
+outcomes research within spine and orthopaedics. A studyexamining minority differences discovered that Hispanic
+patients had higher rates of emergency department visits after
+lumbar fusion.
+20Additionally, one review of patients under-
+going spine and other orthopaedic procedures found that 64%of studies reported disparities affecting minorities.
+21Our
+analysis revealed that housing type & transportation, as well ashousehold vulnerability & disabled populations (increasednumber of young, old, disabled, or single-parent householdmembers), were predictors of 90-day readmission. When
+analyzing ACDF outcomes outside of SDH features, our
+results are consistent with the current literature. In one studyutilizing a smaller cohort of ACDF patients, several healthcomorbidities –such as pulmonary, endocrine, and GI con-
+ditions and age –were highly predictive of 90-day read-
+mission.
+12Similarly, our study found that Elixhauser score,
+MFI-11, and age were top predictors of 90-day readmission.Karabacak et al identi ﬁed age and factors such as preoperative
+laboratory values, diabetes mellitus, and current smoker statusTable 3. Model Performance for 90-Day Readmission and Health
+Utilization (HU).
+90-day readmission AUC ± SD (95% CI) SN/SP
+BRF 0.75 ± 0.02 (0.70-0.79) 0.74/0.67
+ENet 0.72 ± 0.05 (0.57-0.79) 0.71/0.67
+XGBoostC 0.70 ± 0.03 (0.67-0.76) 0.65/0.70DNN 0.68 ± 0.08 (0.67-0.69) 0.68/0.60
+HU MAE ± SD (95% CI) NA
+SVR 1.96 ± 0.07 (1.86-2.09) NARF 2.02 ± 0.06 (1.93-2.12) NAXGBoostR 2.15 ± 0.06 (2.03-2.27) NA
+Different models were used with 90-day readmission and HU as the outcome
+variables. A higher AUC (area under the curve) and a lower MAE (meanabsolute error) indicate a more predictive model. Results are shown as mean± standard deviation (SD) with 95% con ﬁdence intervals (CI). Sensitivity (SN)
+and speci ﬁcity (SP) included. The models used were extreme gradient boosted
+tree classi ﬁer (XGBoostC), balanced random forest (BRF), elastic-net pe-
+nalized logistic regression (ENet), deep learning neural net (DNN), extremegradient boosted tree regressor (XGBoostR), random forest (RF) and supportvector regression (SVR).Reyes et al. 5
+
+Figure 1. (a) Feature Importance Plot 90-Day Readmission. (b) Feature Importance Plot for Health Utilization. The plot, based on SHAP
+values, shows overall feature importance based on the best performing model for the 90-day readmission outcome. The order of feature
+listing on the y-axis denotes global variable importance to the model prediction with correlated mean SHAP value on x-axis. Variables include
+Length of stay (LOS), Blue Cross Blue Shield (BCBS), Body Mass Index (BMI), Operating room (OR), and Modi ﬁed Frailty Index-11 (MFI-II).6 Global Spine Journal 0(0)
+
+as predictors of readmissions and length of stay.22Interest-
+ingly, our analysis found ASA class and insurance status weretop predictors of 90-day readmission. ASA class has beencorrelated with ACDF readmission in traditional regressionanalysis.
+23Furthermore, a propensity-matched cohort com-
+paring Medicare and private insurance patients found lower
+readmission rates in the Medicare group, aligning with our
+traditional statistics analysis ( Table 2 ).24Contradictory, our
+predictive modeling identi ﬁed Medicare status as an impactful
+variable for readmission, highlighting its ability to account fornonlinear interactions and complex connections such as dif-ferences in baseline health, care coordination, and post-discharge support. For discharge status, Taylor et al. foundthat non-routine discharge status correlated with readmission
+rates, which agrees with our ﬁndings that discharge to acute
+inpatient rehab is predictive of readmission.
+25While home/
+self-care was identi ﬁed as a top predictor, further analysis is
+needed to determine whether its presence or absence is apositive or negative predictor. Limited studies examining theeffect of SDH on postoperative HU in ACDF found thatminority status patients were at risk for longer postoperativeLOS and medical complications compared to non-minority
+patients, directly contributing to higher HU rates in patients
+undergoing spine surgery.
+26Das et al. found that higher-
+income patients fared better than lower-income patients interms of complications following ACDF.
+27Although a direct
+comparison was not completed in ACDF populations, ourstudy was consistent with this association. Unsurprisingly, ourstudy found that perioperative duration was the top predictorof HU.
+28Longer total perioperative duration leads to higher
+risks of postoperative complications and necessitates addi-
+tional medical care, thereby increasing HU.29,30A retro-
+spective study found higher rates of postoperativecomplications such as thromboembolism, infection, andlength of stay linked to prolonged anesthesia time. Impor-tantly, these ﬁndings highlight an opportunity for clinical
+workﬂow integration, where automated ML-based risk
+stratiﬁcation tools could be incorporated into EMR systems to
+ﬂag high-risk patients preoperatively, allowing for earlier
+interventions and tailored postoperative planning. By iden-tifying patients at risk of increased HU or admission, clini-cians could allocate resources more ef ﬁciently, ensuring
+appropriate follow-up and patient education.
+These SDH-related factors, such as minority status &
+language, are likely contributing to poorer outcomes throughmultiple mechanism, including disparities in healthcare ac-
+cess, communication barriers, and differences in post-
+discharge support. Studies have found that language bar-riers are associated with higher healthcare cost and poorerhealth outcomes.
+31Patients with limited English pro ﬁciency
+may struggle to fully understand discharge instructions,medication adherence, and follow-up care which increases therisk of complications and subsequent healthcare utilization.
+32
+Studies have found that language concordance /C0patient and
+clinician speaking the same language /C0increases trust andunderstanding while reducing clinician frustration.33,34Im-
+plementing target interventions /C0such as SDH screening,
+tailored social work support, language-concordantstaff/C0could not only improve patient outcomes but also
+optimize resources by reducing preventable readmission andexcess HU, ultimately leading to cost savings for healthcare
+systems.
+Even looking into lumbar fusion populations, disparities in
+postoperative outcomes have been well documented, withhigher rates of pseudoarthrosis and postoperative complica-tions observed in groups with higher social vulnerability.
+6,35
+However, in a propensity-matched study, authors found no
+difference in readmission rates between disparity groups at 30and 90 days, suggesting that traditional statistics may not fully
+capture the complexity of these associations. Similarly,Figure 2. Histograms of top predictors for readmission and HU.
+(a) Length of stay in days (b) elixhauser score (c) total
+perioperative duration in hours. Color denotation of surgery time
+(blue bars), OR time (red), and anesthesia time (yellow).Reyes et al. 7
+
+Holbert et al. found no changes in 30-day readmission status
+amongst SDH variables.36In contrast, our ML analysis
+identi ﬁed multiple SVI-related factors as important predictors
+of 90-days. One possible explanation for this discrepancy isthe differing biomechanical and recovery pro ﬁles of lumbar vs
+cervical spine surgeries; ACDF patients may require addi-
+tional consultation from vascular or ENT for preoperative
+evaluation. Furthermore, differences in post-discharge carepathways /C0rehabilitation requirements or mobility limi-
+tations/C0may further contribute to observed impact of SDH
+factors in our cohort.
+This study is not without limitations. Our sample size was
+limited following data cleaning, resulting in a lower speci ﬁcity even
+for the best model. This indicates that the model had a reduced
+ability to accurately predi ct positive outcomes, speci ﬁcally patients
+who experienced readmission and HU. Increasing the sample sizein future studies could improve speci ﬁcity and consequently, AUC.
+Additionally, the analysis was conducted using data from a singlehealth system, which may limit generalizability to other institutionswith different patient demographics, healthcare infrastructures, andclinical work ﬂows. Future multi-institutional studies could help
+validate these ﬁndings in broader patient populations.
+Another limitation includes our reliance on proxy measures
+to estimate SDH, such as SVI, rather than direct patient re-ported data. While SVI provides valuable insights at a pop-ulation level, it may not fully capture nuanced, patient-speci ﬁc
+socioeconomic factors that contribute to health disparities.Additionally, while our analysis accounted for insurancetypes, it did not control for insurance compensation levels,which have been shown to in ﬂuence patient trajectories and
+healthcare utilization in spine surgery. Moreover, psycho-
+logical and social in ﬂuences, including factors related to
+secondary gain, may in ﬂuence patient behavior and post-
+treatment outcomes. While out study did not account forthese factors, incorporating direct patient-reported SDHmeasures in subsequent research may improve the compre-hensiveness of future studies. Furthermore, as a retrospectivestudy, this analysis is inherently subject to biases related tounmeasured confounders and coding inaccuracies. The use of
+ML in clinical decision making also raises ethical consider-ations, particularly regarding transparency, potential bias inalgorithmic decisions making, and the need for equitablemodel implementation. As ML becomes increasingly inte-grated into healthcare, it is essential to ensure that these tools
+are used to enhance /C0not replace /C0clinical judgment while
+mitigating risks of algorithmic bias and united disparities incare.
+Nevertheless, our ﬁndings are signi ﬁcant as they represent the
+ﬁrst reported analysis of the pred ictive effects of SDH in anterior
+cervical discectomy and fusion p atients, providing an important
+foundation for future research. B y leveraging these clinical and
+SDH-related factors, p redictive modeling can help identify high-
+risk patients more accurately, e nabling targeted interventions
+such as enhanced discharge planning, closer follow-up, andtailored resource allocation to r educe cost and readmission risk.
+Future studies can implement questionaries or surveys —such as
+the PRAPARE assessment tool —to directly query patients about
+a range of SDH characteristics, t hereby eliminating the need for
+proxy social vulne rability measures.
+37
+Conclusion
+Over the last decade, the growing body of literature on SDH
+has dramatically increased, supporting these factors as in-ﬂuential in medicine and surgery.
+38Several SDH variables
+were found to be top predictors of 90-day readmission and HUfollowing ACDF. These ﬁndings underscore the potential
+value of integrating SDH assessments into preoperative risk
+stratiﬁcation, allowing for targeted interventions such as social
+work consultation, language-concordant care, and tailoredpost-operative follow up. Demonstrating the predictive valueof SDH in diverse populations will require prospective, multi-institutional studies to further enhance clinical applicabilityand re ﬁne risk strati ﬁcation models. Additionally, developing
+and validating ML-based clinical decision support tools thatintegrate SDH factors could help re ﬁne risk assessment and
+improve postoperative care pathways. By further investigating
+the intersection between SDH and spine surgery, researcherscan enhance predictive modeling approaches and promotehigh-quality care delivery.
+Declaration of Con ﬂicting Interests
+The author(s) declared no potential con ﬂicts of interest with respect to
+the research, authorship, and/or publication of this article.
+Funding
+The author(s) received no ﬁnancial support for the research, au-
+thorship, and/or publication of this article.
+IRB Statement
+IRB approval was granted by our institution to perform this research.Figure 3. Histogram of minority status & language. Distribution of
+the Minority Status & Language variable, with patient count on the
+y-axis and the SVI-derived rank score (0 to 1) on the x-axis.8 Global Spine Journal 0(0)
+
+ORCID iDs
+Samuel G. Reyes https://orcid.org/0000-0002-8073-1051
+Daniel E. Herrera https://orcid.org/0009-0009-3487-3073
+References
+1. Spruce L. Back to basics: social determinants of health. AORN J .
+2019;110(1):60-69. doi: 10.1002/aorn.12722
+2. Song X, Tong Y, Xian F, Luo Y, Tong R. Predicting 1 year
+readmission for heart failure: a comparative study of machinelearning and the LACE index. ESC Heart Fail . 2024;11:
+2648-2660. doi: 10.1002/ehf2.14855
+3. Quinones J, Hammad Z. Social determinants of health and
+chronic kidney disease. Cureus . 2020;12(9):e10266. doi: 10.
+7759/cureus.10266
+4. Crijns TJ, Bernstein DN, Ring D, Gonzalez R, Wilbur D,
+Hammert WC. Factors associated with a discretionary upper-extremity surgery. J Hand Surg Am . 2019;44(2):155. doi: 10.
+1016/j.jhsa.2018.04.028
+5. Rubenstein WJ, Harris AHS, Hwang KM, Giori NJ, Kuo AC.
+Social determinants of health and patient-reported outcomesfollowing total hip and knee arthroplasty in veterans.J Arthroplast . 2020;35(9):2357-2362. doi: 10.1016/j.arth.2020.
+04.095
+6. Reyes SG, Bajaj PM, Alvandi BA, Kurapaty SS, Patel AA, Divi
+SN. Impact of social determinants of health in spine surgery.Curr Rev Musculoskelet Med . 2023;16(1):24-32. doi: 10.1007/
+s12178-022-09811-1
+7. Buttermann GR. Anterior cervical discectomy and fusion outcomes
+over 10 Years: a prospective study. Spine (Phila Pa 1976) . 2018;
+43(3):207-214. doi: 10.1097/BRS.0000000000002273
+8. Redaelli A, Bellosta-López P, Langella F, et al. The positive side
+effect of anterior cervical decompression and fusion on axialneck pain. Glob Spine J 2024;21925682241254036. doi: 10.
+1177/21925682241254036
+9. Kim LH, D ’Souza M, Ho AL, et al. Anterior techniques in
+managing cervical disc disease. Cureus . 2018;10(8):e3146. doi:
+10.7759/cureus.3146
+10. Rajula HSR, Verlato G, Manchia M, Antonucci N, Fanos V.
+Comparison of conventional statistical methods with machine
+learning in medicine: diagnosis, drug development, and treat-ment. Medicina (Kaunas) . 2020;56(9):455. doi: 10.3390/
+medicina56090455
+11. Rodrigues AJ, Schonfeld E, Varshneya K, et al. Comparison of
+deep learning and classical machine learning algorithms topredict postoperative outcomes for anterior cervical discectomyand fusion procedures with state-of-the-art performance. Spine
+(Phila Pa 1976) . 2022;47(23):1637-1644. doi: 10.1097/BRS.
+0000000000004481
+12. Khazanchi R, Bajaj A, Shah RM, et al. Using machine learning and
+deep learning algorithms to predict postoperative outcomes fol-lowing anterior cervical discectomy and fusion. Clin Spine Surg .
+2023;36(3):143-149. doi: 10.1097/BSD.0000000000001443
+13. Geng EA, Gal JS, Kim JS, et al. Robust prediction of nonhome
+discharge following elective anterior cervical discectomy andfusion using explainable machine learning. Eur Spine J . 2023;
+32(6):2149-2156. doi: 10.1007/s00586-023-07621-8
+14. Powers AY, Chang DC, Stippler M, Papavassiliou E, Moses ZB.
+Public health insurance, frailty, and lack of home support predictrehab discharge following elective anterior cervical discectomyand fusion. Spine J . 2023;23(12):1830-1837. doi: 10.1016/j.
+spinee.2023.08.018
+15. Lee NJ, Lenke LG, Cerpa M, et al. The 90-day reoperations and
+readmissions in complex adult spinal deformity surgery. Glob
+Spine J . 2022;12(3):415-422. doi: 10.1177/2192568220953391
+16. Wang D, Liao W, Hu H, Lei X, Zheng X, Jin D. Risk factors for
+ninety-day readmission following cervical surgery: a meta-analysis. J Orthop Surg Res . 2022;17(1):477. doi: 10.1186/
+s13018-022-03377-x
+1 7 . R o yB ,K i e f eC I ,J a c o b sD R ,e ta l .E d u c a t i o n ,r a c e / e t h n i c i t y ,a n d
+causes of premature mortality among middle-aged adults in 4 US
+urban communities: results from CARDIA, 1985-2017.
+Am J Publ
+Health . 2020;110(4):530-536. doi: 10.2105/AJPH.2019.305506
+18. Shah AA, Devana SK, Lee C, et al. Development and external
+validation of a risk calculator for prediction of major compli-cations and readmission after anterior cervical discectomy andfusion. Spine (Phila Pa 1976) . 2023;48(7):460-467. doi: 10.
+1097/BRS.0000000000004531
+19. Kufel J, Bargiel-Laczek K, Kocot S, et al. What is machine
+learning, arti ﬁcial neural networks and Deep learning? examples
+of practical applications in medicine. Diagnostics . 2023;13(15):
+doi:10.3390/diagnostics13152582
+20. V olaski HA, Sharfman ZT, Sha h P, Eleswarapu A, Geller DS,
+Krystal J. Do racial disparities exist in a spine surgery practice thatserves a predominately minority population? Outcomes of trans-
+foraminal lumbar interbody fusion: a retrospective review. NA m
+Spine Soc J . 2022;12:100171. doi: 10.1016/j.xnsj.2022.100171
+21. Schoenfeld AJ, Tipirneni R, Nelson JH, Carpenter JE, Iwashyna
+TJ. The in ﬂuence of race and ethnicity on complications and
+mortality after orthopedic surgery: a systematic review of theliterature. Med Care . 2014;52(9):842-851. doi: 10.1097/MLR.
+0000000000000177
+22. Karabacak M, Bhimani AD, Schupper AJ, Carr MT, Steinberger
+J, Margetis K. Machine learning models on a web application to
+predict short-term postoperative outcomes following anterior
+cervical discectomy and fusion. BMC Muscoskelet Disord .
+2024;25(1):401. doi: 10.1186/s12891-024-07528-5
+23. Zeidan M, Goz V, Lakomkin N, Spina N, Brodke DS, Spiker
+WR. Predictors of readmission and prolonged length of stayafter cervical disc arthroplasty. Spine (Phila Pa 1976) . 2021;
+46(8):487-491. doi: 10.1097/BRS.0000000000003839
+24. Shah V, Rodrigues AJ, Malhotra S, et al. Clinical outcomes and cost
+differences between patients undergoing primary anterior cervical
+discectomy and fusion procedures with private or Medicare in-surance: a propensity score-matched study. World Neurosurg . 2023;
+173:e669-e676. doi: 10.1016/j.wneu.2023.02.129
+25. Taylor BES, Hilden P, Hansen RTB, Nanda A, Gillick JL.
+National rates, reasons, and risk factors for 30- and 90-dayreadmission and reoperation among patients undergoing anteriorcervical discectomy and fusion: an analysis using the nationwideReyes et al. 9
+
+readmissions database. Spine (Phila Pa 1976) . 2021;46(19):
+1302-1314. doi: 10.1097/BRS.0000000000004020
+26. Reyes AM, Katz JN, Schoenfeld AJ, Kang JD, Losina E, Chang
+Y. National utilization and inpatient safety measures of lumbarspinal fusion methods by race/ethnicity. Spine J . 2021;21(5):
+785-794. doi: 10.1016/j.spinee.2020.11.003
+27. Das A, Vazquez S, Stein A, et al. Disparities in anterior cervical
+discectomy and fusion provision and outcomes for cervical
+stenosis. N Am Spine Soc J . 2023;14:100217. doi: 10.1016/j.
+xnsj.2023.100217
+28. Vetter TR, Goeddel LA, Boudreaux AM, Hunt TR, Jones KA,
+Pittet JF. The Perioperative Surgical Home: how can it make thecase so everyone wins? BMC Anesthesiol . 2013;13:6. doi: 10.
+1186/1471-2253-13-6
+29. Bonnet JF, Buggy E, Cusack B, et al. Can routine perioperative
+haemodynamic parameters predict postoperative morbidity after
+major surgery? Perioper Med . 2020;9:9. doi: 10.1186/s13741-
+020-0139-6
+30. Phan K, Kim JS, Kim JH, et al. Anesthesia duration as an in-
+dependent risk factor for early postoperative complications inadults undergoing elective ACDF. Glob Spine J . 2017;7(8):
+727-734. doi: 10.1177/2192568217701105
+31. Lopez Vera A, Thomas K, Trinh C, Nausheen F. A case study of
+the impact of language concordance on patient care, satisfaction,
+and comfort with sharing sensitive information during medicalcare. J Immigr Minority Health . 2023;25(6):1261-1269. doi: 10.
+1007/s10903-023-01463-832. Diallo MS, Hasnain-Wynia R, Vetter TR. Social determinants of
+health and preoperative care. Anesthesiol Clin . 2024;42(1):
+87-101. doi: 10.1016/j.anclin.2023.07.002
+33. Daggett A, Abdollahi S, Hashemzadeh M. The effect of lan-
+guage concordance on health care relationship trust score.Cureus . 2023;15(5):e39530. doi: 10.7759/cureus.39530
+34. Haskard-Zolnierek K, Martin LR, Bueno EH, Kruglikova-
+Sanchez Y. Physician-patient communication and satisfaction
+in Spanish-language primary care visits. Health Commun . 2023;
+38(4):714-720. doi: 10.1080/10410236.2021.1973176
+35. Khalid SI, Maasarani S, Nunna RS, et al. Association between
+social determinants of health and postoperative outcomes inpatients undergoing single-level lumbar fusions: a matchedanalysis. Spine (Phila Pa 1976) . 2021;46(9):E559-E565. doi: 10.
+1097/BRS.0000000000003829
+36. Holbert SE, Andersen K, Stone D, Pipkin K, Turcotte J, Patton
+C. Social determinants of health in ﬂuence early outcomes
+following lumbar spine surgery. Ochsner J . 2022;22(4):
+299-306. doi: 10.31486/toj.22.0066
+37. Billioux AVK, Anthony S, Alley D. Standardized screening for
+health-related social needs in clinical settings: the accountablehealth communities screening tool. NAM Perspectives 2017.
+doi:10.31478/201705b
+38. Hood CM, Gennuso KP, Swain GR, Catlin BB. County health
+rankings: relationships between determinant factors and healthoutcomes. Am J Prev Med . 2016;50(2):129-135. doi: 10.1016/j.
+amepre.2015.08.02410 Global Spine Journal 0(0)
+

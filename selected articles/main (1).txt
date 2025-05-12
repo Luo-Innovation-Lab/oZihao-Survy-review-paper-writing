@@ -1,0 +1,774 @@
+Perspective
+Artiﬁcial intelligence, ChatGPT, and other large
+language models for social determinantsof health: Current state and future directions
+Jasmine Chiat Ling Ong,1,2Benjamin Jun Jie Seng,3,4Jeren Zheng Feng Law,5Lian Leng Low,4,6,7,8
+Andrea Lay Hoon Kwa,1,2,9Kathleen M. Giacomini,10and Daniel Shu Wei Ting11,12,13, *
+1Division of Pharmacy, Singapore General Hospital, Singapore, Singapore
+2SingHealth Duke-NUS Medicine Academic Clinical Programme, Singapore, Singapore
+3MOHH Holdings (Singapore) Pte., Ltd., Singapore, Singapore
+4SingHealth Duke-NUS Family Medicine Academic Clinical Programme, Singapore, Singapore
+5Department of Pharmacy, National University of Singapore, Singapore, Singapore
+6Population Health and Integrated Care Ofﬁce, Singapore General Hospital, Singapore, Singapore
+7Centre for Population Health Research and Implementation, SingHealth Regional Health System, Singapore, Singapore
+8Outram Community Hospital, SingHealth Community Hospitals, Singapore, Singapore
+9Emerging Infectious Diseases, Duke-NUS Medical School, Singapore, Singapore
+10Department of Bioengineering and Therapeutic Sciences, Schools of Pharmacy and Medicine, University of California, San Francisco, San
+Francisco, CA, USA
+11Artiﬁcial Intelligence and Digital Innovation Research Group, Singapore Eye Research, Singapore, Singapore
+12Duke-NUS Medical School, National University of Singapore, Singapore, Singapore
+13Byers Eye Institute, Stanford University, Stanford, CA, USA
+*Correspondence: daniel.ting@duke-nus.edu.sg
+https://doi.org/10.1016/j.xcrm.2023.101356
+SUMMARY
+This perspective highlights the importance of addressing social determinants of health (SDOH) in patient
+health outcomes and health inequity, a global problem exacerbated by the COVID-19 pandemic. We providea broad discussion on current developments in digital health and artiﬁcial intelligence (AI), including large lan-
+guage models (LLMs), as transformative tools in addressing SDOH factors, offering new capabilities for dis-
+ease surveillance and patient care. Simultaneously, we bring attention to challenges, such as data standard-ization, infrastructure limitations, digital literacy, and algorithmic bias, that could hinder equitable access toAI beneﬁts. For LLMs, we highlight potential unique challenges and risks including environmental impact, un-fair labor practices, inadvertent disinformation or ‘‘hallucinations,’’ proliferation of bias, and infringement ofcopyrights. We propose the need for a multitiered approach to digital inclusion as an SDOH and the devel-opment of ethical and responsible AI practice frameworks globally and provide suggestions on bridgingthe gap from development to implementation of equitable AI technologies.
+INTRODUCTION
+Globally, health equity is a pervasive and prevalent problem. In-
+dicators of health often follow a social gradient: the lower the so-
+cioeconomic position, the worse the health indicator.1,2Factors
+contributing to health indicators can be broadly classiﬁed into
+ﬁve key domains, genetics, behavior, environmental and phys-
+ical inﬂuences/environmental exposures, medical care, and so-cial,
+3of which social and behavioral factors account for up to
+60% premature deaths.4
+The COVID-19 pandemic, which led to lockdowns worldwide,
+occurred against this backdrop of existing health inequality.5
+COVID-19 infection and mortality rates were disproportionately
+higher in socially disadvantaged regions, racial and ethnic minor-
+ity groups, and marginalized populations across the globe.6,7In
+addition to a higher endemic prevalence of chronic diseasessuch as diabetes and cardiopulmonary conditions, social factors
+are thought to be key contributors to this observed phenome-non, e.g., living in crowded spaces, exposure to secondhand
+smoke, limited access to ambulatory or acute healthcare, and in-
+formation asymmetry.
+8,9This pandemic has thrown social deter-
+minants of health (SDOH) research into the global spotlight: to
+achieve the goal of global health equity, addressing SDOH is
+crucial.
+SDOH
+SDOH is deﬁned by the World Health Organization as non-med-
+ical conditions that affect one’s health and impact health-relatedoutcomes.
+10Conventionally, SDOH refers to the environments
+people reside and work in and encompasses systems and forces
+that inﬂuence one’s daily life such as policies related to the
+Cell Reports Medicine 5, 101356, January 16, 2024 ª2023 1
+This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ).ll
+OPEN ACCESS
+
+economy, political systems, and social norms. Its importance
+has led to development of initiatives such as ‘‘Healthy People
+2023’’ in the USA, which seeks to remove health disparities. Of
+note, ﬁve key domains related to SDOH were identiﬁed, namelyeconomic stability, education access and quality, healthcare ac-
+cess and quality, neighborhood and built environment, and
+lastly, social and community context.
+11
+A mounting body of evidence has shown that SDOH impacts
+health outcomes signiﬁcantly12: lead exposure in suboptimal
+residential areas is associated with poorer cognitive function
+and physical development in young children,13and air pollution,
+which is prevalent in disadvantaged regions, is causally related
+to exacerbations of respiratory diseases14; children growing up
+in impoverished communities are more likely to suffer fromemotional and mental stressors and subsequently are at higher
+risk for premature mortality.
+15
+Overall, despite the wealth of evidence available related to
+SDOH and health outcomes, there remain signiﬁcant evidencegaps in the literature, particularly with regard to SDOH with com-
+plex health interactions, which include intangible factors such as
+political, socioeconomic, and cultural constructs that are difﬁcultto quantify.
+16Signiﬁcant technical challenges lie in the designing
+of studies, as some factors may not be amenable to conventional
+studies such as randomized controlled trials.15This is also com-
+pounded by a long lag time to see the study effects and the need
+for collection of extensive sociodemographic and economic fac-
+tors. The advent of artiﬁcial-intelligence-related technologiesthat are able to analyze large volume of healthcare data may
+aid in allowing better risk stratiﬁcation of patients and eliciting
+understanding of the complex interactions between SDOH andhealth outcomes.
+Digital health and SDOH
+Digital health tools helped to address major global health chal-
+lenges through improved access to healthcare services,strengthened health promotion and disease prevention, and
+enhanced care experiences for professionals and patients.
+Core digital domains include telehealth and artiﬁcial intelligence(AI), supported by other technology domains such as big dataanalytics, the internet of things (IoT), next-generation networks
+(e.g., 5G), and privacy-preserving platforms, e.g., block-
+chain.
+17,18The COVID-19 global health crisis was a major turning
+point for digital health. Humanitarian and economic needs pre-
+sented by the pandemic are driving the development and adop-
+tion of new digital technologies at an unprecedented scale andspeed. Various digital technologies were in clinical implementa-
+tion during COVID-19. In particular, AI proved to be a powerful
+emerging technology that improved care during the pandemicin various ways: forecast of infectious disease dynamics and
+outcomes of public health interventions, disease surveillance
+and outbreak detection, real-time population monitoring, andtimely and accurate diagnosis of infections, as well as prognosisof disease severity.
+19
+The past months have seen an accelerated development in
+the ﬁeld of generative AI with the release of large languagemodels (LLM) such as GPT-4, ChatGPT, and bidirectional
+encoder representations from Transformers (BERT).
+20In brief,
+Transformer architecture, a type of neural network algorithm,forms the basis of LLMs—also known as ‘‘foundation models.’’
+Transformers learn contextual information from sequential data
+such as written text and audio signals.21LLMs, trained on a
+large corpus of data from a wide range of sources, containup to trillions of parameters that enable them to perform a
+broad variety of tasks without the need for speciﬁc training.
+Their application for the creation of new content has madethem a key technology in the ﬁeld of generative AI.
+22The devel-
+opment of ChatGPT is outlined in Figure 1 , illustrating the
+concept of reinforcement learning with human in the loop. In
+the biomedical space, proposed applications for LLMs arewide ranging
+23,24: drug discovery and genome analysis; medi-
+cal education; searching, analyzing, and interpreting large pa-
+tient datasets; and generating human-like responses toimprove physician-patient communication.
+Despite rapid technological advancements, a concerted effort
+to address barriers to digital health such as challenges related toleadership and strategic alignment, information and technologygovernance, data management capacity, and systems integra-
+tion, effective solution design is still lacking.
+25Low digital liter-
+acy, unequal access to digital health, and biased AI algorithmshave raised mounting concerns over health equity.
+26As AI appli-
+cations and LLM models become pervasive, we seek to under-
+stand the potential pitfalls of AI in driving health inequalitiesand identify key opportunities for AI in SDOH from a global
+perspective.
+OPPORTUNITIES FOR AI IN SDOH
+SDOH data used in AI models
+Current AI models incorporating SDOH utilize various levels of
+data: individual-patient-level data, state- or neighborhood-level
+data, or country-level data ( Figure 2 ). SDOH data are most
+collected by public health agencies. These datasets made avail-
+able to public are often aggregated and anonymized reports or
+ﬁgures. In AI model development, securing patient-level data isoften a priority.
+27Between high-income countries (HICs) and
+low- and middle-income countries (LMICs), we see a signiﬁcant
+difference in the amount of open-access patient-level data thatare availed under each SDOH domain. Table 1 illustrates exam-
+ples of common SDOH data used in AI algorithms. As discussed
+in the sections below, a lack of data standardization poses a sig-
+niﬁcant barrier to AI model development and validation acrossdifferent populations.
+SDOH extraction from electronic health records (EHRs)
+Up to 80% medical data are unstructured, and traditional
+means of extracting information from this text are manual andtime consuming. Qualitative information about patients’ lifestyle
+and social determinants is often embedded within unstructured
+clinical notes of EHRs. Advances in natural language process-ing (NLP) offer an efﬁcient and automated approach to identify,collect, and analyze useful SDOH information from existing
+EHR systems and databases.
+30Of note, deep learning (DL) al-
+gorithms such as CNNs (convolutional neural networks) andBERT have been applied to SDOH annotation from clinical un-
+structured text.
+31,32However, the NLP methodology with the
+best performance for identiﬁcation of less-well-studied SDOH
+2Cell Reports Medicine 5, 101356, January 16, 2024Perspectivell
+OPEN ACCESS
+
+and longitudinal analyses of SDOH-related data remains a topic
+of contention. LLMs have also been shown to have superior
+performance in the extraction of SDOH compared to structured
+data.33
+Research on SDOH and health outcomes
+Several reviews have evaluated the role of AI in assessing social
+determinants, especially substance abuse, employment status,and socioeconomic status on health outcomes.
+34Across these
+studies, the roles of AI and SDOH were most extensively evalu-
+ated in patients with mental health and chronic diseases such asdiabetes, particularly with the incorporation of SDOH factors for
+clinical risk prediction. The relationship between social determi-
+nants and health outcomes is often indirect and complex,involving different biopsychosocial processes.
+15Advancements
+in multilevel modeling have made it possible to combine individ-
+ual-level and group-level SDOH data to improve disease surveil-lance and prediction and evaluation of population health inter-ventions.
+35In addition, temporal evolution of SDOH factors,
+geospatial relationships, and their impact on health outcomes
+have also been poorly characterized by conventional statisticalmethods. AI models generally outperform parametric models in
+this respect.
+36However, inherent weaknesses such as lack of
+interpretability with consequent difﬁculty in deriving mechanisticexplanations may limit widespread application of AI models in
+SDOH assessment.
+Improve access to care
+AI healthcare applications range broadly from disease diagnosis,patient triage, disease surveillance, and prediction to personal-
+izing treatment, health policy, and planning.
+37Applications of AI
+in LMICs are still fairly limited in scope, most frequently adoptedfor the screening of non-communicable diseases such as diabetic
+retinopathy, diagnosis of infectious diseases such as tuberculosis,
+and augmentation of maternal and child health.
+38,39At a policy
+level, AI modeling has been used to accurately identify high-risk
+individuals for more targeted health policy generation.40
+AI has the potential to democratize specialized care in under-re-
+sourced settings and improve care accessibility, an important
+SDOH. Democratization, used in our context, refers to the
+endeavor of making healthcare universally accessible. In LMICs,telehealth platforms can be coupled with innovative diagnostictests and home-based monitoring tools to promote delivery of pa-
+tient-centric specialist care in a primary care setting. For example,
+the integration of DL systems with smartphone-based applica-tions has been developed to detect prevalent eye diseases such
+as glaucoma and diabetic retinopathy in LMICs.
+41Dacal et al.
+described an end-to-end solution for diagnosis of soil-transmitted
+Figure 1. Reinforcement learning with human in the loop
+Cell Reports Medicine 5, 101356, January 16, 2024 3Perspectivell
+OPEN ACCESS
+
+helminth infections in Kenya that includes a mobile app for image
+digitization, a DL algorithm for automatic detection of pathogen,
+and a telemedicine platform for analysis.42High-risk pregnancy
+detection in rural areas of Africa is now possible without trainedsonographers through the use a low-cost ultrasound probe
+attached to a smartphone app installed with a real-time DL algo-
+rithm.
+43While current studies predominantly address the accu-
+racy of various AI tools in different healthcare settings, we
+acknowledge that a direct correlation between tool accuracy
+and the enhancement of care quality or accessibility has notbeen explicitly demonstrated. Empirical studies that holisticallyexamine the integration of AI tools into care systems, their impact
+on patient outcomes, and broader systems-level outcomes are
+necessary to solidify the claim that AI can truly democratize careand enhance its accessibility and quality.
+The role of AI in health service democratization is evident in
+high-income settings as well, particularly in the delivery of special-ized care in radiology, pathology, and ophthalmology. These
+countries possess the ability to scale and implement AI tools at
+local or international levels for healthcare service delivery. AI toolscurrently used in the screening and detection of debilitating dis-eases such as diabetic retinopathy (DR) demonstrate high levels
+of precision and cost effectiveness when implemented country
+wide.
+44,45Better health equity is then achieved through efﬁcient
+distribution of specialized person power and resources. In addi-
+tion to right siting of specialized resources, AI enhances the overall
+quality of healthcare. AI-powered algorithms have outperformedphysicians and traditional screening tools in detecting and diag-
+nosing serious diseases such as skin and breast cancers.
+46,47
+Detection of these conditions at early stages signiﬁcantly in-Figure 2. The interconnectedness of SDOH
+data sources
+Individual patient-level data ﬂow into neighbor-
+hood- and population-level data sources such aspopulation census reports.
+creases response to traditional lines of
+treatments that are potentially cheaper
+and more accessible to the generalpopulation.
+LLMs in SDOH
+LLMs like ChatGPT have the abilityto generate and replicate human re-
+sponses in a highly convincing manner.
+This linguistic ability, coupled with multi-lingual capabilities,
+48,49is purported to
+be capable of enhancing communication
+between healthcare providers and pa-tients across geographical and language
+borders. Through the provision of health
+education and patient enquires, basicmedical advice can be administeredwithout the need to engage healthcare
+professionals directly, which addresses
+operational challenges in LMICs and
+remote areas where healthcare professional manpower is in a
+critical crunch. These models can support time-consuming,
+administrative activities such as discharge report writing, patientstay summaries, and patient history interrogation.
+50In addition,
+LLMs may overcome the infrastructural limitations (discussed
+in the section below) imposed by semantic and syntactic inter-operability in EHR system.
+51However, despite the huge promise
+of LLMs in transforming healthcare, the deployment of
+these models needs to be approached with caution. The lackof reliable and robust methods to distinguish between LLM-generated and human-generated content ampliﬁes healthcare
+professionals’ and patients’ vulnerability to anthropomor-
+phism.
+52,53Inherent risks presented by LLM-based applications
+include inadvertent disinformation or ‘‘hallucinations,’’ prolifera-
+tion of bias, and infringement of copyrights, all of which can have
+far-reaching societal and health equity implications. These tech-nologies in their current form have the potential to incite harm,
+especially in mental health, where NLP algorithms have shown
+biases relating to religion, race, gender, nationality, sexuality,and age.
+20There is a need for a framework to govern the devel-
+opment, deployment, technology assessment, and eventual
+regulation of LLMs for medical applications. We discuss some
+of the challenges and barriers relating to LLMs and SDOH below.
+CHALLENGES AND BARRIERS
+Lack of SDOH data standardization
+A lack of a standardized method of data collection and deﬁnitions
+has impeded progress in global SDOH research. Take housingdata for example: it can include different deﬁnitions, metadata,
+4Cell Reports Medicine 5, 101356, January 16, 2024Perspectivell
+OPEN ACCESS
+
+and measurements. There is a lack of standardized data ele-
+ments, assessment tools, measurable inputs, and data collectionpractices in clinical notes for patient-level SDOH information.
+30
+SDOH also presents at individual, neighborhood, and populationlevels. LMICs face capacity constraints to handle large data. Datasources owned by private sectors may not be available publicly
+as discussed above. Data are often not harmonized nor interop-
+erable across sectors, making data integration a challenge andsubsequent analysis/modeling difﬁcult.
+29The lack of standard-
+ized terminologies and deﬁnitions will also limit semantic interop-
+erability, posing a challenge to the implementation of algorithms.
+This issue is not speciﬁc to LMICs. In Denmark, for example, thehealthcare sector is highly digitized, with a long history of health
+data registry establishment. Robust healthcare research is
+made possible due to individual-level record linkage betweenall data sources.
+54However, important SDOH variables such as
+lifestyle factors are still not routinely captured in a standardized
+manner. Furthermore, multicohort validation of AI models relyheavily on standardized frameworks for SDOH data collection.
+Initial efforts have been made to improve standardization of
+SDOH data and integrate data into care delivery. The AMA Inte-grated Health Model Initiative (IMHI) and Gravity project spear-headed by the American Medicine Academy seeks to develop
+consensus-driven standards for collection and transfer of SDOH
+data with subsequent integration into CPT codes.
+55The NHS En-
+gland published a consensus common outcomes framework
+(COF), which recommended the use of 3 primary care codes to
+standardize recording of social-prescribing activities.56However,
+the codes lack the level of granularity that is required for the pur-
+pose of SDOH research, AImodeling, and implementation. Another
+widely available tool is the ICD-10 Z-codes (Z55–Z65) that repre-sent SDOH data such as employment status, access to shelter,and social insurance or welfare support. However, despite global
+adoption of ICD-10, Z-codes are highly underutilized, with less
+than 2% hospitalized patients having a Z-coded diagnosis.
+57
+Health infrastructure limitations and environmentalimpactThe lack of essential physical facilities, regulatory barriers, and
+population readiness pose signiﬁcant challenges to equitable im-
+plementation of AI. Variances in internet connectivity, linguisticcompatibility, operational skills, and hardware prerequisites may
+challenge access to beneﬁts conferred by AI models and LLMs.On the level of physical infrastructure, LMICs and remote areas
+may not possess reliable telecommunication networks, stable
+internet connections, or sufﬁcient equipment. Recognizing infra-structure limitations is essential for successful implementation of
+digital tools, e.g., mobile applications, in many cases, need to
+have the ability to work in both online and ofﬂine modes.
+58
+Notably, disparities in technological access may further exacer-bate global inequalities by disproportionately favoring speciﬁc co-
+horts.
+59Implementing digital solutions with lower technical re-
+quirements and cost is promising. A multidisciplinary approachsupported by government, hospital systems, physicians, AI com-
+panies, and industry partners is necessary to create a robust local
+infrastructure of IT systems, clinical services, and digital commu-nications networks.
+60LMICs should invest in infrastructure for
+local validation, and model recalibration will also lay the ground-
+work for eventual contribution of local data to international data re-positories.
+61Aside from physical infrastructure, regulatory barriers
+pose a critical challenge to successful clinical deployment of AI
+models and digital health solutions. While a plethora of fully vali-dated AI models can be found in published literature, clinical im-plementation in practice is hampered by the lack of a clear regu-
+latory approval and deployment roadmap.
+62The development of
+a regulatory framework for AI models is at its nascent stage. Theestablishment of national and international regulatory standards
+could accelerate technology adoption.
+Intensive computing processes of AI and LLMs alike give rise to
+environmental and potential labor impacts. LLMs, in particular,
+require signiﬁcant energy demands during the training process
+and, correspondingly, result in high carbon emissions.
+63This
+can exacerbate existing environmental challenges including risingcarbon footprint, water use, and soil pollution of sealing, which has
+implications for environmental quality and collective inﬂuence on
+SDOH.
+52,64Particular to LMICs, the engagement of low-cost
+workers to perform annotation of toxic language (including text
+embedding hate speech, sexual abuse, violence) may contribute
+to negative psychological health outcomes among theseworkers.
+65,66It is thus imperative to examine the impact of the
+aforementioned labor practices to ensure that advancements in
+AI do not come at the expense of employee well-being.Table 1. Examples of publicly available SDOH data in HICs and LMICs
+WHO SDOH domains Data collected by HICs28Data collected by LMICs29
+Economic stability household poverty ratio, type of
+employment, occupationtype of employment, occupation
+Education highest education level highest education level, native language
+Healthcare services most recent doctor visit, most recent
+wellness doctor visit, have a usual carefacility, type of usual care facilityany visit to health facility in last 12 months,
+time spent traveling to healthcare facility
+Social and community household composition, caregiving sources,
+health insurance, working hourshousehold composition, health insurance
+Neighborhood and built
+environmentregion of residence source of drinking water, access to toilet, access to
+vehicular transport, materials used in the construction of home
+Under each SDOH domain, a lack of congruence and standardization of variables collected reﬂects differences in prevailing health priorities of the
+respective region.
+Cell Reports Medicine 5, 101356, January 16, 2024 5Perspectivell
+OPEN ACCESS
+
+Digital literacy, inclusivity, and culture of acceptance
+Digital literacy and digital inclusivity are important indicators of
+population readiness. Certain population groups fare better in
+a digitized world, for example the younger, the better educated,and/or urban dwellers. These groups consistently report higher
+internet access and digital skills and will beneﬁt the most from
+digital and AI health technologies. Conversely, vulnerable groupscommonly experience high barriers to access, creating a digitalhealth paradox. Singapore is a digitally advanced nation with
+almost universal digital availability, yet when COVID-19 forced
+rapid digital adoption, gaps in access by vulnerable groupssuch as low-income households, the elderly, and migrant
+workers were found.
+67Placing emphasis on digital inclusivity
+as a ‘‘super’’ SDOH could mitigate health inequalities broughtabout by AI and digital health technologies. Underpinning suc-
+cessful implementation of digital health is innate trust and belief
+in the beneﬁts of digital technologies at an individual level. Care-ful, calibrated change management strategies are critical butoften neglected by governments and healthcare leaders. This
+is also critical to the cultural transformation of digital health
+from traditional health services.
+Pertaining to LLMs, we discussed in the above section the po-
+tential of ﬁne-tuned or domain-speciﬁc LLMs in mitigating
+healthcare worker burdens through automation of clinical docu-mentation and enhancement of healthcare conversations. How-
+ever, widespread adoption of such technology is currently
+impeded by concerns related to accuracy and consistency.Medical document summarization involves more than just noting
+facts; it also involves creation of an accurate narrative of the pa-
+tient. Nuances of medical humanities, patient preferences, andcomplexities of socioeconomic and psychological status haveyet to be fully replicated by generative AI.
+68These current limita-
+tions suggest that healthcare professionals may still have to
+manually review outputs for accuracy that, in turn, may bemore time intensive and cognitively fatiguing.
+Bias in algorithms and privacy concerns
+Inadequate representation in training datasets may jeopardizethe effectiveness of AI-based health interventions in vulnerablepopulations. AI models often generalize poorly in populations
+outside of its data training and validation cohort. While models
+may perform well in well-represented regions, disparate perfor-mance in less-represented cohorts and minority populations
+may perpetuate existing health disparities.
+69Clinical AI models
+often draw data from EHRs, biobanks, or genome databases, inwhich groups with irregular or limited access to the healthcare
+systems, e.g., ethnic minorities and immigrants, will be poorly
+represented.
+70,71Data shifts and model deterioration may result
+in missed diagnosis, inaccurate prognosis, and suboptimal treat-
+ment recommendations in unrepresented cohorts.72,73Along the
+same vein, implementing algorithms trained using large datasetshas been shown to be biased against individuals of different racesand socioeconomic status. For instance, chest X-ray classiﬁers
+trained using datasets dominated by White patients performed
+poorly in Medicare patients,
+74and a risk prediction algorithm
+trained using large datasets failed to triage African Americans
+for necessary care.75This will remain a pervasive problem since
+more than half of the datasets used for clinical AI developmentoriginate from either the USA or China.61Careful validation of AI
+algorithms is imperative in ensuring reproducible results before
+being deployed in other populations. To effectively combat
+such bias, models should be trained using multi-institutional da-tasets and surveyed for disparate performance during model
+deployment.
+76In addition to a lack of representation in datasets,
+AI-driven clinical decision support may inadvertently reproducethe biased judgements and decision-making that are entrenchedin real-world practice. Biases captured in unstructured clinical
+notes may be picked up by and replicated in NLP-based AI tools.
+Along the same vein, bias in pretraining or ﬁne-tuning datasets ofLLMs may encode historical and ongoing bias. Prejudiced, ste-
+reotyped, and discriminatory outputs reﬂect empirically
+observed patterns of judgements from pretraining datasets. Inan experiment using commercial LLMs, kidney function estima-
+tion queries returned answers based on an outdated and race-
+biased medical formula.
+77At this juncture, we caution against un-
+checked, unaccounted, and untested applications of LLM inclinical decision support. LLMs may inadvertently perpetuate
+these biases and contribute toward widening health inequities.
+In the realm of data and model responsibility, the party that re-
+mains liable for the outcomes of AI and LLMs remains unclear,
+and it is important to note that absence of autonomy and
+sentience renders a lack of moral agency in AI.
+78Pertaining to
+data privacy, patient-related data are entrusted to healthcare in-
+stitutions and professionals, and the use of big data may lead to
+potential unauthorized usage of personal data in predictive ana-lyses.
+79A lack of robust data privacy frameworks may introduce
+vulnerabilities for penetration and manipulation of sensitive pa-
+tient information. Reidentiﬁcation of anonymized medical datais possible with few spatiotemporal datapoints despite deidenti-ﬁcation efforts.
+80Vulnerable populations are in jeopardy when
+SDOH data carrying sensitive and stigmatizing information are
+uncovered. Examples of cybersecurity measures include userauthentication, audit trails, data encryption, and secure data
+transmission mechanisms.
+58
+Developments in privacy-preserving technologies are gaining
+traction. Homomorphic encryption is one such solution that per-
+mits for analyses to be performed securely on encrypted data
+without the need for decryption. Generative adversarial networks(GANs) are generative models that learn from the distribution ofhealthcare data or medical images to create large, realistic syn-
+thetic data.
+76The privacy of patients is protected, as data cannot
+be attributed to any single individual. In addition, GANs can beused to augment healthcare datasets with class imbalance or
+insufﬁcient variability. Performance of models augmented by
+GANs outperforms those trained using traditionally augmenteddata using a fraction of the original training dataset.
+81GANs pre-
+sent as a novel tool to overcome both privacy concerns and
+algorithmic bias discussed above. Federated machine learningis a data-private, multisite, collaborative learning approach that
+distributes model training and aggregates model weights
+without the need to share individual patient datasets.
+82,83Block-
+chain technology facilitates secure and auditable exchange ofsensitive patient data, safeguarding data integrity and immuta-
+bility. Blockchain can be coupled with the aforenamed privacy-
+preserving techniques to augment AI algorithms while providingan additional layer of data security.
+84,85
+6Cell Reports Medicine 5, 101356, January 16, 2024Perspectivell
+OPEN ACCESS
+
+FUTURE DIRECTIONS
+Emphasis on digital inclusion
+In the recent decades, digital literacy and internet access have
+been increasingly recognized as ‘‘super’’ SDOHs due to their
+complex interlink and ability to affect other SODH.86A key barrier
+to digital literacy lies in the digital divide, which afﬂicts disadvan-
+taged populations more signiﬁcantly. For example, approxi-
+mately one-sixth of low-income household families in the USAdo not have broadband internet access.
+87
+With expanding applications of AI and digital health, it is imper-
+ative to devise strategies to bridge the digital divide in our pursuitof health equity. The concept of digital inclusion encompassesactivities that allow for equitable access and use of information
+communication technologies ( https://www.digitalinclusion.org/
+deﬁnitions/ ). Digital inclusion goes beyond simple possession
+of internet-enabled devices and internet access; elements
+such as digital literacy training, availability of technical support,
+and applications to empower users are equally crucial ( https://
+www.digitalinclusion.org/deﬁnitions/ ). Within the EU, only about
+half of the population possesses basic digital skills, despite
+widespread access to the internet (https://digital-strategy.ec.europa.eu/en/library/ict-work-digital-skills-workplace). We
+propose a multitiered approach to evaluate and address digital
+inclusion as an SDOH ( Figure 3 ).
+Global agenda for ethical and equitable AI practices
+The establishment of global guidelines and framework is neces-
+sary to guide the development, implementation, and evaluation
+of AI-based digital health technologies to ensure efﬁcacy sus-tainability and equitability. Various guidelines and frameworks
+have been developed to guide the ethical use of AI including
+guidance from international bodies, e.g., the WHO (https://www.who.int/publications/i/item/9789240029200) and UNIGlobal Union (https://uniglobalunion.org/report/10-principles-
+for-ethical-artiﬁcial-intelligence/)—however, signiﬁcant diver-
+gences exist in the interpretation and prioritization of speciﬁcethics principles.
+89In addition, there is a lack of representation
+from LMICs such as African and South American countries,
+revealing a power imbalance in this ethical debate. Relevantstakeholders from different global regions should be involved
+in the development of a global consensus framework while
+respecting variability in regional priorities, capabilities, andchallenges.
+60
+Furthermore, on the research front, a global research agenda
+for AI interventions relevant to addressing SDOH will ensure thattools developed respond to population needs.
+37Furthermore, AI
+research in LMICs can be enhanced by international frameworks
+to promote model transparency such as the ‘‘transparent report-ing of a multivariable prediction model for individual prognosis or
+diagnosis (TRIPOD)’’ reporting guideline and ‘‘developmental
+and exploratory clinical investigations of decision support sys-tems driven by AI (DECIDE-AI).’’
+90,91
+Bridge development to implementation
+Greater efforts are also required to bridge development to imple-
+mentation for AI-based technologies to maximize gain. Lessonsdrawn from implementation science suggest a need to map out
+unique circumstances and processes within each local setting to
+identify potential interactions and barriers of technology imple-mentation. Active engagement of local stakeholders such asgovernment agencies and non-governmental organizations
+(NGOs) in the process of workﬂow design is essential, especially
+in resource-limited settings.
+38,92For example, DL algorithms
+developed using computed tomography (CT) images cannot
+be generalized or implemented in a region where CT scanners
+are unavailable. Along the same vein, there is a need to conducteconomic evaluation of AI-based technologies under different
+resource settings. For the under-resourced settings, the key is
+to prevent life-threatening conditions, and thus the referralthresholds by these digital tools will need to be carefully set
+based on the health economic analysis that is feasible to the spe-
+ciﬁc country. Cost-effective analyses of AI vs. standard of carereveal useful information for policy makers and regulators suchas the optimal operating model or whether the new initiative
+should be adopted at all.
+44,93
+The ‘‘black box’’ nature of DL- and LLM-based models, com-
+pounded by the tendency of LLMs to ‘‘hallucinate,’’ is a key
+impediment to the development of trustworthy and explainable
+AI models. Beyond improving accuracy of AI model outputs,Figure 3. A multitiered approach for digital inclusion using WHO SDOH framework
+The framework was adapted from Van Dijk.88
+Cell Reports Medicine 5, 101356, January 16, 2024 7Perspectivell
+OPEN ACCESS
+
+signiﬁcant effort and progress has been made in developing ex-
+plainability techniques for machine learning and DL models,
+such as saliency-based explainable AI (XAI).94However, inter-
+pretation of such techniques, e.g., SHAP, may not be sufﬁciently‘‘layman’’ to facilitate rapid decision-making in clinical prac-
+tice.
+95In addition, there is still a paucity of evidence to quantify
+improved clinician or patient trust in AI model output throughincorporation of these explainability techniques. We encouragemore research and exploration in examining factors that foster
+greater user trust in AI models and the design of conceptual
+models and frameworks
+96to bridge the gap between model
+development and effective implementation.
+Conclusion
+Achieving health equity remains a challenge, and addressingSDOH is progressively becoming a global priority. In a post-
+pandemic world, the widening digital and health divide has thrown
+caution to the use of AI and digital health technologies. Signiﬁcantchallenges and barriers to equitable AI implementation remain,especially with regard to overcoming infrastructure limitations
+and algorithmic bias. Newer techniques and global collaborative
+efforts have the potential to overcome these barriers and allowdisruptive and transformative digital health tools to ﬂourish.
+ACKNOWLEDGMENTS
+D.S.W.T. is supported by grants from the National Medical Research Council
+Singapore (MOH-000655–00 and MOH-001014–00), the Duke-NUS MedicalSchool Singapore (Duke-NUS/RSF/2021/0018, 05/FY2020/EX/15-A58, and05/FY2022/EX/66-A128), and the Agency for Science, Technology andResearch Singapore (A20H4g2141 and H20C6a0032) for research in AI.J.C.L.O. is supported by grants from the National Medical Research CouncilSingapore (MOH-CIAINV21nov-001) and AI Singapore OTTIC (AISG2-TC-2022-006).
+DECLARATION OF INTERESTS
+D.S.W.T. hold patents on a DL system for the detection of retinal diseases.
+REFERENCES
+1.Morse, D.F., Sandhu, S., Mulligan, K., Tierney, S., Polley, M., Chiva Giurca,
+B., Slade, S., Dias, S., Mahtani, K.R., Wells, L., et al. (2022). Global devel-opments in social prescribing. BMJ Glob. Health 7, e008524 .
+2.McGinnis, J.M., and Foege, W.H. (1993). Actual causes of death in the
+United States. JAMA 270, 2207–2212 .
+3.Schroeder, S.A. (2007). We Can Do Better — Improving the Health of the
+American People. NEJM 357, 1221–1228 .
+4.Marmot, M. (2013). Universal health coverage and social determinants of
+health. Lancet 382, 1227–1228 .
+5.Bambra, C., Riordan, R., Ford, J., and Matthews, F. (2020). The COVID-19
+pandemic and health inequalities. J. Epidemiol. Community Health 74,
+964–968 .
+6.Millett, G.A., Jones, A.T., Benkeser, D., Baral, S., Mercer, L., Beyrer, C.,
+Honermann, B., Lankiewicz, E., Mena, L., Crowley, J.S., et al. (2020). As-sessing differential impacts of COVID-19 on black communities. Ann. Epi-demiol. 47, 37–44 .
+7.Unruh, L.H., Dharmapuri, S., Xia, Y., and Soyemi, K. (2022). Health dispar-
+ities and COVID-19: A retrospective study examining individual and com-munity factors causing disproportionate COVID-19 outcomes in CookCounty, Illinois. PLoS One 17, e0268317 .8.Vardavas, C.I., and Nikitara, K. (2020). COVID-19 and smoking: A system-
+atic review of the evidence. Tob. Induc. Dis. 18,2 0.
+9.Goh, O.Q., Islam, A.M., Lim, J.C.W., and Chow, W.C. (2020). Towards
+health market systems changes for migrant workers based on theCOVID-19 experience in Singapore. BMJ Glob. Health 5, e003054 .
+10. World Health Organisation. Social Determinants of Health. ; Available
+from: https://www.who.int/health-topics/social-determinants-of-health#
+tab=tab_1 . Accessed March 13, 2023.
+11. Healthy People 2030. Social Determinants of Health. https://health.gov/
+healthypeople/priority-areas /social-determinants-health . Accessed
+December 3, 2023.
+12.Daniel, H., Bornstein, S.S., Kane, G.C., Health and Public Policy Commit-
+tee of the American College of Physicians; Carney, J.K., Gantzer, H.E.,
+Henry, T.L., Lenchus, J.D., Li, J.M., McCandless, B.M., et al. (2018). Ad-dressing Social Determinants to Improve Patient Care and Promote HealthEquity: An American College of Physicians Position Paper. Ann. Intern.Med. 168, 577–578 .
+13.Lidsky, T.I., and Schneider, J.S. (2003). Lead neurotoxicity in children:
+basic mechanisms and clinical correlates. Brain 126, 5–19 .
+14.Lanphear, B.P., Kahn, R.S., Berger, O., Auinger, P., Bortnick, S.M., and
+Nahhas, R.W. (2001). Contribution of residential exposures to asthma inus children and adolescents. Pediatrics 107, E98 .
+15.Braveman, P., and Gottlieb, L. (2014). The social determinants of health:
+it’s time to consider the causes of the causes. Public Health Rep.
+129, 19–31 .
+16. Editorial (2017). Social Determinants of Health (SDOH). NEJM Catalyst.
+https://catalyst.nejm.org/doi/full/10.1056/CAT.17.0312 .
+17.
+Gunasekeran, D.V., Tham, Y.C., Ting, D.S.W., Tan, G.S.W., and Wong,
+T.Y. (2021). Digital health during COVID-19: lessons from operationalisingnew models of care in ophthalmology. Lancet Digit. Health 3, e124–e134 .
+18.Ting, D.S.W., Carin, L., Dzau, V., and Wong, T.Y. (2020). Digital technology
+and COVID-19. Nat. Med. 26, 459–461 .
+19.Syrowatka, A., Kuznetsova, M., Alsubai, A., Beckman, A.L., Bain, P.A.,
+Craig, K.J.T., Hu, J., Jackson, G.P., Rhee, K., and Bates, D.W. (2021).Leveraging artiﬁcial intelligence for pandemic preparedness and response:a scoping review to identify key use cases. NPJ Digit. Med. 4,9 6.
+20.Arora, A., and Arora, A. (2023). The promise of large language models in
+health care. Lancet 401, 641 .
+21.Vaswani, A., Shazeer, N., Parmer, N., Uszkoreit, J., Jones, L., Gomez,
+A.N., Kaiser, L., and Polosukhin, I. (2017). Attention is all you need. arXiv .
+22.Sanderson, K. (2023). GPT-4 is here: what scientists think. Nature
+615, 773 .
+23.Thirunavukarasu, A.J., Ting, D.S.J., Elangovan, K., Gutierrez, L., Tan, T.F.,
+and Ting, D.S.W. (2023). Large language models in medicine. Nat. Med.29, 1930–1940 .
+24.Tan, T.F., Thirunavukarasu, A.J., Campbell, J.P., Keane, P.A., Pasquale,
+L.R., Abramoff, M.D., Kalpathy-Cramer, J., Lum, F., Kim, J.E., Baxter,S.L., and Ting, D.S.W. (2023). Generative Artiﬁcial Intelligence ThroughChatGPT and Other Large Language Models in Ophthalmology: ClinicalApplications and Challenges. Ophthalmol. Sci. 3, 100394 .
+25.Zelmer, J., Sheikh, A., Zimlichman, E., and Bates, D.W. (2022). Transform-
+ing Care and Outcomes with Digital Health Through and Beyond thePandemic. NEJM Catalyst .
+26.d’Elia, A., Gabbay, M., Rodgers, S., Kierans, C., Jones, E., Durrani, I.,
+Thomas, A., and Frith, L. (2022). Artiﬁcial intelligence and health inequitiesin primary care: a systematic scoping review and framework. Fam. Med.Community Health 10, e001670 .
+27.Mullangi, S., Aviki, E.M., and Hershman, D.L. (2022). Reexamining Social
+Determinants of Health Data Collection in the COVID-19 Era. JAMA Oncol.8, 1736–1738 .
+8Cell Reports Medicine 5, 101356, January 16, 2024Perspectivell
+OPEN ACCESS
+
+28.Centers for Disease Control and Prevention. (2021). 2021 National Health
+Interview Survey Sample Adult Interview. https://www.cdc.gov/nchs/nhis/2021nhis.htm .
+29.Torres, I., Thapa, B., Robbins, G., Koya, S.F., Abdalla, S.M., Arah, O.A.,
+Weeks, W.B., Zhang, L., Asma, S., Morales, J.V., et al. (2021). Data Sour-ces for Understanding the Social Determinants of Health: Examples fromTwo Middle-Income Countries: the 3-D Commission. J. Urban Health
+98, 31–40 .
+30.Patra, B.G., Sharma, M.M., Vekaria, V., Adekkanattu, P., Patterson, O.V.,
+Glicksberg, B., Lepow, L.A., Ryu, E., Biernacka, J.M., Furmanchuk, A.,et al. (2021). Extracting social determinants of health from electronic healthrecords using natural language processing: a systematic review. J. Am.Med. Inform. Assoc. 28, 2716–2727 .
+31.Lybarger, K., Ostendorf, M., and Yetisgen, M. (2021). Annotating social
+determinants of health using active learning, and characterizing determi-nants using neural event extraction. J. Biomed. Inform. 113, 103631 .
+32.Stemerman, R., Arguello, J., Brice, J., Krishnamurthy, A., Houston, M., and
+Kitzmiller, R. (2021). Identiﬁcation of social determinants of health usingmulti-label classiﬁcation of electronic health record clinical notes. JAMIAOpen 4, ooaa069 .
+33.Guevara, M., Chen, S., Thomas, S., Chaunzwa, T.L., Franco, I., Kann, B.,
+Moningi, S., Qian, J., Goldstein, M., Harper, S., et al. (2023). Large Lan-guage Models to Identify Social Determinants of Health in ElectronicHealth Records .
+34.Bompelli, A., Wang, Y., Wan, R., Singh, E., Zhou, Y., Xu, L., Oniani, D.,
+Kshatriya, B.S.A., Balls-Berry, J.E., and Zhang, R. (2021). Social andBehavioral Determinants of Health in the Era of Artiﬁcial Intelligence with
+Electronic Health Records: A Scoping Review. Health Data Sci 2021 ,
+9759016 .
+35.Shaban-Nejad, A., Michalowski, M., and Buckeridge, D.L. (2018). Health
+intelligence: how artiﬁcial intelligence transforms population and personal-ized health. NPJ Digit. Med. 1,5 3.
+36.Kino, S., Hsu, Y.T., Shiba, K., Chien, Y.S., Mita, C., Kawachi, I., and Daoud,
+A. (2021). A scoping review on the use of machine learning in research onsocial determinants of health: Trends and research prospects. SSM Popul.Health 15, 100836 .
+37.Schwalbe, N., and Wahl, B. (2020). Artiﬁcial intelligence and the future of
+global health. Lancet 395, 1579–1586 .
+38.Ugarte-Gil, C., Icochea, M., Llontop Otero, J.C., Villaizan, K., Young, N.,
+Cao, Y., Liu, B., Grifﬁn, T., and Brunette, M.J. (2020). Implementing a so-cio-technical system for computer-aided tuberculosis diagnosis in Peru: Aﬁeld trial among health professionals in resource-constraint settings.Health Informatics J. 26, 2762–2775 .
+39.Bellemo, V., Lim, Z.W., Lim, G., Nguyen, Q.D., Xie, Y., Yip, M.Y.T.,
+Hamzah, H., Ho, J., Lee, X.Q., Hsu, W., et al. (2019). Artiﬁcial intelligenceusing deep learning to screen for referable and vision-threatening diabeticretinopathy in Africa: a clinical validation study. Lancet. Digit. Health 1,
+e35–e44 .
+40.Carroll, N.W., Jones, A., Burkard, T., Lulias, C., Severson, K., and Posa, T.
+(2022). Improving risk stratiﬁcation using AI and social determinants ofhealth. Am. J. Manag. Care 28, 582–587 .
+41.Bastawrous, A., Rono, H.K., Livingstone, I.A.T., Weiss, H.A., Jordan, S.,
+Kuper, H., and Burton, M.J. (2015). Development and Validation of aSmartphone-Based Visual Acuity Test (Peek Acuity) for Clinical Practiceand Community-Based Fieldwork. JAMA Ophthalmol. 133, 930–937 .
+42.Dacal, E., Bermejo-Pela ´ez, D., Lin, L., A ´lamo, E., Cuadrado, D., Martı ´nez,
+A´., Mousa, A., Postigo, M., Soto, A., Sukosd, E., et al. (2021). Mobile mi-
+croscopy and telemedicine platform assisted by deep learning for thequantiﬁcation of Trichuris trichiura infection. PLoS Negl. Trop. Dis. 15,
+e0009677 .
+43. Pokaprakarn, T., Prieto, J.C., Price, J.T., Kasaro, M.P., Sindano, N., Shah,
+H.R., Peterson, M., Akapelwa, M.M., Kapilya, F.M., Sebasti ~
+ao, Y.V., et al.
+(2022). AI Estimation of Gestational Age from Blind Ultrasound Sweeps inLow-Resource Settings. NEJM Evid. 1.https://doi.org/10.1056/
+evidoa2100058 .
+44.Xie, Y., Nguyen, Q.D., Hamzah, H., Lim, G., Bellemo, V., Gunasekeran,
+D.V., Yip, M.Y.T., Qi Lee, X., Hsu, W., Li Lee, M., et al. (2020). Artiﬁcial in-telligence for teleophthalmology-based diabetic retinopathy screening in anational programme: an economic analysis modelling study. Lancet. Digit.Health 2, e240–e249 .
+45.Han, J.E.D., Liu, X., Bunce, C., Douiri, A., Vale, L., Blandford, A., Lawren-
+son, J., Hussain, R., Grimaldi, G., Learoyd, A.E., et al. (2022). Teleophthal-mology-enabled and artiﬁcial intelligence-ready referral pathway for com-munity optometry referrals of retinal disease (HERMES): a ClusterRandomised Superiority Trial with a linked Diagnostic Accuracy Study-HERMES study report 1-study protocol. BMJ Open 12, e055845 .
+46.Winkler, J.K., Fink, C., Toberer, F., Enk, A., Deinlein, T., Hofmann-Wellen-
+hof, R., Thomas, L., Lallas, A., Blum, A., Stolz, W., and Haenssle, H.A.(2019). Association Between Surgical Skin Markings in Dermoscopic Im-ages and Diagnostic Performance of a Deep Learning Convolutional Neu-ral Network for Melanoma Recognition. JAMA Dermatol. 155, 1135–1141 .
+47.Liu, Y., Kohlberger, T., Norouzi, M., Dahl, G.E., Smith, J.L., Mohtashamian,
+A., Olson, N., Peng, L.H., Hipp, J.D., and Stumpe, M.C. (2019). ArtiﬁcialIntelligence-Based Breast Cancer Nodal Metastasis Detection: InsightsInto the Black Box for Pathologists. Arch. Pathol. Lab Med. 143, 859–868 .
+48. Yang, W., Li, C., Zhang, J., and Zong, C. (2023). BigTranslate: Augmenting
+Large Language Models with Multilingual Translation Capability over 100LanguagesPreprint in. arXiv. https://doi.org/10.48550/arXiv.2305.18098 .
+49. Doddapaneni, S., Ramesh, G., Khapra, M.M., Kunchukuttan, A., and Ku-
+mar, P. (2021). A Primer on Pretrained Multilingual Language ModelsPre-print in. arXiv. https://doi.org/10.48550/arXiv.2107.00676 .
+50.Shah, N.H., Entwistle, D., and Pfeffer, M.A. (2023). Creation and Adoption
+of Large Language Models in Medicine. JAMA 330, 866–869 .
+51.Harrer, S. (2023). Attention is not all you need: the complicated case of
+ethically using large language models in healthcare and medicine. EBio-Medicine 90, 104512 .
+52.Bender, E.M., Gebru, T., McMillan-Major, A., and Shmitchell, S. (2021). On
+the Dangers of Stochastic Parrots. Proceedings of the 2021 ACM Confer-ence on Fairness, Accountability, and Transparency, 610–623. 2023 .
+53.Shanahan, M. (2022). Talking about Large Language Models. Preprint in.
+arXiv .
+54.Schmidt, M., Schmidt, S.A.J., Adelborg, K., Sundbøll, J., Laugesen, K.,
+Ehrenstein, V., and Sørensen, H.T. (2019). The Danish health care systemand epidemiological research: from health care contacts to database re-cords. Clin. Epidemiol. 11, 563–591 .
+55. Robeznieks, A. (2023). Quality data Is Key to Addressing Social Determi-
+nants of Health. https://www.ama-assn.org/delivering-care/health-equity/
+quality-data-key-addressing-social-determinants-health .
+56.Jani, A., Liyanage, H., Okusi, C., Sherlock, J., Hoang, U., Ferreira, F., Yo-
+nova, I., and de Lusignan, S. (2020). Using an Ontology to Facilitate MoreAccurate Coding of Social Prescriptions Addressing Social Determinantsof Health: Feasibility Study. J. Med. Internet Res. 22, e23721 .
+57.Truong, H.P., Luke, A.A., Hammond, G., Wadhera, R.K., Reidhead, M.,
+and Joynt Maddox, K.E. (2020). Utilization of Social Determinants ofHealth ICD-10 Z-Codes Among Hospitalized Patients in the United States,2016-2017. Med. Care 58, 1037–1043 .
+58.Were, M.C., Kamano, J.H., and Vedanthan, R. (2016). Leveraging Digital
+Health for Global Chronic Diseases. Glob. Heart 11, 459–462 .
+59. Weidinger, L. (2021). Ethical and Social Risks of Harm from Language
+ModelsPreprint in. arXiv. https://doi.org/10.48550/arXiv.2112.04359 .
+60.(2022). Challenges in digital medicine applications in under-resourced set-
+tings. Nat. Commun. 13, 3020 .
+61.Celi, L.A., Cellini, J., Charpignon, M.L., Dee, E.C., Dernoncourt, F., Eber,
+R., Mitchell, W.G., Moukheiber, L., Schirmer, J., Situ, J., et al. (2022). Sour-
+ces of bias in artiﬁcial intelligence that perpetuate healthcare disparities-Aglobal review. PLOS Digit. Health 1, e0000022 .
+Cell Reports Medicine 5, 101356, January 16, 2024 9Perspectivell
+OPEN ACCESS
+
+62.Nagendran, M., Chen, Y., Lovejoy, C.A., Gordon, A.C., Komorowski, M.,
+Harvey, H., Topol, E.J., Ioannidis, J.P.A., Collins, G.S., and Maruthappu,M. (2020). Artiﬁcial intelligence versus clinicians: systematic review ofdesign, reporting standards, and claims of deep learning studies. BMJ368, m689 .
+63. Rae, J.W. (2021). Scaling Language Models: Methods, Analysis & Insights
+from Training GopherPreprint in. arXiv. https://doi.org/10.48550/arXiv.
+2112.11446 .
+64.Jiang, L.Y., Liu, X.C., Nejatian, N.P., Nasir-Moin, M., Wang, D., Abidin, A., Ea-
+ton, K., Riina, H.A., Laufer, I., Punjabi, P., et al. (2023). Health system-scalelanguage models are all-purpose prediction engines. Nature 619,3 5 7 – 3 6 2 .
+65. Perrigo, B. (2023). Exclusive: The $2 Per Hour Workers Who Made
+ChatGPT Safer. Time. January 18, 2023. https://time.com/6247678/
+openai-chatgpt-kenya-workers/ .
+66.Steiger, M., Bharucha, T.J., Venkatagiri, S., Riedl, M.J., and Lease, M.
+(2021). The Psychological Well-Being of Content Moderators: TheEmotional Labor of Commercial Moderation and Avenues for ImprovingSupport. Proceedings of the 2021 CHI Conference on Human Factors inComputing Systems .
+67.Ng, I.Y.H., Lim, S.S., and Pang, N. (2022). Making Universal Digital Access
+Universal: Lessons from COVID-19 in Singapore (Univ Access Inf Soc),pp. 1–11 .
+68.Preiksaitis, C., Sinsky, C.A., and Rose, C. (2023). ChatGPT is not the solu-
+tion to physicians’ documentation burden. Nat. Med. 29, 1296–1297 .
+69.Abra`moff, M.D., Tarver, M.E., Loyo-Berrios, N., Trujillo, S., Char, D., Ober-
+meyer, Z., Eydelman, M.B., and Foundational Principles of Ophthalmic Im-aging and Algorithmic Interpretation Working Group of the CollaborativeCommunity for Ophthalmic Imaging Foundation, Washington, D.C.; and
+Maisel, W.H. (2023). Considerations for addressing bias in artiﬁcial intelli-
+gence for health equity. npj Digital Medicine 6, 170 .
+70.Popejoy, A.B., Ritter, D.I., Crooks, K., Currey, E., Fullerton, S.M., Hindorff,
+L.A., Koenig, B., Ramos, E.M., Sorokin, E.P., Wand, H., et al. (2018). The
+clinical imperative for inclusivity: Race, ethnicity, and ancestry (REA) in ge-nomics. Hum. Mutat. 39, 1713–1720 .
+71.Manrai, A.K., Funke, B.H., Rehm, H.L., Olesen, M.S., Maron, B.A., Szolo-
+vits, P., Margulies, D.M., Loscalzo, J., and Kohane, I.S. (2016). GeneticMisdiagnoses and the Potential for Health Disparities. N. Engl. J. Med.375, 655–665 .
+72.Rajkomar, A., Hardt, M., Howell, M.D., Corrado, G., and Chin, M.H. (2018).
+Ensuring Fairness in Machine Learning to Advance Health Equity. Ann.Intern. Med. 169, 866–872 .
+73.Leslie, D., Mazumder, A., Peppin, A., Wolters, M.K., and Hagerty, A.
+(2021). Does "AI" stand for augmenting inequality in the era of covid-19healthcare? BMJ 372, n304 .
+74.Seyyed-Kalantari, L., Liu, G., McDermott, M., Chen, I.Y., and Ghassemi,
+M. (2021). CheXclusion: Fairness gaps in deep chest X-ray classiﬁers.Pac. Symp. Biocomput. 26, 232–243 .
+75.Obermeyer, Z., Powers, B., Vogeli, C., and Mullainathan, S. (2019). Dis-
+secting racial bias in an algorithm used to manage the health of popula-tions. Science 366, 447–453 .
+76.Zhang, A., Xing, L., Zou, J., and Wu, J.C. (2022). Shifting machine learning
+for healthcare from development to deployment and from models to data.Nat. Biomed. Eng. 6, 1330–1345 .
+77.Omiye, J.A., Lester, J.C., Spichak, S., Rotemberg, V., and Daneshjou, R.
+(2023). Large language models propagate race-based medicine. NPJDigit. Med. 6, 195–204 .
+78.Verdicchio, M., and Perin, A. (2022). When Doctors and AI Interact: on Hu-
+man Responsibility for Artiﬁcial Risks. Philos. Technol. 35, 11–28 .
+79.Price, W.N., and Cohen, I.G. (2019). Privacy in the age of medical big data.
+Nat. Med. 25, 37–43 .
+80.Reddy, S., Allan, S., Coghlan, S., and Cooper, P. (2020). A governance
+model for the application of AI in health care. J. Am. Med. Inform. Assoc.27, 491–497 .81.Salehinejad, H., et al. (2018). Generalization of deep neural networks for
+chest pathology classiﬁcation in X-rays using generative adversarial net-works. In I EEE International Conference on Acoustics, Speech and Signal
+Processing (ICASSP), pp. 990–994 .
+82.Sheller, M.J., Edwards, B., Reina, G.A., Martin, J., Pati, S., Kotrotsou, A.,
+Milchenko, M., Xu, W., Marcus, D., Colen, R.R., and Bakas, S. (2020).Federated learning in medicine: facilitating multi-institutional collabora-tions without sharing patient data. Sci. Rep. 10, 12598 .
+83.Sun, C., van Soest, J., Koster, A., Eussen, S.J.P.M., Schram, M.T., Ste-
+houwer, C.D.A., Dagnelie, P.C., and Dumontier, M. (2022). Studying theassociation of diabetes and healthcare cost on distributed data from theMaastricht Study and Statistics Netherlands using a privacy-preservingfederated learning infrastructure. J. Biomed. Inform. 134, 104194 .
+84.Tan, T.E., Anees, A., Chen, C., Li, S., Xu, X., Li, Z., Xiao, Z., Yang, Y., Lei, X.,
+Ang, M., et al. (2021). Retinal photograph-based deep learning algorithms
+for myopia and a blockchain platform to facilitate artiﬁcial intelligence
+medical research: a retrospective multicohort study. Lancet. Digit. Health3, e317–e329 .
+85.Chang, Y., Fang, C., and Sun, W. (2021). A Blockchain-Based Federated
+Learning Method for Smart Healthcare. Comput. Intell. Neurosci. 2021 ,
+4376418 .
+86. Gibbons C. Digital Access Disparities: Policy and Practice Overview.
+Panel Discussion, Digital Skills and Connectivity as Social Determinantsof Health. Sheon, A Conference Report: Digital Skills: A Hidden ‘‘Super’’Social Determinant of Health: Interdisciplinary Association for PopulationHealth Science. p. 2018. https://doi.org/10.1007/978-0-387-72815-5_8 .
+87.Sieck, C.J., Sheon, A., Ancker, J.S., Castek, J., Callahan, B., and Siefer, A.
+(2021). Digital inclusion as a social determinant of health. NPJ Digit. Med.4,5 2.
+88. Van Dijk, J.A.G.M. (2002). A framework for digital divide research. Electron.
+J. Commun. 12.http://www.cios.org/EJCPUBLIC/012/1/01211.html .
+89.Jobin, A., Ienca, M., and Vayena, E. (2019). The global landscape of AI
+ethics guidelines. Nat. Mach. Intell. 1, 389–399 .
+90.Vasey, B., Nagendran, M., Campbell, B., Clifton, D.A., Collins, G.S., De-
+naxas, S., Denniston, A.K., Faes, L., Geerts, B., Ibrahim, M., et al.(2022). Reporting guideline for the early-stage clinical evaluation of deci-sion support systems driven by artiﬁcial intelligence: DECIDE-AI. Nat.Med. 28, 924–933 .
+91.Collins, G.S., Dhiman, P., Andaur Navarro, C.L., Ma, J., Hooft, L., Reitsma,
+J.B., Logullo, P., Beam, A.L., Peng, L., Van Calster, B., et al. (2021). Pro-tocol for development of a reporting guideline (TRIPOD-AI) and risk ofbias tool (PROBAST-AI) for diagnostic and prognostic prediction modelstudies based on artiﬁcial intelligence. BMJ Open 11, e048008 .
+92.Gama, F., Tyskbo, D., Nygren, J., Barlow, J., Reed, J., and Svedberg, P.
+(2022). Implementation Frameworks for Artiﬁcial Intelligence TranslationInto Health Care Practice: Scoping Review. J. Med. Internet Res. 24,
+e32215 .
+93.Rossi, J.G., Rojas-Perilla, N., Krois, J., and Schwendicke, F. (2022). Cost-
+effectiveness of Artiﬁcial Intelligence as a Decision-Support System
+Applied to the Detection and Grading of Melanoma, Dental Caries, and
+Diabetic Retinopathy. JAMA Netw. Open 5, e220269 .
+94.Borys, K., Schmitt, Y.A., Nauta, M., Seifert, C., Kramer, N., Friedrich, C.M.,
+and Nensa, F. (2023). Explainable AI in medical imaging: An overview forclinical practitioners - Saliency-based XAI approaches. Eur. J. Radiol162, 110787 .
+95.Stephens, A.F.,/C20Seman, M., Hodgson, C.L., and Gregory, S.D. (2023).
+SHAP Model Explainability in ECMO – PAL mortality prediction: A CriticalAnalysis. Author’s reply. Intensive Care Med. 49
+, 1560–1562 .
+96.Benda, N.C., Novak, L.L., Reale, C., and Ancker, J.S. (2021). Trust in AI:
+why we should be designing for APPROPRIATE reliance. J. Am. Med.Inform. Assoc. 29, 207–212 .
+10Cell Reports Medicine 5, 101356, January 16, 2024Perspectivell
+OPEN ACCESS
+

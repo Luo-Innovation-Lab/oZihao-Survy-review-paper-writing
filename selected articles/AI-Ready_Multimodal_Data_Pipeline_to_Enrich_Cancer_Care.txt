@@ -1,0 +1,509 @@
+2024 IEEE International Conference on Big Data (Big Data)
+979-8-3503-6248-0/24/$31.00 ©2024 IEEE8814
+AI-Ready Multimodal Data Pipeline to Enrich Cancer Care
+Rezaur Rashid1*, Soheil Hashtarkhani1, Fekede Asefa Kumsa1, Lokesh Chinthala1, Brianna M White1, Janet A ZinK1,  
+Christopher L Brett2, Robert L Davis1, David L Schwartz1*, Arash Shaban-Nejad1* 
+ 
+1 College of Medicine, The University of Tennessee Health Science Center, Memphis, TN, USA  
+2 The University of Tennessee Graduate School of Medicine, Knoxville, TN, USA 
+*Corresponding authors :  
+Rezaur Rashid ( mrashid7@uthsc.edu), David L Schwartz (dschwar4@uthsc.edu ), Arash Shaban-Nejad ( ashabann@uthsc.edu ) 
+College of Medicine, The University of Tennessee Health Science Center, Memphis, TN, USA 
+Abstract — This study reports on the progress in designing and 
+developing a framework for integrating heterogeneous datasets—
+structured, semi-structured, and unstructured—into an AI-ready 
+multimodal data pipeline aimed at predicting radiation therapy 
+interruptions (RTI) and enhancing patient care navigation. The 
+AI-Ready dataset incorporates a broad set of information, 
+including patient demographics, health data, clinical notes, 
+medical imaging, and data on social determinants of health. 
+Preliminary results indicate that this pipeline effectively integrates 
+diverse distributed data sources, providing a foundation for 
+training AI models capable of generating reliable and actionable 
+predictions.   
+I. INTRODUCTION  
+Advances in artificial intelligence (AI) are transforming the 
+healthcare paradigm, introducing predictive models that 
+enhance clinical decision-making and improve patient 
+outcomes. Notably, in the domain of cancer care, radiation 
+oncology faces significant challenges posed by radiation 
+treatment interruptions (RTIs), which can compromise treatment 
+efficacy and adversely affect patient survival rates [1, 2]. RTIs 
+increased during the COVID-19 pandemic, especially in 
+underserved areas where limited healthcare access and resources 
+made it harder to maintain consistent cancer treatments [3]. To 
+mitigate this issue, predictive modeling of RTIs becomes 
+essential, requiring the integration of diverse healthcare data 
+sources to comprehensively capture the complexities of patient-
+specific circumstances [4, 5]. 
+Healthcare data's multimodal nature encompasses structured 
+Electronic Health Records (EHR), semi-structured clinical 
+notes, and unstructured imaging data. Integrating these diverse 
+data types into a unified AI-ready format poses significant 
+challenges driven by heterogeneity in formats, inconsistent data 
+quality, and the need for scalable reproducible solutions [6]. 
+Existing research often focuses on single-modality approaches, 
+which limits predictions by lowering accuracy and missing 
+important insights that can be gained from integrated data 
+sources [7]. 
+Recent studies demonstrate incorporating multiple data 
+types enhances clinical predictions [8, 9]. However, challenges 
+exist in harmonizing structured data, text, and medical images 
+into a consistent dataset. In addition, in some cases, privacy 
+concerns may require synthetic data generation to ensure patient 
+confidentiality [10, 11].  In a clinical and public health context, AI-readiness refers to 
+the quality and preparation of diverse (health and non-health) 
+datasets, ensuring they are suitable for artificial intelligence (AI) 
+applications to generate targeted, actionable insights that support 
+patient care, improve health outcomes, and inform population-
+level health interventions. This study develops an AI-ready 
+multimodal data pipeline for RTI prediction, addressing key 
+challenges such as data fragmentation and variable data quality 
+to enable more accurate and scalable predictive models while 
+integrating a diverse data type into a single, cohesive dataset. 
+Our key contributions include: 
+• Design and development of an AI-ready multimodal 
+data integration pipeline unifying structured, EHRs, 
+clinical text, and imaging data for predictive modeling 
+in radiation oncology. 
+• Implementation of a unified data representation 
+enhancing model efficiency while maintaining clinical 
+interpretability. 
+• Case study application showcasing the pipeline’s 
+effectiveness in improving RTI prediction accuracy 
+through multimodal data integration. 
+This paper aims to tackle the challenges of creating AI-ready 
+datasets by introducing a comprehensive end-to-end pipeline 
+that integrates diverse multimodal healthcare data. The 
+following sections detail the methodology, experiments, and 
+results, demonstrating the pipeline’s ability to advance AI model 
+performance while maintaining clinical relevance and 
+applicability.  
+II. RELATED WORK 
+The quest for AI-ready healthcare data has intensified, 
+driven by the potential of AI to enhance clinical decision-making 
+and patient outcomes. Most current approaches focus on 
+preparing individual data modalities, such as structured EHR, 
+clinical notes, or medical imaging, but often fail to fully 
+integrate these disparate data types into a unified dataset that is 
+suitable for machine learning. Willemink et al. [12] addressed 
+critical challenges in data preprocessing, particularly in the 
+context of medical imaging, establishing methods for creating 
+high-quality, AI-ready imaging datasets. Diaz et al. [13] 
+expanded on this, providing a comprehensive guide for 
+preparing imaging data using open-access platforms and 
+harmonization techniques to enhance data quality and 
+interoperability. However, these studies generally focus on a This research was supported by a grant from the  
+Tennessee Department of Health. 
+ 2024 IEEE International Conference on Big Data (BigData) | USGov | DOI: 10.1109/BigData62323.2024.10825353
+Authorized licensed use limited to: UNIV OF WISCONSIN - MILWAUKEE. Downloaded on May 11,2025 at 05:52:13 UTC from IEEE Xplore.  Restrictions apply. 
+
+8815
+ single modality data and lack an integrated view th at combines 
+structured EHR data with unstructured clinical note s and 
+imaging data. 
+Recent studies have demonstrated the value of integ rating 
+multiple data types to enhance predictive performan ce [14, 15]. 
+For example, Miotto et al. [8] employed unsupervise d deep 
+learning to create patient representations from str uctured EHR 
+data, improving patient outcome predictions. Simila rly, 
+Rajkomar et al. [9] used deep learning to process s tructured 
+healthcare data, highlighting the potential for EHR -based 
+predictions. Despite these advances, both studies d id not 
+integrate unstructured data, limiting their ability  to capture the 
+full context necessary for comprehensive patient mo deling.  
+Natural Language Processing (NLP) techniques, such as 
+BERT-based and SpaCy-based models, have improved th e 
+extraction of clinically relevant entities from tex tual notes [16, 
+17]. For example, Alsentzer et al. [16] leveraged B ERT-based 
+language models to extract patient details from cli nical texts, 
+offering improved representational capabilities com pared to 
+traditional NLP methods. However, while NLP advance ments 
+have improved the extraction of meaningful informat ion from 
+clinical notes, these approaches often fail to full y integrate 
+textual features with structured EHR or unstructure d imaging 
+data, which is critical for a holistic understandin g of patient 
+conditions. Similarly, imaging data integration has  advanced 
+significantly, primarily with convolutional neural networks 
+(CNNs) such as ResNet for feature extraction. Xu et  al. [18] 
+demonstrated the effectiveness of combining imaging  features 
+with clinical data, showing improved performance in  diagnostic 
+tasks. Yet, these models often neglect unstructured  clinical 
+notes, missing important contextual information abo ut patient 
+history and ongoing treatment that could improve pr ediction 
+outcomes. 
+The challenge of creating an integrated, multimodal  dataset 
+is further complicated by privacy concerns and data  silos, which 
+restrict data availability. Thomas et al. [19] high lighted the need 
+for transparent, fair, and integrated health data f or AI 
+applications, , while addressing the complexities o f fragmented 
+healthcare data. Our work addresses these limitations by proposing a n AI-
+ready data pipeline that integrates structured data  (such as 
+patient demographics, treatment plans, and social d eterminants 
+of health (SDoH) metrics), clinical notes, and imag ing features 
+into a unified dataset. Unlike prior studies, we pr ioritize 
+interpretability by focusing on categorical feature  extraction 
+instead of embeddings, ensuring that the model outp uts are not 
+only accurate but also explainable for clinicians. Our 
+methodology bridges the gaps between different data  modalities 
+offering a comprehensive approach to creating AI-re ady datasets 
+for cancer care, with a specific focus on Radiation  Treatment 
+Interruption (RTI) prediction in radiation oncology .  
+III.  METHODOLOGY  
+The goal of this study is to design and develop an AI-ready data 
+pipeline for addressing the challenges of data frag mentation and 
+multimodality to accurately predict Radiation Treat ment 
+Interruptions (RTI).  
+A.  AI-Ready Data Pipeline: Overview 
+The AI-ready data pipeline is designed to systemati cally 
+integrate multimodal healthcare data, ensuring that  the final 
+dataset is not only cohesive, and interpretable but  also suitable 
+for machine learning applications. The foucus was o n extracting 
+clinically relevant, interpretable categorical feat ures rather than 
+dense embeddings, to enhance explainability and sup port causal 
+analysis. This approach aims to provide clinicians with clear, 
+actionable insights that directly inform patient ca re. 
+The pipeline is composed of a series of interconnec ted steps, 
+including data ingestion, processing, integration, and 
+preparation for predictive modeling. Fig. 1 demonst rates a 
+flowchart of the complete pipeline, detailing the t ransformation 
+of raw healthcare data into a unified format optimi zed for AI 
+modeling. 
+B.  Data Acquisition and Sources 
+Structured Data . Demographics, clinical metrics, and SDoH 
+metrics were collected from 1,840 patients. Structu red data 
+included features such as age, gender, marital stat us, treatment 
+intent, and distance to treatment facilities.  
+Fig. 1.  AI-Ready Multimodal Data Pipeline 
+Authorized licensed use limited to: UNIV OF WISCONSIN - MILWAUKEE. Downloaded on May 11,2025 at 05:52:13 UTC from IEEE Xplore.  Restrictions apply. 
+
+8816
+ Text-Based Data . A total of 5,925 clinical notes and treatment 
+plans in PDF format were collected, containing valu able 
+contextual information about patient conditions, tr eatment 
+strategies, and reported side effects. 
+Imaging Data . To evaluate the pipeline’s multimodal 
+integration capabilities, chest X-ray (CXR) data wa s obtained 
+from MIMIC-CXR [20]. Although this dataset was not 
+originally part of the primary dataset, they were i ncluded to 
+illustrate the feasibility of integrating imaging d ata with other 
+data modalities for downstream predictive analysis.  
+C.  Data Preprocessing and Feature Extraction 
+a)   Structured Data Extraction: Demographics and 
+clinical metrics were extracted, standardized, and preprocessed 
+using pandas and Scikit-learn. To ensure data consi tency, 
+missing values were imputed using mean imputation f or 
+numerical features and mode imputation for categori cal 
+features.  
+b)  Text Data Extraction: Clinical notes and treatment 
+plans were processed using medSpaCy [21], a alspeci alized 
+NLP toolkit for medical data. The tool  extracted e ntities that 
+were relevant to RTI predictions, including patient  conditions 
+(e.g., lung cancer), treatment types (e.g., chemoth erapy), and 
+side effects (e.g., nausea, fatigue). Instead of cr eating text 
+embeddings, the pipeline focused on extracting inte rpretable 
+categorical features to maintain explainability and  clinical 
+relevance.  
+c)  Image Data Extraction: Chest X-ray images were 
+preprocessed using OpenCV for noise reduction, foll owed by 
+feature extraction using texture analysis and shape -based 
+techniques (e.g. Gray Level Co-occurrence Matrix (G LCM)). 
+Unlike deep learning approaches that generate dense  
+embeddings, we extracted higher-level features that  could be 
+easily categorized and interpreted by clinicians. F eatures such 
+as the presence/absence of abnormalities, lesion si ze, and 
+anatomical location were captured, allowing us to c reate 
+meaningful and interpretable image-derived features .   
+d)  Motivation for Categorical Feature Extraction: Given 
+the emphasis on explainable AI (XAI), categorical f eatures 
+were prioritized over embeddings for both text and image data. 
+While embeddings are effective at capturing informa tion, often 
+lack interpretability. Instead, features like tumor  presence, 
+disease categories, and treatment types were select ed to ensure 
+alignment with clinical interpretability requiremen ts. These 
+features make the AI outputs actionable for clinici ans by 
+providing a basis of interpretability and relevance  in potential 
+causal pathways., unlike embeddings, which are more  abstract.   
+D.  Data Integration 
+Once features were extracted from each modality, th ey were 
+integrated into a unified dataset. Key steps in the  integration 
+process included: 
+• Common Identifier : Data from different sources 
+(structured, text, imaging) were linked using a com mon 
+patient identifier to ensure data consistency acros s 
+modalities. • Feature Alignment : Features from each modality were 
+aligned, and categorical attributes were encoded as  
+needed. Label encoding for categorical variables wa s 
+used instead of one-hot encoding to preserve 
+interpretability, minimizing feature space expansio n. 
+• Validation : The pipeline was validated to ensure all 
+features were interpretable and suitable for predic tive 
+modeling. Consistency checks were conducted to veri fy 
+alignment across patient records, ensuring 
+completeness and feasibility of downstream analysis . 
+IV.  EXPERIMENTS  
+The experimental phase aimed to validate the effect iveness 
+of the AI-ready multimodal data pipeline through tw o case 
+studies each focusing on different modalities and i ntegration 
+challenges. Case Study 1  involved synthetic data derived from 
+real patient records, focusing on integrating struc tured data with 
+textual features. In contrast, Case Study 2  focused on the 
+MIMIC-CXR dataset to demonstrate how imaging data c an be 
+integrated with textual data. The purpose of these experiments 
+was to evaluate the pipeline's capability to proces s and integrate 
+multiple data modalities for machine learning tasks . 
+A.  Case Study 1: Synthetic Data from Real Patient Reco rds 
+The original dataset contained information from 1,8 40 
+patients and 5,925 clinical treatment plans in PDF format. This 
+data included structured elements such as patient d emographics, 
+treatment plans, and SDoH, alongside unstructured f eatures 
+extracted from clinical notes. Given the limited sa mple size and 
+privacy concerns, synthetic data generation was emp loyed to 
+create a dataset that preserves patient confidentia lity while 
+enabling model training. 
+We used CTGAN (Conditional Tabular Generative 
+Adversarial Network) [11], an extension of GANs opt imized for 
+tabular data, to generate synthetic records. CTGAN was chosen 
+for its ability to accurately model the complex rel ationships and 
+mixed data types commonly found in healthcare datas ets. The 
+generator and discriminator network within CTGAN le arned the 
+joint distribution of the structured dataset to pro duce realistic 
+synthetic samples. The quality of the synthetic dat a was 
+evaluated using metrics such as the Kolmogorov-Smir nov (KS) 
+statistic, ensuring the generated feature distribut ions closely  
+Fig. 2.  KS-statistic Comparison between Real Data and Synth etic Data 
+Authorized licensed use limited to: UNIV OF WISCONSIN - MILWAUKEE. Downloaded on May 11,2025 at 05:52:13 UTC from IEEE Xplore.  Restrictions apply. 
+
+8817
+ resembled the original data (Fig. 2). The final syn thetic dataset 
+consisted of 5,000 patient records, which served as  the training 
+and validation data for the RTI prediction model. 
+Although the synthetic data generated by CTGAN 
+effectively mirrors the statistical properties and relationships 
+found in real-world data, it may still lack the com plete variability 
+inherent in actual clinical environments. Therefore , these 
+synthetic datasets serve as a strong basis for mode l development, 
+but validation on larger real-world datasets remain s a necessary 
+future step to confirm their robustness and applica bility. 
+B.  Case Study 2: MIMIC-CXR Dataset 
+To explore the integration of imaging data within t he 
+pipeline, we used MIMIC-CXR, containing chest X-ray  images 
+with corresponding radiology reports. We selected a nd 
+processed 5,000 chest X-ray images. The textual not es were 
+extracted similarly to the clinical notes in the sy nthetic dataset 
+from Case Study 1, ensuring consistency in feature extraction. 
+This case study illustrated the pipeline’s potentia l to create a 
+more comprehensive patient assessment by integratin g imaging 
+features with textual information.  
+ 
+It is important to clarify that the imaging data in  Case Study 
+2 served as a proof of concept to demonstrate the v ersatility of 
+our AI-ready data pipeline for multimodal integrati on. It was 
+independent of the synthetic data from Case Study 1 , focusing 
+not on improving prediction accuracy but on showcas ing the 
+pipeline's capability to handle diverse data types.   
+C.  Prediction Task and Model Training 
+The goal of both case studies was formulated as a 
+classification problem with specific prediction tas ks: 
+• In Case Study 1 , structured and text-based features 
+were used for a binary classification. The target v ariable 
+was defined as 'Yes' if a patient had two or more m issed 
+treatment days (classified as "RTI") and 'No' other wise. 
+  
+• In Case Study 2 , combined features from text and 
+imaging data were used for a multi-level classifica tion 
+task, aiming to classify patients into different di sease 
+severity levels based on the findings in the X-ray 
+images.  
+ 
+In both case studies, XGBoost, a Gradient Boosting 
+classifier, was selected for predictive model train ing due to its 
+robustness and durability for tabular health data. XGBoost was 
+configured with hyperparameter optimization through  a grid 
+search, tuning the learning rate, maximum depth, an d number 
+of estimators to determine the optimal parameters f or model 
+performance. 
+ 
+D.  Model Evaluation 
+ 
+The models were evaluated using metrics such as Acc uracy, 
+Area Under the Curve (AUC), and F1-score. For Case Study 2, 
+we calculated both one-vs-rest (OVR) and one-vs-one  (OVO) 
+AUC scores to better capture the performance in the  multi-class 
+scenario. These metrics provided a comprehensive as sessment 
+of model performance, emphasizing both classificati on correctness and the balance between sensitivity and  specificity, 
+critical factors for clinical decision-making. 
+V.  RESULTS  
+The section presents a comparative evaluation acros s both 
+case studies, highlighting the impact of different combinations 
+of data modalities on model performance. 
+A.  Performance Metrics for Case Study 1 (Synthetic Dat a) 
+Table I presents the results for Case Study 1 , where models 
+were trained using structured data only, text data only, and a 
+combination of both structured and text-derived fea tures. The 
+combination of structured and text-derived features  consistently 
+outperformed models trained on individual modalitie s, 
+achieving higher AUC, Accuracy, and F1-score. This 
+improvement underscores the critical role of contex tual 
+information embedded within clinical notes, such as  treatment 
+types and potential side effects in enhancing the m odel's ability 
+to predict RTI. 
+TABLE I.  MODEL PERFORMANCE FOR DIFFERENT DATA MODALITIES IN 
+CASE STUDY 1 (S YNTHETIC DATA ) 
+Data Type AUC Accuracy F1-score 
+Structured only  0.819 76.00% 0.707 
+Text only 0.593 63.50% 0.330 
+Structured + Text 0.821 78.25% 0.727 
+B.  Performance Metrics for Case Study 2 (MIMIC-CXR) 
+Table II presents the performance metrics for Case Study 2, 
+where models were trained using text-only, image-on ly, and 
+combined text and image-derived features. The findi ngs 
+suggest that: Text-Only Features outperformed image -only 
+features, underscoring the significant predictive v alue 
+embedded in radiology reports. Image-only features 
+underperformed, indicating that, without the contex tual 
+understanding provided by textual data, imaging dat a alone was 
+insufficient in this scenario.  
+ 
+Interestingly, combining image features with text f eatures 
+led to a decrease in AUC compared to using text alo ne. This 
+may suggest that the image data did not add complem entary 
+value to this prediction task but rather introduced  noise, 
+possibly because of differences in the timing and c ontext of 
+image acquisition relative to the radiology reports .  
+TABLE II.  MODEL  PERFORMANCE  FOR  DIFFERENT  DATA  
+MODALITIES  (CASE  STUDY  2). 
+Data Type AUC (OVR) AUC (OVO) Accuracy F1-score 
+Text only  0.861 0.823 66.98% 0.662 
+Image only 0.539 0.541 37.00% 0.205 
+Text + Image 0.845 0.808 65.57% 0.646 
+VI.  DISCUSSION 
+A.  Findings 
+Integration text-derived features consistently impr oved 
+model performance, underscoring the value of unstru ctured 
+clinical notes. In Case Study 1, text-derived featu res enhanced 
+Authorized licensed use limited to: UNIV OF WISCONSIN - MILWAUKEE. Downloaded on May 11,2025 at 05:52:13 UTC from IEEE Xplore.  Restrictions apply. 
+
+8818
+ performance compared to structured data alone, high lighting 
+the role of contextual information from clinical no tes. 
+ 
+In Case Study 2, text data provided strong predicti ve power, 
+while imaging-only features performed poorly, sugge sting that 
+imaging data without context has limited utility. T hese findings 
+emphasize that the relevance and effectiveness of i maging data 
+are highly dependent on its clinical context and th e quality of 
+integration with other data types. 
+B.  Challenges in Synthetic Data Generation 
+Ensuring the statistical integrity of synthetic dat a posed 
+significant challenges, particularly in maintaining  the fidelity of 
+complex feature distributions. To address this, rig orous 
+monitoring of feature distributions and bias mitiga tion were 
+conducted using the Kolmogorov-Smirnov (KS) statist ic and 
+correlation analysis. These measures ensured that t he synthetic 
+dataset closely resembled the real-world data, supp orting 
+reliable model training while preserving privacy. 
+C.  Limitations in Feature Extraction and Integration 
+The extraction of categorical features from text an d images 
+was prioritized for interpretability, a key require ment for 
+clinical applications. However, this process requir ed significant 
+effort to align features across modalities. Focusin g on 
+categorical features instead of embeddings supporte d clinical 
+decision-making by enhancing explainability but int roduced 
+challenges in maintaining consistency across data t ypes. This 
+limitation highlights the trade-off between interpr etability and 
+the uniformity of feature representation.  
+D.  Data Availability 
+The syntactic data used in this study are available  upon 
+reasonable request. 
+VII.  CONCLUSION  
+This work presents early work on the design and 
+development of a pipeline for integrating heterogen eous 
+healthcare data into an AI-ready dataset to study r adiation 
+oncology treatment interruptions. The pipeline's ut ility and 
+effectiveness were validated through two case studi es, 
+demonstrating that integrating multiple data modali ties 
+improves model performance. This finding emphasizes  the 
+importance of comprehensive data pipelines in healt hcare for 
+supporting advanced predictive models.   
+ 
+By focusing on the extraction of clinically interpr etable 
+categorical features and ensuring the dataset’s rea diness for AI 
+applications, this study lays the groundwork for fu ture machine 
+learning models that are not only accurate but also  actionable in 
+clinical settings. Future Work will expand the data set to include 
+more diverse patient populations, incorporate addit ional 
+methods for causal analysis, and enhance model 
+interpretability. These enhancements will ensure th at the 
+resulting AI model is both robust and readily adopt able by 
+clinicians.  
+ 
+ 
+ REFERENCES  
+[1]  T. Shaikh, et al., “The impact of radiation treatme nt time on survival in 
+patients with head and neck cancer,” International Journal of Radiation 
+Oncology* Biology* Physics, vol. 96, no. 5, pp. 967 –975, 2016. 
+[2]  A. Shaban-Nejad, et al., “Towards an explainable ai  platform to study 
+interruptions in cancer radiation therapy,” in MEDI NFO 2023—The 
+Future Is Accessible, pp. 1501–1502, IOS Press, 202 4. 
+[3]  E. Gaudio, et al., “Defining radiation treatment in terruption rates during 
+the covid-19 pandemic: findings from an academic ce nter in an 
+underserved urban setting,” International Journal o f Radiation Oncology* 
+Biology* Physics, vol. 116, no. 2, pp. 379–393, 202 3. 
+[4]  A. Joseph, T. Hijal, J. Kildea, L. Hendren, and D. Herrera, “Predicting 
+waiting times in radiation oncology using machine l earning,” in 2017 16th 
+IEEE International Conference on Machine Learning a nd Applications 
+(ICMLA), pp. 1024–1029, IEEE, 2017. 
+[5]  M. Martínez-García and E. Hernández-Lemus, “Data in tegration 
+challenges for machine learning in precision medici ne,” Frontiers in 
+medicine, vol. 8, p. 784455, 2022.  
+[6]  D. Lahat, T. Adali, and C. Jutten, “Multimodal data  fusion: an overview 
+of methods, challenges, and prospects,” Proceedings  of the IEEE, vol. 
+103, no. 9, pp. 1449–1477, 2015. 
+[7]  H. Uno, D. P. Ritzwoller, A. M. Cronin, N. M. Carro ll, M. C. Hornbrook, 
+and M. J. Hassett, “Determining the time of cancer recurrence using 
+claims or electronic medical record data,” JCO clin ical cancer 
+informatics, vol. 2, pp. 1–10, 2018. 
+[8]  R. Miotto, L. Li, B. A. Kidd, and J. T. Dudley, “De ep patient: an 
+unsupervised representation to predict the future o f patients from the 
+electronic health records,” Scientific reports, vol . 6, no. 1, pp. 1–10, 2016. 
+[9]  A. Rajkomar, et al., “Scalable and accurate deep le arning with electronic 
+health records,” NPJ digital medicine, vol. 1, no. 1, pp. 1–10, 2018. 
+[10]  K. Armanious, C. Jiang, M. Fischer, T. K¨ustner, et  al.,, “Medgan: 
+Medical image translation using gans,” Computerized  medical imaging 
+and graphics, vol. 79, p. 101684, 2020. 
+[11]  L. Xu, M. Skoularidou, A. Cuesta-Infante, and K. Ve eramachaneni, 
+“Modeling tabular data using conditional gan,” Adva nces in neural 
+information processing systems, vol. 32, 2019.  
+[12]  M. J. Willemink, et al., “Preparing medical imaging  data for machine 
+learning,” Radiology, vol. 295, no. 1, pp. 4–15, 20 20. 
+[13]  O. Diaz, et al., “Data preparation for artificial i ntelligence in medical 
+imaging: A comprehensive guide to open-access platf orms and tools,” 
+Physica medica, vol. 83, pp. 25–37, 2021. 
+[14]  Y. Yang, K. Sun, Y. Gao, K. Wang, and G. Yu, “Prepa ring data for 
+artificial intelligence in pathology with clinical- grade performance,” 
+Diagnostics, vol. 13, no. 19, p. 3115, 2023. 
+[15]  F. Kidwai-Khan, R. Wang, M. Skanderson, C. A. Brand t, S. Fodeh, and 
+J. A. Womack, “A roadmap to artificial intelligence  (ai): Methods for 
+designing and building ai ready data to promote fai rness,” Journal of 
+Biomedical Informatics, vol. 154, p. 104654, 2024. 
+[16]  E. Alsentzer, J. R. Murphy, W. Boag, W.-H. Weng, D.  Jin, T. Naumann, 
+and M. McDermott, “Publicly available clinical bert  embeddings,” arXiv 
+preprint arXiv:1904.03323, 2019. 
+[17]  J. Lee, et al., “Biobert: a pre-trained biomedical language representation 
+model for biomedical text mining,” Bioinformatics, vol. 36, no. 4, pp. 
+1234–1240, 2020. 
+[18]  J. Xu, B. S. Glicksberg, C. Su, P. Walker, J. Bian,  and F. Wang, 
+“Federated learning for healthcare informatics,” Jo urnal of healthcare 
+informatics research, vol. 5, pp. 1–19, 2021. 
+[19]  D. M. Thomas, et al., “Transforming big data into a i-ready data for 
+nutrition and obesity research,” Obesity, vol. 32, no. 5, pp. 857–870, 
+2024. 
+[20]  A. E. Johnson, et al., “Mimic-cxr, a deidentified p ublicly available 
+database of chest radiographs with free-text report s,” Scientific data, vol. 
+6, no. 1, p. 317, 2019. 
+[21]  H. Eyre, et al., “Launching into clinical space wit h medspacy: a new 
+clinical text processing toolkit in python,” in AMI A Annual Symposium 
+Proceedings, vol. 2021, p. 438, 2022.  
+Authorized licensed use limited to: UNIV OF WISCONSIN - MILWAUKEE. Downloaded on May 11,2025 at 05:52:13 UTC from IEEE Xplore.  Restrictions apply. 
+
